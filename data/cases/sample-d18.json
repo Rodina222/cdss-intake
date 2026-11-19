@@ -1,0 +1,1232 @@
+{
+  "id": "sample-d18",
+  "created": "2026-11-18T23:48:00+00:00",
+  "updated": "2026-11-19T00:29:21+00:00",
+  "source": "sample",
+  "audio_file": null,
+  "transcript": "فين الوجع؟ أشّر على المكان اللي بيوجعك أكتر. الورك. في الناحية اليمين ولا الشمال ولا الاتنين؟ اليمين. الوجع في مكان واحد بس ولا في أكتر من مكان؟ في أكتر من مكان. عندك وجع في الرقبة أو الضهر كمان؟ أيوه في أسفل ضهري كمان. إيه اللي مضايقك وجاي بسببه النهارده؟ وركي بيوجعني ومش قادر أمشي زي الأول. بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من سنتين، واحدة واحدة. حصلت لك وقعة أو لوية أو ضربة أو إصابة؟ حصلت إزاي؟ لا مفيش وقعة. الوجع فين بالظبط: في الأربية (تحت البطن عند الفخذ)، ولا من برا الورك، ولا في المؤخرة؟ في الأربية. بينزل للفخذ أو للركبة؟ أيوه بينزل للركبة. بتعرج وإنت ماشي؟ أيوه بعرج وأنا ماشي. صعب تلبس الشراب أو الجزمة، أو تقص ضوافرك؟ أيوه صعب ألبس الشراب. بيزيد على السلم، أو لما تقوم من كرسي واطي، أو لما تحط رجل على رجل، أو تنام على الناحية دي؟ أيوه بيزيد لما أقوم من كرسي واطي. الورك بيطقطق أو بيعلّق أو بيتقفل أو بيخونك؟ لا مبيطقطقش ولا بيتقفل. تقدر تمشي قد إيه قبل ما الوجع يوقّفك؟ حوالي ربع ساعة وبعدها لازم أقعد. كان عندك مشكلة في الورك وإنت صغير، أو لبست جبيرة وإنت رضيع؟ لا مكانش عندي حاجة وأنا صغير. اختياري والدكتور يقرر: أخدت كورتيزون لفترة طويلة، أو بتشرب كحول بكميات كبيرة؟ لا مبشربش كحول ولا بخد كورتيزون. من صفر لعشرة، الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله. ستة. الصبح بتحس بتيبّس في الركبة؟ بياخد كام دقيقة عشان يروح؟ أيوه بيتيبس الصبح حوالي نص ساعة. في تنميل أو وخز أو ضعف في رجل واحدة أو الاتنين؟ لا مفيش تنميل ولا ضعف. حصل تغيير في التحكم في البول أو البراز؟ لا التبول عادي. في تنميل في المنطقة اللي بين الرجلين وحوالين الشرج؟ لا مفيش.",
+  "asr": null,
+  "busy": null,
+  "error": null,
+  "model": {
+    "llm": "opencode/deepseek-v4.1-flash-free",
+    "backend": "opencode",
+    "prompt_version": "v1"
+  },
+  "fields": {
+    "site": {
+      "ai": "hip",
+      "quote": "الورك",
+      "value": "hip",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "side": {
+      "ai": "right",
+      "quote": "اليمين",
+      "value": "right",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "one_or_many": {
+      "ai": "more_than_one",
+      "quote": "في أكتر من مكان",
+      "value": "more_than_one",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "exact_spot": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "also_neck_back": {
+      "ai": "yes",
+      "quote": "أيوه في أسفل ضهري كمان",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset": {
+      "ai": "من سنتين",
+      "quote": "من سنتين",
+      "value": "من سنتين",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset_type": {
+      "ai": "gradual",
+      "quote": "واحدة واحدة",
+      "value": "gradual",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "injury": {
+      "ai": "no",
+      "quote": "لا مفيش وقعة",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "pain_severity": {
+      "ai": 6,
+      "quote": "ستة",
+      "value": 6,
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "character": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "radiation": {
+      "ai": "yes",
+      "quote": "أيوه بينزل للركبة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "worse_with": {
+      "ai": "لما أقوم من كرسي واطي",
+      "quote": "بيزيد لما أقوم من كرسي واطي",
+      "value": "لما أقوم من كرسي واطي",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "better_with": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "night_pain": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "morning_stiffness_min": {
+      "ai": 30,
+      "quote": "حوالي نص ساعة",
+      "value": 30,
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "swelling": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "numbness": {
+      "ai": "no",
+      "quote": "لا مفيش تنميل ولا ضعف",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "weakness": {
+      "ai": "no",
+      "quote": "لا مفيش تنميل ولا ضعف",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "prior_treatment": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "diabetes": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "chief_complaint": {
+      "ai": "وركي بيوجعني ومش قادر أمشي زي الأول",
+      "quote": "وركي بيوجعني ومش قادر أمشي زي الأول",
+      "value": "وركي بيوجعني ومش قادر أمشي زي الأول",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "timing": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "painkillers_help": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "stiffness": {
+      "ai": "yes",
+      "quote": "أيوه بيتيبس الصبح",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "instability": {
+      "ai": "none",
+      "quote": "لا مبيطقطقش ولا بيتقفل",
+      "value": "none",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "function": {
+      "ai": "مش قادر أمشي زي الأول",
+      "quote": "مش قادر أمشي زي الأول",
+      "value": "مش قادر أمشي زي الأول",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "prior_problems": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "other_joints": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "chronic_diseases": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "medications": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "steroids": {
+      "ai": "no",
+      "quote": "ولا بخد كورتيزون",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "blood_thinners": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "allergies": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "family_history": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "occupation": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "dominant_hand": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "sport_activity": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "smoking": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "patient_belief": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "trauma_mechanism": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "can_bear_weight": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "high_energy": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "injury_when": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "immediate_function": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "snap_pop": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "swelling_24h": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "deformity": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "skin_wound": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "numb_cold": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "head_neck_injury": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "first_aid": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "fever": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "weight_loss": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "cancer_history": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "bladder_bowel": {
+      "ai": "no",
+      "quote": "لا التبول عادي",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "constant_worsening": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "neuro_vascular": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "immune": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "hot_red_joint": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "recent_infection_procedure": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "injected_drugs": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "saddle_numbness": {
+      "ai": "no",
+      "quote": "لا مفيش",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "exertion_chest": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "arm_pain": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "arm_numbness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "arm_weakness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "clumsy_balance": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "bladder_bowel_neck": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "dizzy_vision_speech": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "neck_movement": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "headache": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "overhead_activity": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "night_lying": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "stiffness_reach": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "can_lift_arm": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "dislocation": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "neck_arm_symptoms": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "first_dislocation": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "elbow_site": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "grip_lift_twist": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "elbow_swelling": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "elbow_locking": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "ulnar_numbness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "numb_fingers": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "spares_little_finger": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "night_waking": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "shake_relief": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "provoked_by": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "grip_weakness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "daily_use": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "lump_swelling": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "splint_injection": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "leg_pain_below_knee": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "leg_numb_weak": {
+      "ai": "no",
+      "quote": "لا مفيش تنميل ولا ضعف",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "foot_catching": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "pain_over_6_weeks": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "steroids_osteoporosis": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "lying_down": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "hip_site": {
+      "ai": "groin",
+      "quote": "في الأربية",
+      "value": "groin",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "hip_pain_travels": {
+      "ai": "yes",
+      "quote": "أيوه بينزل للركبة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "limp": {
+      "ai": "yes",
+      "quote": "أيوه بعرج وأنا ماشي",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "socks_shoes": {
+      "ai": "yes",
+      "quote": "أيوه صعب ألبس الشراب",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "hip_provokers": {
+      "ai": "yes",
+      "quote": "أيوه بيزيد لما أقوم من كرسي واطي",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "hip_mechanical": {
+      "ai": "no",
+      "quote": "لا مبيطقطقش ولا بيتقفل",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "childhood_hip": {
+      "ai": "no",
+      "quote": "لا مكانش عندي حاجة وأنا صغير",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "steroid_alcohol": {
+      "ai": "no",
+      "quote": "لا مبشربش كحول ولا بخد كورتيزون",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "walking_distance": {
+      "ai": "حوالي ربع ساعة",
+      "quote": "حوالي ربع ساعة",
+      "value": "حوالي ربع ساعة",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "giving_way": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "locking_catching": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "stairs": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "kneeling": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "can_straighten": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "foot_site": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "foot_swelling": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "ankle_instability": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "footwear": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "foot_deformity": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "foot_numbness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "gout_attacks": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "calf_pain": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "foot_walk_distance": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    }
+  },
+  "flags": [],
+  "events": [
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "site",
+      "from": null,
+      "to": "hip",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "side",
+      "from": null,
+      "to": "right",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "one_or_many",
+      "from": null,
+      "to": "more_than_one",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "also_neck_back",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "onset",
+      "from": null,
+      "to": "من سنتين",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "onset_type",
+      "from": null,
+      "to": "gradual",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "injury",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "pain_severity",
+      "from": null,
+      "to": "6",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "radiation",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "worse_with",
+      "from": null,
+      "to": "لما أقوم من كرسي واطي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "morning_stiffness_min",
+      "from": null,
+      "to": "30",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "numbness",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "weakness",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "وركي بيوجعني ومش قادر أمشي زي الأول",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "instability",
+      "from": null,
+      "to": "none",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "مش قادر أمشي زي الأول",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "steroids",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "bladder_bowel",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "hip_site",
+      "from": null,
+      "to": "groin",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "hip_pain_travels",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "limp",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "socks_shoes",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "hip_provokers",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "hip_mechanical",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "childhood_hip",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "steroid_alcohol",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "walking_distance",
+      "from": null,
+      "to": "حوالي ربع ساعة",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "saddle_numbness",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T00:29:21+00:00",
+      "kind": "AI filled",
+      "field": "leg_numb_weak",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    }
+  ],
+  "comment": "",
+  "reviewed": false,
+  "report_seen": false
+}

@@ -1,0 +1,23 @@
+{
+  "site": "shoulder",
+  "side": "left",
+  "chief_complaint": "كتفي خرج من مكانه امبارح",
+  "injury": "yes",
+  "trauma_mechanism": "وقعت على كتفي مباشرة",
+  "high_energy": "yes",
+  "injury_when": "امبارح بالليل",
+  "immediate_function": "no",
+  "snap_pop": "yes",
+  "deformity": "yes",
+  "skin_wound": "yes",
+  "numb_cold": "no",
+  "head_neck_injury": "no",
+  "first_aid": "رحت مستشفى حطوا لي جبيرة",
+  "pain_severity": 9,
+  "dislocation": "yes",
+  "first_dislocation": 19,
+  "can_lift_arm": "no",
+  "neck_arm_symptoms": "no",
+  "sport_activity": "بلعب كورة سلة",
+  "dominant_hand": "left"
+}

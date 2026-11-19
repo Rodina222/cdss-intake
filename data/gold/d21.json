@@ -1,0 +1,12 @@
+{
+  "site": "other",
+  "one_or_many": "more_than_one",
+  "exact_spot": "wide_area",
+  "chief_complaint": "تعبان ومفاصلي بتوجعني بقالي فترة",
+  "other_joints": "yes",
+  "stiffness": "yes",
+  "morning_stiffness_min": 60,
+  "injury": "no",
+  "fever": "no",
+  "family_history": "أبويا كان عنده روماتويد"
+}

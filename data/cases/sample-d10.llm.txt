@@ -1,0 +1,192 @@
+{
+  "fields": {
+    "site": {
+      "value": "knee",
+      "evidence_quote": "ركبتي بتوجعني"
+    },
+    "side": {
+      "value": "both",
+      "evidence_quote": "الاتنين"
+    },
+    "one_or_many": {
+      "value": "one_place",
+      "evidence_quote": "في مكان واحد بس"
+    },
+    "exact_spot": {
+      "value": "wide_area",
+      "evidence_quote": "منتشر حوالين الركبة كلها"
+    },
+    "also_neck_back": {
+      "value": "no",
+      "evidence_quote": "لا مفيش وجع في رقبتي ولا ضهري"
+    },
+    "onset": {
+      "value": "من خمس سنين",
+      "evidence_quote": "من خمس سنين"
+    },
+    "onset_type": {
+      "value": "gradual",
+      "evidence_quote": "بدأ واحدة واحدة"
+    },
+    "injury": {
+      "value": "no",
+      "evidence_quote": "لا عمري ما وقعت عليها"
+    },
+    "pain_severity": {
+      "value": 6,
+      "evidence_quote": "ستة"
+    },
+    "character": {
+      "value": "وجع تقيل",
+      "evidence_quote": "وجع تقيل"
+    },
+    "radiation": {
+      "value": "no",
+      "evidence_quote": "لا مبيمشيش في مكان تاني"
+    },
+    "worse_with": {
+      "value": "لما أنزل السلم ولما أقف كتير",
+      "evidence_quote": "لما أنزل السلم ولما أقف كتير"
+    },
+    "better_with": {
+      "value": "لما أقعد وأرتاح",
+      "evidence_quote": "لما أقعد وأرتاح"
+    },
+    "night_pain": {
+      "value": "no",
+      "evidence_quote": "لا بنام عادي"
+    },
+    "morning_stiffness_min": {
+      "value": 10,
+      "evidence_quote": "حوالي عشر دقايق"
+    },
+    "swelling": {
+      "value": "yes",
+      "evidence_quote": "فيه ورم بسيط"
+    },
+    "weakness": {
+      "value": "no",
+      "evidence_quote": "مفيش ضعف"
+    },
+    "prior_treatment": {
+      "value": "علاج طبيعي وحقن",
+      "evidence_quote": "علاج طبيعي وحقن"
+    },
+    "diabetes": {
+      "value": "yes",
+      "evidence_quote": "عندي سكر"
+    },
+    "chief_complaint": {
+      "value": "ركبتي بتوجعني وأنا بطلع السلم وجاية أشوف الدكتور",
+      "evidence_quote": "ركبتي بتوجعني وأنا بطلع السلم وجاية أشوف الدكتور"
+    },
+    "timing": {
+      "value": "intermittent",
+      "evidence_quote": "بييجي ويروح"
+    },
+    "painkillers_help": {
+      "value": "yes",
+      "evidence_quote": "المسكنات بتفرق معايا شوية"
+    },
+    "stiffness": {
+      "value": "yes",
+      "evidence_quote": "وتيبّس"
+    },
+    "instability": {
+      "value": "clicks",
+      "evidence_quote": "بتطقطق بس مبتتقفلش"
+    },
+    "function": {
+      "value": "مش بعرف أنزل السلم من غير ما أمسك في الحيطة",
+      "evidence_quote": "مش بعرف أنزل السلم من غير ما أمسك في الحيطة"
+    },
+    "prior_problems": {
+      "value": "no",
+      "evidence_quote": "لا عمري ما اتكسرت ولا عملت عملية"
+    },
+    "other_joints": {
+      "value": "yes",
+      "evidence_quote": "أيوه إيديا الاتنين بيوجعوني"
+    },
+    "chronic_diseases": {
+      "value": "سكر وضغط",
+      "evidence_quote": "سكر وضغط"
+    },
+    "medications": {
+      "value": "جلوكوفاج وأدوية الضغط",
+      "evidence_quote": "جلوكوفاج وأدوية الضغط"
+    },
+    "steroids": {
+      "value": "no",
+      "evidence_quote": "مش باخد كورتيزون"
+    },
+    "blood_thinners": {
+      "value": "no",
+      "evidence_quote": "ولا مسيّلات"
+    },
+    "allergies": {
+      "value": "no",
+      "evidence_quote": "لا مفيش حساسية"
+    },
+    "family_history": {
+      "value": "أمي كان عندها خشونة في الركبة",
+      "evidence_quote": "أمي كان عندها خشونة في الركبة"
+    },
+    "occupation": {
+      "value": "مدرّسة، وبقف كتير في الحصة",
+      "evidence_quote": "مدرّسة، وبقف كتير في الحصة"
+    },
+    "dominant_hand": {
+      "value": "right",
+      "evidence_quote": "بستخدم إيدي اليمين"
+    },
+    "sport_activity": {
+      "value": "لا بمشي بس شوية",
+      "evidence_quote": "لا بمشي بس شوية"
+    },
+    "smoking": {
+      "value": "no",
+      "evidence_quote": "لا مبدخنش"
+    },
+    "patient_belief": {
+      "value": "شايفة إنه من الوزن، وخايفة أحتاج عملية",
+      "evidence_quote": "شايفة إنه من الوزن، وخايفة أحتاج عملية"
+    },
+    "fever": {
+      "value": "no",
+      "evidence_quote": "لا مفيش سخونية"
+    },
+    "weight_loss": {
+      "value": "no",
+      "evidence_quote": "لا وزني مبينزلش"
+    },
+    "cancer_history": {
+      "value": "no",
+      "evidence_quote": "لا مفيش"
+    },
+    "kneeling": {
+      "value": "yes",
+      "evidence_quote": "أيوه بقعد على الأرض وأنا بصلي"
+    },
+    "stairs": {
+      "value": "yes",
+      "evidence_quote": "أيوه بتزيد لما أنزل السلم"
+    },
+    "can_straighten": {
+      "value": "yes",
+      "evidence_quote": "بعرف أفرد الركبة وأثنيها"
+    },
+    "can_bear_weight": {
+      "value": "yes",
+      "evidence_quote": "أقف وأمشي بس بصعوبة"
+    },
+    "giving_way": {
+      "value": "yes",
+      "evidence_quote": "أحيانًا بتخوني"
+    },
+    "locking_catching": {
+      "value": "clicks",
+      "evidence_quote": "بتطقطق بس مبتتقفلش"
+    }
+  }
+}

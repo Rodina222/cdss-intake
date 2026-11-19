@@ -1,0 +1,1 @@
+{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "مش فاكر بالزبط يمكن من كام شهك", "evidence_quote": "مش فاكر بالزبط يمكن من كام شهك"}, "giving_way": {"value": "yes", "evidence_quote": "أحيانا"}, "swelling": {"value": "yes", "evidence_quote": "آ شوية"}}}

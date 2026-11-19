@@ -1,0 +1,21 @@
+{
+  "site": "elbow",
+  "side": "right",
+  "chief_complaint": "كوعي بيوجعني لما بمسك الأدوات",
+  "onset": "من تلات شهور",
+  "onset_type": "gradual",
+  "injury": "no",
+  "elbow_site": "outer",
+  "grip_lift_twist": "yes",
+  "elbow_swelling": "no",
+  "elbow_locking": "no",
+  "ulnar_numbness": "no",
+  "pain_severity": 5,
+  "better_with": "لما أريّح إيدي",
+  "weakness": "yes",
+  "prior_treatment": "لبست رباط ودهان",
+  "occupation": "سباك وشغلي فيه لف وشد كتير",
+  "sport_activity": "مبتمرنش",
+  "fever": "no",
+  "night_pain": "no"
+}

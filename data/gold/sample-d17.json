@@ -1,0 +1,23 @@
+{
+  "site": "back",
+  "side": "centre",
+  "chief_complaint": "ضهري بيوجعني ورجلي ضعفت",
+  "onset": "من أسبوعين",
+  "onset_type": "sudden",
+  "injury": "yes",
+  "pain_severity": 9,
+  "leg_pain_below_knee": "yes",
+  "leg_numb_weak": "yes",
+  "foot_catching": "yes",
+  "bladder_bowel": "yes",
+  "saddle_numbness": "yes",
+  "pain_over_6_weeks": "no",
+  "lying_down": "no_change",
+  "steroids_osteoporosis": "no",
+  "constant_worsening": "yes",
+  "night_pain": "yes",
+  "fever": "no",
+  "weight_loss": "no",
+  "cancer_history": "no",
+  "recent_infection_procedure": "no"
+}

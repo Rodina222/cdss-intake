@@ -1,0 +1,22 @@
+{
+  "site": "wrist_hand",
+  "side": "both",
+  "chief_complaint": "إيديا بتنمل وبتصحيني بالليل",
+  "onset": "من أربع شهور",
+  "onset_type": "gradual",
+  "numb_fingers": "الإبهام والسبابة والوسطى",
+  "numbness": "yes",
+  "spares_little_finger": "yes",
+  "night_waking": "yes",
+  "shake_relief": "yes",
+  "provoked_by": "yes",
+  "grip_weakness": "yes",
+  "weakness": "yes",
+  "daily_use": "yes",
+  "lump_swelling": "no",
+  "splint_injection": "yes",
+  "diabetes": "yes",
+  "occupation": "سكرتيرة وبكتب على الكمبيوتر طول اليوم",
+  "dominant_hand": "right",
+  "neuro_vascular": "no"
+}

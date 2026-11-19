@@ -1,0 +1,1390 @@
+[
+ {
+  "id": "site",
+  "module": "site",
+  "question_en": "Where does it hurt? Point to the place that hurts you most.",
+  "question_ar": "فين الوجع؟ أشّر على المكان اللي بيوجعك أكتر.",
+  "type": "enum",
+  "options": [
+   "neck",
+   "shoulder",
+   "elbow",
+   "wrist_hand",
+   "back",
+   "hip",
+   "knee",
+   "ankle_foot",
+   "other"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "side",
+  "module": "site",
+  "question_en": "Is it on the right, the left, or both sides?",
+  "question_ar": "في الناحية اليمين ولا الشمال ولا الاتنين؟",
+  "type": "enum",
+  "options": [
+   "right",
+   "left",
+   "both",
+   "centre"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "one_or_many",
+  "module": "site",
+  "question_en": "Is the pain in one place only, or in more than one place?",
+  "question_ar": "الوجع في مكان واحد بس ولا في أكتر من مكان؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "one_place",
+   "more_than_one"
+  ]
+ },
+ {
+  "id": "exact_spot",
+  "module": "site",
+  "question_en": "Can you point to the exact spot with one finger, or is it spread over a wide area?",
+  "question_ar": "تقدر تحدد المكان بصباع واحد ولا هو منتشر في مساحة كبيرة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "one_spot",
+   "wide_area"
+  ]
+ },
+ {
+  "id": "also_neck_back",
+  "module": "site",
+  "question_en": "Do you also have neck or back pain?",
+  "question_ar": "عندك وجع في الرقبة أو الضهر كمان؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "onset",
+  "module": "core",
+  "question_en": "When did it start?",
+  "question_ar": "بدأت من إمتى؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "onset_type",
+  "module": "core",
+  "question_en": "Sudden or gradual?",
+  "question_ar": "فجأة ولا واحدة واحدة؟",
+  "type": "enum",
+  "options": [
+   "sudden",
+   "gradual"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "injury",
+  "module": "core",
+  "question_en": "Was there an injury?",
+  "question_ar": "كان فيه إصابة أو وقعة؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "pain_severity",
+  "module": "core",
+  "question_en": "Pain from 0 to 10?",
+  "question_ar": "الوجع كام من صفر لعشرة؟",
+  "type": "number",
+  "red_flag": false
+ },
+ {
+  "id": "character",
+  "module": "core",
+  "question_en": "What does the pain feel like?",
+  "question_ar": "الوجع شكله إيه؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "radiation",
+  "module": "core",
+  "question_en": "Does the pain spread elsewhere?",
+  "question_ar": "الوجع بيروح مكان تاني؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "worse_with",
+  "module": "core",
+  "question_en": "What makes it worse?",
+  "question_ar": "إيه اللي بيزوّده؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "better_with",
+  "module": "core",
+  "question_en": "What makes it better?",
+  "question_ar": "إيه اللي بيخفّفه؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "night_pain",
+  "module": "core",
+  "question_en": "Does pain wake you at night?",
+  "question_ar": "الوجع بيصحيك بالليل؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "morning_stiffness_min",
+  "module": "core",
+  "question_en": "Morning stiffness, in minutes?",
+  "question_ar": "الصبح بتتيبّس كام دقيقة؟",
+  "type": "number",
+  "red_flag": false
+ },
+ {
+  "id": "swelling",
+  "module": "core",
+  "question_en": "Any swelling?",
+  "question_ar": "فيه ورم؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "numbness",
+  "module": "core",
+  "question_en": "Numbness or tingling?",
+  "question_ar": "فيه تنميل؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "weakness",
+  "module": "core",
+  "question_en": "Any weakness?",
+  "question_ar": "فيه ضعف؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "prior_treatment",
+  "module": "core",
+  "question_en": "Treatment tried so far?",
+  "question_ar": "جربت أي علاج لحد دلوقتي؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "diabetes",
+  "module": "core",
+  "question_en": "Diabetes?",
+  "question_ar": "عندك سكر؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "chief_complaint",
+  "module": "core",
+  "question_en": "What is bothering you, and why have you come today?",
+  "question_ar": "إيه اللي مضايقك وجاي بسببه النهارده؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "timing",
+  "module": "core",
+  "question_en": "Is the pain constant, or does it come and go? Is it worse at night or in the morning?",
+  "question_ar": "الوجع ثابت ولا بييجي ويروح؟ وبيزيد بالليل ولا الصبح؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "constant",
+   "intermittent"
+  ]
+ },
+ {
+  "id": "painkillers_help",
+  "module": "core",
+  "question_en": "Do painkillers help?",
+  "question_ar": "المسكنات بتفرق معاك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "stiffness",
+  "module": "core",
+  "question_en": "Is the area stiff?",
+  "question_ar": "فيه تيبّس في المكان؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "instability",
+  "module": "core",
+  "question_en": "Does it click, catch or lock?",
+  "question_ar": "بيطقطق أو بيعلّق أو بيتقفل؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "clicks",
+   "catches",
+   "locks",
+   "none"
+  ]
+ },
+ {
+  "id": "function",
+  "module": "core",
+  "question_en": "Does it stop you from walking, climbing stairs, dressing, working or exercising?",
+  "question_ar": "الوجع بيمنعك تمشي أو تطلع السلم أو تلبس أو تشتغل أو تتمرن؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "prior_problems",
+  "module": "core",
+  "question_en": "Have you had a fracture, injury or surgery before, in this place or elsewhere?",
+  "question_ar": "اتكسرت أو اتصابت أو عملت عملية قبل كده، في نفس المكان أو في مكان تاني؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "other_joints",
+  "module": "core",
+  "question_en": "Do you have pain or swelling in other joints?",
+  "question_ar": "في مفاصل تانية بتوجعك أو ورمانة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "chronic_diseases",
+  "module": "core",
+  "question_en": "Do you have a long-term illness such as diabetes, high blood pressure, rheumatoid arthritis or osteoporosis?",
+  "question_ar": "عندك أمراض مزمنة زي السكر أو الضغط أو الروماتويد أو هشاشة العظام؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "medications",
+  "module": "core",
+  "question_en": "What medicines do you take now? Do you take cortisone or blood thinners?",
+  "question_ar": "بتاخد أدوية إيه دلوقتي؟ وبتاخد كورتيزون أو مسيّلات للدم؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "steroids",
+  "module": "core",
+  "question_en": "Do you take cortisone?",
+  "question_ar": "بتاخد كورتيزون؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "blood_thinners",
+  "module": "core",
+  "question_en": "Do you take blood thinners?",
+  "question_ar": "بتاخد مسيّلات للدم؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "allergies",
+  "module": "core",
+  "question_en": "Are you allergic to any medicine?",
+  "question_ar": "عندك حساسية من أي دوا؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "family_history",
+  "module": "core",
+  "question_en": "Does anyone in your family have rheumatoid arthritis, cancer, or bone and joint problems?",
+  "question_ar": "في العيلة حد عنده روماتويد أو سرطان أو مشاكل في العظام والمفاصل؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "occupation",
+  "module": "core",
+  "question_en": "What is your job? Does it involve long standing, heavy lifting or repeated movements?",
+  "question_ar": "بتشتغل إيه؟ وشغلك فيه وقوف كتير أو شيل حاجات تقيلة أو حركات متكررة؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "dominant_hand",
+  "module": "core",
+  "question_en": "Are you right-handed or left-handed?",
+  "question_ar": "بتستخدم إيدك اليمين ولا الشمال؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "right",
+   "left",
+   "both"
+  ]
+ },
+ {
+  "id": "sport_activity",
+  "module": "core",
+  "question_en": "Do you play sports or exercise regularly? Which ones?",
+  "question_ar": "بتلعب رياضة أو بتتمرن بانتظام؟ إيه هي؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "smoking",
+  "module": "core",
+  "question_en": "Do you smoke?",
+  "question_ar": "بتدخّن؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "patient_belief",
+  "module": "core",
+  "question_en": "What do you think caused it? What worries you most about it?",
+  "question_ar": "إنت شايف إيه السبب؟ وإيه أكتر حاجة قلقان منها؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "trauma_mechanism",
+  "module": "trauma",
+  "question_en": "How did the injury happen?",
+  "question_ar": "الإصابة حصلت إزاي؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "can_bear_weight",
+  "module": "trauma",
+  "question_en": "Can you put weight on it now (or could you straight after the injury)?",
+  "question_ar": "قدرت تقف عليها بعد الإصابة؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "high_energy",
+  "module": "trauma",
+  "question_en": "Was it a serious accident, such as a car crash or a fall from a height?",
+  "question_ar": "كانت حادثة كبيرة، زي حادثة عربية أو وقعة من مكان عالي؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "injury_when",
+  "module": "trauma",
+  "question_en": "When did it happen?",
+  "question_ar": "حصلت إمتى؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "immediate_function",
+  "module": "trauma",
+  "question_en": "Could you use the limb or put weight on it straight away?",
+  "question_ar": "قدرت تستخدم الجزء ده أو تشيل وزنك عليه على طول؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "snap_pop",
+  "module": "trauma",
+  "question_en": "Did you hear or feel a snap or a pop when it happened?",
+  "question_ar": "سمعت أو حسيت بطرقعة أو فرقعة وقت الإصابة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "swelling_24h",
+  "module": "trauma",
+  "question_en": "Did it swell within the first 24 hours?",
+  "question_ar": "ورم في أول 24 ساعة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "deformity",
+  "module": "trauma",
+  "question_en": "Does the area look misshapen or out of place?",
+  "question_ar": "شكل المكان باين مش طبيعي أو متحرك من مكانه؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "skin_wound",
+  "module": "trauma",
+  "question_en": "Is the skin broken or bleeding over the area?",
+  "question_ar": "الجلد مجروح أو بينزف فوق المكان؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "numb_cold",
+  "module": "trauma",
+  "question_en": "Is there numbness, tingling, coldness or a colour change below the injury?",
+  "question_ar": "في تنميل أو برودة أو تغيّر في اللون تحت مكان الإصابة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "head_neck_injury",
+  "module": "trauma",
+  "question_en": "Did you hit your head or hurt your neck?",
+  "question_ar": "ضربت دماغك أو رقبتك اتصابت؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "first_aid",
+  "module": "trauma",
+  "question_en": "What did you do or take after the injury: ice, a splint, painkillers, a hospital visit?",
+  "question_ar": "عملت أو خدت إيه بعد الإصابة؟ تلج أو جبيرة أو مسكنات أو رحت مستشفى؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "fever",
+  "module": "red_flags",
+  "question_en": "Fever?",
+  "question_ar": "فيه سخونية؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": true
+ },
+ {
+  "id": "weight_loss",
+  "module": "red_flags",
+  "question_en": "Unexplained weight loss?",
+  "question_ar": "وزنك نزل من غير سبب؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": true
+ },
+ {
+  "id": "cancer_history",
+  "module": "red_flags",
+  "question_en": "History of cancer?",
+  "question_ar": "عندك تاريخ مرضي بالسرطان؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": true
+ },
+ {
+  "id": "bladder_bowel",
+  "module": "red_flags",
+  "question_en": "Bladder or bowel change?",
+  "question_ar": "فيه تغيير في التبول أو الإخراج؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": true
+ },
+ {
+  "id": "constant_worsening",
+  "module": "red_flags",
+  "question_en": "Is the pain constant and steadily getting worse?",
+  "question_ar": "الوجع ثابت وبيزيد مع الوقت؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "neuro_vascular",
+  "module": "red_flags",
+  "question_en": "Do you have numbness, coldness, a colour change or sudden weakness?",
+  "question_ar": "في تنميل أو برودة أو تغيّر في اللون أو ضعف حصل فجأة؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "immune",
+  "module": "red_flags",
+  "question_en": "Do you have a condition, or take medicines, that weaken your immune system?",
+  "question_ar": "عندك حاجة بتضعف المناعة، أو بتاخد أدوية بتضعف المناعة؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "hot_red_joint",
+  "module": "red_flags",
+  "question_en": "Is a joint red, hot and very painful, especially with fever?",
+  "question_ar": "في مفصل أحمر وسخن وبيوجع جداً، خصوصاً مع سخونية؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "recent_infection_procedure",
+  "module": "red_flags",
+  "question_en": "Have you had a recent infection, injection or surgery near the painful area?",
+  "question_ar": "عندك عدوى قريبة، أو حقنة أو عملية في المكان ده مؤخراً؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "injected_drugs",
+  "module": "red_flags",
+  "question_en": "Optional, doctor decides: do you inject any drugs?",
+  "question_ar": "اختياري والدكتور يقرر: بتاخد أي حاجة بالحقن من غير وصفة طبيب؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "saddle_numbness",
+  "module": "red_flags",
+  "question_en": "Is there numbness between your legs or around the back passage?",
+  "question_ar": "في تنميل في المنطقة اللي بين الرجلين وحوالين الشرج؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "exertion_chest",
+  "module": "red_flags",
+  "question_en": "Does the pain get worse with effort, or come with shortness of breath, sweating or dizziness?",
+  "question_ar": "الوجع بيزيد مع المجهود، أو معاه ضيق نفس أو عرق أو دوخة؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "arm_pain",
+  "module": "neck",
+  "question_en": "Does the pain go down your shoulder or arm?",
+  "question_ar": "الوجع بينزل في الكتف أو الدراع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "arm_numbness",
+  "module": "neck",
+  "question_en": "Do you have numbness, tingling or pins and needles in your arm, hand or fingers?",
+  "question_ar": "في تنميل أو وخز في دراعك أو إيدك أو صوابعك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "arm_weakness",
+  "module": "neck",
+  "question_en": "Is your arm or hand weak, or do you drop things?",
+  "question_ar": "في ضعف في دراعك أو إيدك، أو بتوقّع حاجات من إيدك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "clumsy_balance",
+  "module": "neck",
+  "question_en": "Have your hands become clumsy, for example with buttons, or is your balance or walking worse?",
+  "question_ar": "إيدك بقت متلخبطة في الحركات الدقيقة زي الأزرار، أو مشيتك أو توازنك بقوا أسوأ؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "bladder_bowel_neck",
+  "module": "neck",
+  "question_en": "Has your bladder or bowel control changed?",
+  "question_ar": "حصل تغيير في التحكم في البول أو البراز؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "dizzy_vision_speech",
+  "module": "neck",
+  "question_en": "With the neck pain, do you have dizziness, fainting, double vision, trouble swallowing or slurred speech?",
+  "question_ar": "مع وجع الرقبة، في دوخة أو إغماء أو زغللة أو صعوبة في البلع أو تقل في الكلام؟",
+  "type": "enum",
+  "red_flag": true,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "neck_movement",
+  "module": "neck",
+  "question_en": "Is it hard to turn or bend your neck? Is it stiff?",
+  "question_ar": "صعب تلف رقبتك أو تحنيها؟ وهي متيبّسة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "headache",
+  "module": "neck",
+  "question_en": "Do you get headaches, especially at the back of the head?",
+  "question_ar": "بيجيلك صداع، خصوصاً ورا الراس؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "overhead_activity",
+  "module": "shoulder",
+  "question_en": "Do you work or play with your arm above shoulder height, or lift heavy things?",
+  "question_ar": "بتشتغل أو بتلعب وإيدك فوق مستوى الكتف، أو بتشيل حاجات تقيلة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "night_lying",
+  "module": "shoulder",
+  "question_en": "Does the pain wake you when you lie on that shoulder?",
+  "question_ar": "الوجع بيصحّيك لما تنام على الكتف؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "stiffness_reach",
+  "module": "shoulder",
+  "question_en": "Is it hard to comb your hair, get dressed, or reach behind your back?",
+  "question_ar": "صعب تسرّح شعرك أو تلبس أو توصل ورا ضهرك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "can_lift_arm",
+  "module": "shoulder",
+  "question_en": "Can you lift your arm up to shoulder height?",
+  "question_ar": "تقدر ترفع دراعك لمستوى الكتف؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "dislocation",
+  "module": "shoulder",
+  "question_en": "Has the shoulder come out of its joint before, or does it feel like it might?",
+  "question_ar": "الكتف خرج من مكانه قبل كده، أو بتحس إنه ممكن يخرج؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "neck_arm_symptoms",
+  "module": "shoulder",
+  "question_en": "Do you have neck pain, or pain, numbness or tingling elsewhere in the arm?",
+  "question_ar": "عندك وجع في الرقبة، أو وجع أو تنميل أو وخز في أي مكان تاني في الدراع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "first_dislocation",
+  "module": "shoulder",
+  "question_en": "If yes: how old were you the first time, and was it after an injury?",
+  "question_ar": "لو آه: كان عندك كام سنة أول مرة، وكان بعد إصابة؟",
+  "type": "number",
+  "red_flag": false
+ },
+ {
+  "id": "elbow_site",
+  "module": "elbow",
+  "question_en": "Is the pain on the outer side, inner side, back or front of the elbow?",
+  "question_ar": "الوجع في الناحية اللي برا، ولا جوه، ولا ورا، ولا قدام الكوع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "outer",
+   "inner",
+   "back",
+   "front"
+  ]
+ },
+ {
+  "id": "grip_lift_twist",
+  "module": "elbow",
+  "question_en": "Does it hurt when you grip, lift or twist, for example a door handle or a jar, or when you use a racket or tools?",
+  "question_ar": "بيوجعك لما تمسك حاجة أو تشيل أو تلف إيدك، زي مقبض الباب أو برطمان، أو لما تستخدم مضرب أو أدوات؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "elbow_swelling",
+  "module": "elbow",
+  "question_en": "Is there swelling or a lump at the point of the elbow?",
+  "question_ar": "في ورم أو كتلة عند طرف الكوع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "elbow_locking",
+  "module": "elbow",
+  "question_en": "Does the elbow lock, catch, or fail to straighten fully?",
+  "question_ar": "الكوع بيتقفل أو بيعلّق أو مش بيتفرد كامل؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "ulnar_numbness",
+  "module": "elbow",
+  "question_en": "Do you have numbness or tingling in the ring and little fingers, especially when the elbow is bent?",
+  "question_ar": "في تنميل أو وخز في البنصر والخنصر، خصوصاً لما تثني الكوع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "numb_fingers",
+  "module": "wrist_hand",
+  "question_en": "Do you have numbness, tingling or pain in your fingers? Which fingers?",
+  "question_ar": "في تنميل أو وخز أو وجع في صوابعك؟ أنهي صوابع؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "spares_little_finger",
+  "module": "wrist_hand",
+  "question_en": "Is the little finger free of symptoms?",
+  "question_ar": "الصباع الصغير سليم ومفيهوش أعراض؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "night_waking",
+  "module": "wrist_hand",
+  "question_en": "Does it wake you at night?",
+  "question_ar": "بيصحّيك بالليل؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "shake_relief",
+  "module": "wrist_hand",
+  "question_en": "Does shaking or raising the hand relieve it?",
+  "question_ar": "لما تنفض إيدك أو ترفعها بيخف؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "provoked_by",
+  "module": "wrist_hand",
+  "question_en": "Is it worse with driving, holding a phone, typing or using vibrating tools?",
+  "question_ar": "بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "grip_weakness",
+  "module": "wrist_hand",
+  "question_en": "Is your hand weak, or do you drop things?",
+  "question_ar": "إيدك ضعيفة أو بتوقّع حاجات منها؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "daily_use",
+  "module": "wrist_hand",
+  "question_en": "Is it hard to write, button clothes, open jars or carry shopping bags?",
+  "question_ar": "صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "lump_swelling",
+  "module": "wrist_hand",
+  "question_en": "Is there swelling or a lump at the wrist or hand?",
+  "question_ar": "في ورم أو كتلة في الرسغ أو الإيد؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "splint_injection",
+  "module": "wrist_hand",
+  "question_en": "Has a splint or an injection helped before?",
+  "question_ar": "الجبيرة أو الحقن فرقت معاك قبل كده؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "leg_pain_below_knee",
+  "module": "back",
+  "question_en": "Does the pain go down the leg, below the knee?",
+  "question_ar": "الوجع بينزل في الرجل لتحت الركبة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "leg_numb_weak",
+  "module": "back",
+  "question_en": "Do you have numbness, tingling or weakness in one or both legs?",
+  "question_ar": "في تنميل أو وخز أو ضعف في رجل واحدة أو الاتنين؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "foot_catching",
+  "module": "back",
+  "question_en": "Does your foot catch or slap on the ground when you walk?",
+  "question_ar": "رجلك بتتعلّق أو بتخبط في الأرض وإنت ماشي؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "pain_over_6_weeks",
+  "module": "back",
+  "question_en": "Has the pain lasted more than six weeks?",
+  "question_ar": "الوجع له أكتر من ست أسابيع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "steroids_osteoporosis",
+  "module": "back",
+  "question_en": "Have you taken cortisone for a long time, or do you have osteoporosis?",
+  "question_ar": "أخدت كورتيزون لفترة طويلة، أو عندك هشاشة عظام؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "lying_down",
+  "module": "back",
+  "question_en": "Does lying down make the pain better or worse?",
+  "question_ar": "النوم على الضهر بيخفف الوجع ولا بيزوّده؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "better",
+   "worse",
+   "no_change"
+  ]
+ },
+ {
+  "id": "hip_site",
+  "module": "hip",
+  "question_en": "Where exactly is the pain: in the groin, on the outer side of the hip, or in the buttock?",
+  "question_ar": "الوجع فين بالظبط: في الأربية (تحت البطن عند الفخذ)، ولا من برا الورك، ولا في المؤخرة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "groin",
+   "outer_hip",
+   "buttock",
+   "thigh",
+   "knee"
+  ]
+ },
+ {
+  "id": "hip_pain_travels",
+  "module": "hip",
+  "question_en": "Does it go down to the thigh or the knee?",
+  "question_ar": "بينزل للفخذ أو للركبة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "limp",
+  "module": "hip",
+  "question_en": "Do you limp when you walk?",
+  "question_ar": "بتعرج وإنت ماشي؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "socks_shoes",
+  "module": "hip",
+  "question_en": "Is it hard to put on socks or shoes, or to cut your toenails?",
+  "question_ar": "صعب تلبس الشراب أو الجزمة، أو تقص ضوافرك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "hip_provokers",
+  "module": "hip",
+  "question_en": "Is it worse on stairs, getting up from a low chair, crossing your legs, or lying on that side?",
+  "question_ar": "بيزيد على السلم، أو لما تقوم من كرسي واطي، أو لما تحط رجل على رجل، أو تنام على الناحية دي؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "hip_mechanical",
+  "module": "hip",
+  "question_en": "Does the hip click, catch, lock or give way?",
+  "question_ar": "الورك بيطقطق أو بيعلّق أو بيتقفل أو بيخونك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "childhood_hip",
+  "module": "hip",
+  "question_en": "Did you have a hip problem as a child, or wear a brace as a baby?",
+  "question_ar": "كان عندك مشكلة في الورك وإنت صغير، أو لبست جبيرة وإنت رضيع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "steroid_alcohol",
+  "module": "hip",
+  "question_en": "Optional, doctor decides: have you used cortisone for a long time, or drunk alcohol heavily?",
+  "question_ar": "اختياري والدكتور يقرر: أخدت كورتيزون لفترة طويلة، أو بتشرب كحول بكميات كبيرة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "walking_distance",
+  "module": "hip",
+  "question_en": "How far can you walk before the pain stops you?",
+  "question_ar": "تقدر تمشي قد إيه قبل ما الوجع يوقّفك؟",
+  "type": "text",
+  "red_flag": false
+ },
+ {
+  "id": "giving_way",
+  "module": "knee",
+  "question_en": "Does the knee give way?",
+  "question_ar": "الركبة بتخونك وانت ماشي؟",
+  "type": "enum",
+  "options": [
+   "yes",
+   "no"
+  ],
+  "red_flag": false
+ },
+ {
+  "id": "locking_catching",
+  "module": "knee",
+  "question_en": "Does the knee lock, catch or click?",
+  "question_ar": "الركبة بتتقفل أو بتعلّق أو بتطقطق؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "locks",
+   "catches",
+   "clicks",
+   "none"
+  ]
+ },
+ {
+  "id": "stairs",
+  "module": "knee",
+  "question_en": "Is the pain worse going up or down stairs?",
+  "question_ar": "الوجع بيزيد لما تطلع أو تنزل السلم؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "kneeling",
+  "module": "knee",
+  "question_en": "Do you sit on the floor, squat or kneel, for prayer or work?",
+  "question_ar": "بتقعد على الأرض أو بتقرفص أو بتركع في الصلاة أو الشغل؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "can_straighten",
+  "module": "knee",
+  "question_en": "Can you straighten and bend the knee?",
+  "question_ar": "تقدر تفرد الركبة وتثنيها؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "foot_site",
+  "module": "ankle_foot",
+  "question_en": "Where is the pain: front of the ankle, outer side, inner side, back of the ankle or heel, middle of the foot, or toes?",
+  "question_ar": "الوجع فين: قدام الكاحل، ولا برا، ولا جوه، ولا ورا عند الكعب، ولا في وسط القدم، ولا في الصوابع؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "front_ankle",
+   "outer",
+   "inner",
+   "back_heel",
+   "midfoot",
+   "toes"
+  ]
+ },
+ {
+  "id": "foot_swelling",
+  "module": "ankle_foot",
+  "question_en": "Is there swelling? In one area or the whole foot and ankle? In one leg or both?",
+  "question_ar": "في ورم؟ في مكان واحد ولا القدم والكاحل كلهم؟ في رجل واحدة ولا الاتنين؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "ankle_instability",
+  "module": "ankle_foot",
+  "question_en": "Does the ankle give way or twist often? When was the first sprain, and how often does it happen?",
+  "question_ar": "الكاحل بيخونك أو بيلتوي كتير؟ أول لوية كانت إمتى، وبتحصل كام مرة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "footwear",
+  "module": "ankle_foot",
+  "question_en": "Is it hard to find shoes that fit, or do you use insoles or special shoes?",
+  "question_ar": "صعب تلاقي جزمة مناسبة، أو بتستخدم نعل طبي أو جزمة خاصة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "foot_deformity",
+  "module": "ankle_foot",
+  "question_en": "Has the shape of your foot or toes changed, for example a flat foot or a bump?",
+  "question_ar": "شكل رجلك أو صوابعك اتغيّر، زي القدم المفلطحة أو نتوء؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "foot_numbness",
+  "module": "ankle_foot",
+  "question_en": "Do you have numbness or burning in your feet?",
+  "question_ar": "في تنميل أو حرقان في رجليك؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "gout_attacks",
+  "module": "ankle_foot",
+  "question_en": "Have you had sudden attacks of redness, heat, swelling and pain, especially in the big toe?",
+  "question_ar": "حصلت لك نوبات فجأة من احمرار وسخونة وورم ووجع، خصوصاً في الصباع الكبير؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "calf_pain",
+  "module": "ankle_foot",
+  "question_en": "Do you have pain, swelling or tenderness in one calf?",
+  "question_ar": "في وجع أو ورم أو حساسية في السمانة في رجل واحدة؟",
+  "type": "enum",
+  "red_flag": false,
+  "options": [
+   "yes",
+   "no"
+  ]
+ },
+ {
+  "id": "foot_walk_distance",
+  "module": "ankle_foot",
+  "question_en": "How far can you walk before the pain becomes severe?",
+  "question_ar": "تقدر تمشي قد إيه قبل ما الوجع يشتد؟",
+  "type": "text",
+  "red_flag": false
+ }
+]

@@ -1,0 +1,22 @@
+{
+  "site": "ankle_foot",
+  "side": "right",
+  "chief_complaint": "كعب رجلي بيوجعني وصباعي الكبير بيورم",
+  "foot_site": "back_heel",
+  "onset": "من تمن شهور",
+  "onset_type": "gradual",
+  "injury": "no",
+  "foot_swelling": "yes",
+  "ankle_instability": "no",
+  "can_bear_weight": "yes",
+  "foot_walk_distance": "حوالي عشر دقايق",
+  "footwear": "yes",
+  "foot_deformity": "yes",
+  "foot_numbness": "yes",
+  "gout_attacks": "yes",
+  "calf_pain": "no",
+  "diabetes": "yes",
+  "pain_severity": 7,
+  "fever": "no",
+  "hot_red_joint": "no"
+}

@@ -1,0 +1,2 @@
+# Needed only on the computer that transcribes audio (not on a hosted app):
+faster-whisper>=1.0

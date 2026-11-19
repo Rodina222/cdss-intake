@@ -1,0 +1,11 @@
+{
+  "site": "shoulder",
+  "side": "left",
+  "onset": "امبارح",
+  "injury": "yes",
+  "trauma_mechanism": "وقعت من على السلم",
+  "pain_severity": 8,
+  "weakness": "yes",
+  "swelling": "no",
+  "numbness": "no"
+}

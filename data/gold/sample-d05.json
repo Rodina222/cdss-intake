@@ -1,0 +1,11 @@
+{
+  "site": "ankle_foot",
+  "side": "left",
+  "onset": "من يومين",
+  "injury": "yes",
+  "trauma_mechanism": "لويت رجلي وأنا بلعب كورة",
+  "can_bear_weight": "no",
+  "swelling": "yes",
+  "pain_severity": 7,
+  "numbness": "no"
+}

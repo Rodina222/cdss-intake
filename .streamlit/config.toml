@@ -1,0 +1,14 @@
+[theme]
+primaryColor = "#087F80"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#EEF3F3"
+textColor = "#263B43"
+
+[server]
+maxUploadSize = 200
+
+[browser]
+gatherUsageStats = false
+
+[client]
+toolbarMode = "minimal"

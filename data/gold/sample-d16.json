@@ -1,0 +1,23 @@
+{
+  "site": "neck",
+  "one_or_many": "more_than_one",
+  "chief_complaint": "رقبتي بتوجعني وإيدي بقت بتتلخبط",
+  "onset": "من سبع شهور",
+  "onset_type": "gradual",
+  "injury": "no",
+  "arm_pain": "yes",
+  "arm_numbness": "yes",
+  "arm_weakness": "yes",
+  "clumsy_balance": "yes",
+  "bladder_bowel_neck": "no",
+  "dizzy_vision_speech": "no",
+  "neck_movement": "yes",
+  "headache": "yes",
+  "pain_severity": 6,
+  "worse_with": "لما أبص لتحت كتير",
+  "occupation": "محاسب وبقعد قدام الكمبيوتر",
+  "night_pain": "no",
+  "fever": "no",
+  "weight_loss": "no",
+  "cancer_history": "no"
+}
