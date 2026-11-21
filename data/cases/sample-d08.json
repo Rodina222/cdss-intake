@@ -1,7 +1,7 @@
 {
   "id": "sample-d08",
   "created": "2026-11-18T23:48:00+00:00",
-  "updated": "2026-11-19T00:20:12+00:00",
+  "updated": "2026-11-19T11:31:05+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ إيدي اليمين بتنمل بالليل. من إمتى؟ من شهر. الوجع بيصحيك من النوم؟ أيوه الوجع بيصحيني من النوم. حاسة بضعف؟ أيوه الحاجة بتقع من إيدي. جربتي أي علاج؟ لبست جبيرة بالليل. عندك سكر؟ لا مفيش سكر.",
@@ -9,14 +9,14 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
     "site": {
       "ai": "wrist_hand",
-      "quote": "إيدي",
+      "quote": "إيدي اليمين",
       "value": "wrist_hand",
       "decision": "",
       "edited": false,
@@ -120,7 +120,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "الوجع بيصحيني من النوم",
+      "quote": "بيصحيني من النوم",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -143,12 +143,12 @@
       "filled": false
     },
     "numbness": {
-      "ai": "yes",
-      "quote": "بتنمل",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "weakness": {
       "ai": "yes",
@@ -159,16 +159,16 @@
       "filled": true
     },
     "prior_treatment": {
-      "ai": "لبست جبيرة بالليل",
-      "quote": "لبست جبيرة بالليل",
-      "value": "لبست جبيرة بالليل",
+      "ai": "لّبست جبيرة بالليل",
+      "quote": "لّبست جبيرة بالليل",
+      "value": "لّبست جبيرة بالليل",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "diabetes": {
       "ai": "no",
-      "quote": "مفيش سكر",
+      "quote": "لا مفيش سكر",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -183,28 +183,28 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "intermittent",
+      "quote": "من شهر",
+      "value": "intermittent",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش سكر",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "حاسة بضعف",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -215,20 +215,20 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "الحاجة بتقع من إيدي",
+      "quote": "الحاجة بتقع من إيدي",
+      "value": "الحاجة بتقع من إيدي",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "لبست جبيرة بالليل",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "other_joints": {
       "ai": null,
@@ -295,12 +295,12 @@
       "filled": false
     },
     "dominant_hand": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "right",
+      "quote": "إيدي اليمين",
+      "value": "right",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "sport_activity": {
       "ai": null,
@@ -311,20 +311,20 @@
       "filled": false
     },
     "smoking": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "مفيش سكر",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "patient_belief": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "جربتي أي علاج؟ لبست جبيرة بالليل",
+      "quote": "جربتي أي علاج؟ لبست جبيرة بالليل",
+      "value": "جربتي أي علاج؟ لبست جبيرة بالليل",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "trauma_mechanism": {
       "ai": null,
@@ -527,20 +527,20 @@
       "filled": false
     },
     "arm_numbness": {
-      "ai": "yes",
-      "quote": "إيدي اليمين بتنمل",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "arm_weakness": {
-      "ai": "yes",
-      "quote": "الحاجة بتقع من إيدي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "clumsy_balance": {
       "ai": null,
@@ -679,12 +679,12 @@
       "filled": false
     },
     "numb_fingers": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "إيدي اليمين بتنمل بالليل",
+      "quote": "إيدي اليمين بتنمل بالليل",
+      "value": "إيدي اليمين بتنمل بالليل",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "spares_little_finger": {
       "ai": null,
@@ -743,12 +743,12 @@
       "filled": false
     },
     "splint_injection": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "لبست جبيرة بالليل",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "leg_pain_below_knee": {
       "ai": null,
@@ -983,10 +983,16 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "numbness",
+      "issue": "quote_not_in_transcript",
+      "quote": "بتتنمل"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +1000,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,15 +1008,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من شهر",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1018,31 +1016,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "night_waking",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "numbness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "arm_numbness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "weakness",
       "from": null,
@@ -1050,31 +1024,71 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "arm_weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
-      "kind": "AI filled",
-      "field": "grip_weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "prior_treatment",
       "from": null,
-      "to": "لبست جبيرة بالليل",
+      "to": "لّبست جبيرة بالليل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "onset",
+      "from": null,
+      "to": "من شهر",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "إيدي اليمين بتنمل بالليل",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "intermittent",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "painkillers_help",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "الحاجة بتقع من إيدي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "prior_problems",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
       "field": "diabetes",
       "from": null,
@@ -1082,11 +1096,59 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:12+00:00",
+      "t": "2026-11-19T11:31:05+00:00",
       "kind": "AI filled",
-      "field": "chief_complaint",
+      "field": "dominant_hand",
+      "from": null,
+      "to": "right",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "patient_belief",
+      "from": null,
+      "to": "جربتي أي علاج؟ لبست جبيرة بالليل",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "smoking",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "numb_fingers",
       "from": null,
       "to": "إيدي اليمين بتنمل بالليل",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "night_waking",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "grip_weakness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:31:05+00:00",
+      "kind": "AI filled",
+      "field": "splint_injection",
+      "from": null,
+      "to": "yes",
       "who": "Language model"
     }
   ],

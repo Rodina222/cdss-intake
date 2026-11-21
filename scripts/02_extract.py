@@ -16,7 +16,11 @@ if not todo:
     raise SystemExit("Nothing to do. Run scripts/01_transcribe.py first, or add a case in the dashboard.")
 print(f"Language model: {config.LLM_BACKEND} / {config.llm_model_name()}")
 for cid in todo:
-    c = pipeline.extract_case(cid)
+    try:
+        c = pipeline.extract_case(cid)
+    except Exception as e:
+        print(f"{cid}: FAILED ({e}). Continuing with the next case.")
+        continue
     n = sum(1 for d in c["fields"].values() if d["filled"])
     print(f"{cid}: {n} fields filled, {len(c['flags'])} discarded by the checks")
     for fl in c["flags"]:

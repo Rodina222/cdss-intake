@@ -19,12 +19,31 @@ def _load():
     return _model
 
 
+def load_audio(path):
+    """Decode any audio file to 16 kHz mono float32 with PyAV. Used instead of faster-whisper's own decoder,
+    which passes an option that some PyAV versions do not accept."""
+    import av
+    import numpy as np
+    resampler = av.AudioResampler(format="s16", layout="mono", rate=16000)
+    parts = []
+    with av.open(str(path)) as container:
+        stream = container.streams.audio[0]
+        for frame in container.decode(stream):
+            for f in resampler.resample(frame):
+                parts.append(f.to_ndarray().reshape(-1))
+        for f in resampler.resample(None):
+            parts.append(f.to_ndarray().reshape(-1))
+    if not parts:
+        raise RuntimeError(f"No audio found in {Path(path).name}")
+    return np.concatenate(parts).astype(np.float32) / 32768.0
+
+
 def transcribe(path):
     """Return {file, model, language, duration_s, seconds_to_transcribe, text, segments}."""
     with _lock:
         model = _load()
         start = time.time()
-        segs, info = model.transcribe(str(path), language=config.WHISPER_LANGUAGE, beam_size=5, vad_filter=True)
+        segs, info = model.transcribe(load_audio(path), language=config.WHISPER_LANGUAGE, beam_size=5, vad_filter=True)
         segments = [{"start": round(s.start, 2), "end": round(s.end, 2), "text": s.text.strip()} for s in segs]
         return {
             "file": Path(path).name,

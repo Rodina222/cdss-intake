@@ -1,7 +1,7 @@
 {
   "id": "sample-d12",
   "created": "2026-11-18T23:48:00+00:00",
-  "updated": "2026-11-19T00:24:09+00:00",
+  "updated": "2026-11-19T11:40:48+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "فين الوجع؟ أشّر على المكان اللي بيوجعك أكتر. كتفي. في الناحية اليمين ولا الشمال ولا الاتنين؟ اليمين. الوجع بيمشي لمكان تاني، زي الدراع أو الرجل؟ أيوه بينزل لحد الكوع. عندك وجع في الرقبة أو الضهر كمان؟ لا رقبتي كويسة. إيه اللي مضايقك وجاي بسببه النهارده؟ كتفي بيوجعني وإيدي مش بترتفع. بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من أربع شهور، واحدة واحدة. حصلت لك وقعة أو لوية أو ضربة أو إصابة؟ حصلت إزاي؟ لا مفيش وقعة. من صفر لعشرة، الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله. سبعة بالليل. إيه اللي بيزوّده؟ لما أرفع إيدي فوق راسي. بتشتغل أو بتلعب وإيدك فوق مستوى الكتف، أو بتشيل حاجات تقيلة؟ أيوه أنا نقّاش وبشتغل وإيدي فوق طول اليوم. الوجع بيصحّيك لما تنام على الكتف؟ أيوه بيصحيني لما أنام عليه. الوجع بيصحّيك بالليل أو بيفضل موجود وإنت مرتاح؟ أيوه حتى وأنا قاعد بيوجعني بالليل. صعب تسرّح شعرك أو تلبس أو توصل ورا ضهرك؟ أيوه صعب أسرّح شعري وأوصل ورا ضهري. تقدر ترفع دراعك لمستوى الكتف؟ لا مش بقدر أرفعها لمستوى الكتف. الكتف خرج من مكانه قبل كده، أو بتحس إنه ممكن يخرج؟ لا الكتف عمره ما خرج من مكانه. عندك وجع في الرقبة، أو وجع أو تنميل أو وخز في أي مكان تاني في الدراع؟ لا مفيش وجع في رقبتي ولا تنميل. الوجع بيزيد مع المجهود، أو معاه ضيق نفس أو عرق أو دوخة؟ لا مفيش ضيق نفس ولا عرق. جرّبت علاج قبل كده، زي علاج طبيعي أو أدوية أو حقن؟ وفرق معاك؟ خدت حقنة كورتيزون من شهرين وفرقت يومين. بتستخدم إيدك اليمين ولا الشمال؟ بستخدم اليمين. بتدخّن؟ أيوه بدخّن علبة في اليوم. عندك سخونية أو رعشة أو عرق بالليل؟ لا مفيش سخونية. وزنك نزل من غير سبب؟ لا وزني زي ما هو. اتعالجت من ورم أو سرطان قبل كده؟ لا عمري ما اتعالجت من ورم.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -31,20 +31,20 @@
       "filled": true
     },
     "one_or_many": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "one_place",
+      "quote": "الوجع بيمشي لمكان تاني، زي الدراع أو الرجل؟ أيوه بينزل لحد الكوع",
+      "value": "one_place",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "exact_spot": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "one_spot",
+      "quote": "بيوجعني وإيدي مش بترتفع",
+      "value": "one_spot",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "also_neck_back": {
       "ai": "no",
@@ -55,20 +55,20 @@
       "filled": true
     },
     "onset": {
-      "ai": "من أربع شهور",
-      "quote": "من أربع شهور",
-      "value": "من أربع شهور",
+      "ai": "من أربع شهور، واحدة واحدة",
+      "quote": "من أربع شهور، واحدة واحدة",
+      "value": "من أربع شهور، واحدة واحدة",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "onset_type": {
-      "ai": "gradual",
-      "quote": "واحدة واحدة",
-      "value": "gradual",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "injury": {
       "ai": "no",
@@ -96,7 +96,7 @@
     },
     "radiation": {
       "ai": "yes",
-      "quote": "أيوه بينزل لحد الكوع",
+      "quote": "بينزل لحد الكوع",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -120,7 +120,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "أيوه حتى وأنا قاعد بيوجعني بالليل",
+      "quote": "بيصحيني لما أنام عليه",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -151,12 +151,12 @@
       "filled": false
     },
     "weakness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "لا مش بقدر أرفعها لمستوى الكتف",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_treatment": {
       "ai": "خدت حقنة كورتيزون من شهرين وفرقت يومين",
@@ -279,24 +279,24 @@
       "filled": false
     },
     "family_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لا عمري ما اتعالجت من ورم",
+      "quote": "اتعالجت من ورم أو سرطان قبل كده؟ لا عمري ما اتعالجت من ورم",
+      "value": "لا عمري ما اتعالجت من ورم",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "occupation": {
-      "ai": "نقّاش",
-      "quote": "أنا نقّاش",
-      "value": "نقّاش",
+      "ai": "بشتغل وإيدي فوق طول اليوم",
+      "quote": "بتشتغل أو بتلعب وإيدك فوق مستوى الكتف، أو بتشيل حاجات تقيلة؟ أيوه أنا نقّاش وبشتغل وإيدي فوق طول اليوم",
+      "value": "بشتغل وإيدي فوق طول اليوم",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "dominant_hand": {
       "ai": "right",
-      "quote": "بستخدم اليمين",
+      "quote": "بتستخدم إيدك اليمين ولا الشمال؟ بستخدم اليمين",
       "value": "right",
       "decision": "",
       "edited": false,
@@ -312,19 +312,19 @@
     },
     "smoking": {
       "ai": "yes",
-      "quote": "أيوه بدخّن علبة في اليوم",
+      "quote": "بتستخدم إيدك اليمين ولا الشمال؟ بستخدم اليمين. بتدخّن؟ أيوه بدخّن علبة في اليوم",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "patient_belief": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "كتفي بيوجعني وإيدي مش بترتفع",
+      "quote": "إيه اللي مضايقك وجاي بسببه النهارده؟ كتفي بيوجعني وإيدي مش بترتفع",
+      "value": "كتفي بيوجعني وإيدي مش بترتفع",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "trauma_mechanism": {
       "ai": null,
@@ -432,7 +432,7 @@
     },
     "weight_loss": {
       "ai": "no",
-      "quote": "لا وزني زي ما هو",
+      "quote": "وزني زي ما هو",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -495,12 +495,12 @@
       "filled": false
     },
     "injected_drugs": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش سخونية",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "saddle_numbness": {
       "ai": null,
@@ -511,28 +511,28 @@
       "filled": false
     },
     "exertion_chest": {
-      "ai": "no",
-      "quote": "لا مفيش ضيق نفس ولا عرق",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "arm_pain": {
-      "ai": "yes",
-      "quote": "أيوه بينزل لحد الكوع",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "arm_numbness": {
-      "ai": "no",
-      "quote": "ولا تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "arm_weakness": {
       "ai": null,
@@ -615,20 +615,20 @@
       "filled": true
     },
     "dislocation": {
-      "ai": "no",
-      "quote": "لا الكتف عمره ما خرج من مكانه",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "neck_arm_symptoms": {
       "ai": null,
       "quote": "",
       "value": null,
       "decision": "",
       "edited": false,
       "filled": false
+    },
+    "neck_arm_symptoms": {
+      "ai": "no",
+      "quote": "لا مفيش وجع في رقبتي ولا تنميل",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
     },
     "first_dislocation": {
       "ai": null,
@@ -983,10 +983,16 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "sport_activity",
+      "issue": "quote_not_in_transcript",
+      "quote": "حصلت وقعة أو لوية أو ضربة أو إصابة؟ حصلت إزاي؟ لا مفيش وقعة"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +1000,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,7 +1008,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "one_or_many",
+      "from": null,
+      "to": "one_place",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "exact_spot",
+      "from": null,
+      "to": "one_spot",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1010,39 +1032,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من أربع شهور",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "injury",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "pain_severity",
-      "from": null,
-      "to": "10",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "radiation",
       "from": null,
@@ -1050,7 +1040,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "worse_with",
       "from": null,
@@ -1058,7 +1048,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1066,7 +1056,39 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "pain_severity",
+      "from": null,
+      "to": "10",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "onset",
+      "from": null,
+      "to": "من أربع شهور، واحدة واحدة",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "injury",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "weakness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "prior_treatment",
       "from": null,
@@ -1074,7 +1096,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1082,15 +1104,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
-      "field": "occupation",
+      "field": "family_history",
       "from": null,
-      "to": "نقّاش",
+      "to": "لا عمري ما اتعالجت من ورم",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "occupation",
+      "from": null,
+      "to": "بشتغل وإيدي فوق طول اليوم",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "dominant_hand",
       "from": null,
@@ -1098,7 +1128,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "smoking",
       "from": null,
@@ -1106,15 +1136,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
-      "field": "fever",
+      "field": "patient_belief",
+      "from": null,
+      "to": "كتفي بيوجعني وإيدي مش بترتفع",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:40:48+00:00",
+      "kind": "AI filled",
+      "field": "injected_drugs",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "weight_loss",
       "from": null,
@@ -1122,7 +1160,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "cancer_history",
       "from": null,
@@ -1130,31 +1168,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
-      "field": "exertion_chest",
+      "field": "fever",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "arm_pain",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
-      "kind": "AI filled",
-      "field": "arm_numbness",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "overhead_activity",
       "from": null,
@@ -1162,7 +1184,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "night_lying",
       "from": null,
@@ -1170,7 +1192,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "stiffness_reach",
       "from": null,
@@ -1178,7 +1200,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
       "field": "can_lift_arm",
       "from": null,
@@ -1186,9 +1208,9 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:09+00:00",
+      "t": "2026-11-19T11:40:48+00:00",
       "kind": "AI filled",
-      "field": "dislocation",
+      "field": "neck_arm_symptoms",
       "from": null,
       "to": "no",
       "who": "Language model"

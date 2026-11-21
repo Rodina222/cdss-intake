@@ -1,7 +1,7 @@
 {
   "id": "sample-d07",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T00:33:35+00:00",
+  "updated": "2026-11-19T12:13:10+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي تعبك؟ ضهري... لا استنى، رجلي، ركبتي الشمال. من إمتى؟ مش فاكرة بالظبط، يمكن من كام شهر. الوجع كام من صفر لعشرة؟ مش عارفة، متوسط. الركبة بتخونك وإنتي ماشية؟ أحيانًا. فيه ورم؟ آه شوية.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -55,9 +55,9 @@
       "filled": false
     },
     "onset": {
-      "ai": "يمكن من كام شهر",
-      "quote": "يمكن من كام شهر",
-      "value": "يمكن من كام شهر",
+      "ai": "من كام شهر",
+      "quote": "من كام شهر",
+      "value": "من كام شهر",
       "decision": "",
       "edited": false,
       "filled": true
@@ -79,12 +79,12 @@
       "filled": false
     },
     "pain_severity": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": 5,
+      "quote": "متوسط",
+      "value": 5,
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "character": {
       "ai": null,
@@ -103,12 +103,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "الركبة بتخونك",
+      "quote": "الركبة بتخونك",
+      "value": "الركبة بتخونك",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": null,
@@ -136,7 +136,7 @@
     },
     "swelling": {
       "ai": "yes",
-      "quote": "آه شوية",
+      "quote": "شوية",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -183,12 +183,12 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "intermittent",
+      "quote": "أحيانًا",
+      "value": "intermittent",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": null,
@@ -872,7 +872,7 @@
     },
     "giving_way": {
       "ai": "yes",
-      "quote": "أحيانًا",
+      "quote": "الركبة بتخونك",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -983,10 +983,31 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "locking_catching",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش"
+    },
+    {
+      "field": "stairs",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش"
+    },
+    {
+      "field": "kneeling",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش"
+    },
+    {
+      "field": "can_straighten",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +1015,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,23 +1023,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
-      "to": "يمكن من كام شهر",
+      "to": "من كام شهر",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
-      "field": "giving_way",
+      "field": "pain_severity",
       "from": null,
-      "to": "yes",
+      "to": "5",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
+      "kind": "AI filled",
+      "field": "worse_with",
+      "from": null,
+      "to": "الركبة بتخونك",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
       "field": "swelling",
       "from": null,
@@ -1026,11 +1055,27 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:33:35+00:00",
+      "t": "2026-11-19T12:13:10+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
       "to": "ركبتي الشمال",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T12:13:10+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "intermittent",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T12:13:10+00:00",
+      "kind": "AI filled",
+      "field": "giving_way",
+      "from": null,
+      "to": "yes",
       "who": "Language model"
     }
   ],

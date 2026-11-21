@@ -1,27 +1,27 @@
 {
   "id": "d09",
   "created": "2026-11-18T23:49:48+00:00",
-  "updated": "2026-11-19T00:09:45+00:00",
+  "updated": "2026-11-19T11:21:30+00:00",
   "source": "audio",
   "audio_file": "d09.aac",
-  "transcript": "أهلا بحضرتك إيه المشكلة ضهري بيوغاني من 3 شهور وكان عندي سرطان في السدي من 5 سنين الوقع بيصحيك بالليلة أي وكل ليلة في تغير في التباول أو الإخرى أي وبيئة مش قدرت حكم في البول وزنك نزل من غير سبب لا وزني سابت في سوخونية لا ما فيش سوخونية",
+  "transcript": "أهلا بحضرتك، إيه المشكلة؟ ظهري بيوجعني من 3 شهور وكان عندي سرطان في السادي من 5 سنين الوجع بيصحيك بالليل؟ أيوة كل ليلة فيه تغيير في التباول أو الإخراج؟ أيوة بقيت مش قادرة أتحكم في البول وزنك نزل من غير سابق؟ لا وزني سابق فيه سخونية؟ لا مفيش سخونية",
   "asr": {
-    "model": "small",
+    "model": "large-v3",
     "language": "ar",
     "duration_s": 18.4,
-    "seconds_to_transcribe": 11.0
+    "seconds_to_transcribe": 4.0
   },
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
     "site": {
       "ai": "back",
-      "quote": "ضهري بيوغاني",
+      "quote": "ظهري",
       "value": "back",
       "decision": "",
       "edited": false,
@@ -52,12 +52,12 @@
       "filled": false
     },
     "also_neck_back": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "كان عندي سرطان في السادي من 5 سنين",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "onset": {
       "ai": "من 3 شهور",
@@ -108,12 +108,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "تغيير في التباول أو الإخراج",
+      "quote": "تغيير في التباول أو الإخراج",
+      "value": "تغيير في التباول أو الإخراج",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": null,
@@ -125,7 +125,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "أي وكل ليلة",
+      "quote": "كل ليلة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -140,12 +140,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش سخونية",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "numbness": {
       "ai": null,
@@ -156,12 +156,12 @@
       "filled": false
     },
     "weakness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "مش قادرة أتحكم في البول",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_treatment": {
       "ai": null,
@@ -180,9 +180,9 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": "ضهري بيوغاني",
-      "quote": "ضهري بيوغاني",
-      "value": "ضهري بيوغاني",
+      "ai": "ظهرى بيوجعني من 3 شهور",
+      "quote": "ظهرى بيوجعني من 3 شهور",
+      "value": "ظهرى بيوجعني من 3 شهور",
       "decision": "",
       "edited": false,
       "filled": true
@@ -196,12 +196,12 @@
       "filled": false
     },
     "painkillers_help": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوة كل ليلة",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "stiffness": {
       "ai": null,
@@ -220,12 +220,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "بقيت مش قادرة أتحكم في البول",
+      "quote": "بقيت مش قادرة أتحكم في البول",
+      "value": "بقيت مش قادرة أتحكم في البول",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -284,12 +284,12 @@
       "filled": false
     },
     "family_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "سرطان في السادي",
+      "quote": "كان عندي سرطان في السادي",
+      "value": "سرطان في السادي",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "occupation": {
       "ai": null,
@@ -429,7 +429,7 @@
     },
     "fever": {
       "ai": "no",
-      "quote": "لا ما فيش سوخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -437,7 +437,7 @@
     },
     "weight_loss": {
       "ai": "no",
-      "quote": "لا وزني سابت",
+      "quote": "لا وزني سابق",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -445,7 +445,7 @@
     },
     "cancer_history": {
       "ai": "yes",
-      "quote": "كان عندي سرطان في السدي من 5 سنين",
+      "quote": "كان عندي سرطان",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -453,7 +453,7 @@
     },
     "bladder_bowel": {
       "ai": "yes",
-      "quote": "في تغير في التباول أو الإخرى أي",
+      "quote": "أيوة كل ليلة فيه تغيير في التباول أو الإخراج",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -991,7 +991,7 @@
   "flags": [],
   "events": [
     {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -999,7 +999,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "also_neck_back",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1007,15 +1015,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:09:45+00:00",
-      "kind": "AI filled",
-      "field": "chief_complaint",
-      "from": null,
-      "to": "ضهري بيوغاني",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1023,7 +1023,71 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "worse_with",
+      "from": null,
+      "to": "تغيير في التباول أو الإخراج",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "weakness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "swelling",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "ظهرى بيوجعني من 3 شهور",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "painkillers_help",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "بقيت مش قادرة أتحكم في البول",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "family_history",
+      "from": null,
+      "to": "سرطان في السادي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
+      "kind": "AI filled",
+      "field": "cancer_history",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "bladder_bowel",
       "from": null,
@@ -1031,7 +1095,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "weight_loss",
       "from": null,
@@ -1039,19 +1103,11 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:09:45+00:00",
+      "t": "2026-11-19T11:21:30+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
       "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:09:45+00:00",
-      "kind": "AI filled",
-      "field": "cancer_history",
-      "from": null,
-      "to": "yes",
       "who": "Language model"
     }
   ],

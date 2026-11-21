@@ -30,10 +30,37 @@ def _opencode(system, user):
     return out
 
 
+_THINK = re.compile(r"<think>.*?</think>", re.S)
+
+
+def _ollama_native(system, user):
+    """Ollama's own chat API. Used for Qwen3 because it accepts think:false (no slow reasoning), which the OpenAI-style endpoint may ignore."""
+    base = config.OPENAI_BASE_URL.rstrip("/")
+    if base.endswith("/v1"):
+        base = base[:-3]
+    body = {"model": config.OPENAI_MODEL, "stream": False, "think": False, "options": {"temperature": 0},
+            "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+    try:
+        r = requests.post(base + "/api/chat", json=body, timeout=config.LLM_TIMEOUT)
+    except requests.ConnectionError:
+        raise LLMError(f"Could not connect to {base}. Is Ollama running?")
+    except requests.Timeout:
+        raise LLMError(f"The model server did not answer within {config.LLM_TIMEOUT} seconds.")
+    if r.status_code != 200:
+        raise LLMError(f"Model server returned {r.status_code}: {r.text[:300]}")
+    return _THINK.sub("", (r.json().get("message") or {}).get("content") or "").strip()
+
+
 def _openai(system, user):
+    if config.OPENAI_MODEL.lower().startswith("qwen3") and config.OPENAI_BASE_URL.rstrip("/").endswith(("/v1", ":11434")):
+        return _ollama_native(system, user)
+    if config.OPENAI_MODEL.lower().startswith("qwen3"):
+        user = user + "\n/no_think"  # Qwen3 soft switch: answer directly, no long reasoning (faster, no timeouts)
     url = config.OPENAI_BASE_URL.rstrip("/") + "/chat/completions"
     body = {"model": config.OPENAI_MODEL, "temperature": 0,
             "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}
+    if config.OPENAI_MODEL.lower().startswith(("qwen3", "gpt-oss")):
+        body["reasoning_effort"] = "none" if config.OPENAI_MODEL.lower().startswith("qwen3") else "low"
     try:
         r = requests.post(url, json=body, timeout=config.LLM_TIMEOUT,
                           headers={"Authorization": f"Bearer {config.OPENAI_API_KEY}"})
@@ -43,7 +70,7 @@ def _openai(system, user):
         raise LLMError(f"The model server did not answer within {config.LLM_TIMEOUT} seconds.")
     if r.status_code != 200:
         raise LLMError(f"Model server returned {r.status_code}: {r.text[:300]}")
-    return r.json()["choices"][0]["message"]["content"]
+    return _THINK.sub("", r.json()["choices"][0]["message"]["content"] or "").strip()
 
 
 def call_llm(system, user):

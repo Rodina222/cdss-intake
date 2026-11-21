@@ -1,7 +1,7 @@
 {
   "id": "sample-d09",
   "created": "2026-11-18T23:48:00+00:00",
-  "updated": "2026-11-19T00:20:32+00:00",
+  "updated": "2026-11-19T11:32:04+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ ضهري بيوجعني من تلات شهور، وكان عندي سرطان في الثدي من خمس سنين. الوجع بيصحيكي بالليل؟ أيوه كل ليلة. فيه تغيير في التبول أو الإخراج؟ أيوه بقيت مش قادرة أتحكم في البول. وزنك نزل من غير سبب؟ لا وزني ثابت. فيه سخونية؟ لا مفيش سخونية.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -183,12 +183,12 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "constant",
+      "quote": "الوجع بيصحيكي بالليل؟ أيوه كل ليلة",
+      "value": "constant",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": null,
@@ -215,12 +215,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "بقيت مش قادرة أتحكم في البول",
+      "quote": "بقيت مش قادرة أتحكم في البول",
+      "value": "بقيت مش قادرة أتحكم في البول",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -239,12 +239,12 @@
       "filled": false
     },
     "chronic_diseases": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "كان عندي سرطان في الثدي من خمس سنين",
+      "quote": "كان عندي سرطان في الثدي من خمس سنين",
+      "value": "كان عندي سرطان في الثدي من خمس سنين",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "medications": {
       "ai": null,
@@ -279,12 +279,12 @@
       "filled": false
     },
     "family_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "سرطان في الثدي",
+      "quote": "كان عندي سرطان في الثدي من خمس سنين",
+      "value": "سرطان في الثدي",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "occupation": {
       "ai": null,
@@ -424,7 +424,7 @@
     },
     "fever": {
       "ai": "no",
-      "quote": "مفيش سخونية",
+      "quote": "لا مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -432,7 +432,7 @@
     },
     "weight_loss": {
       "ai": "no",
-      "quote": "وزني ثابت",
+      "quote": "لا وزني ثابت",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -440,7 +440,7 @@
     },
     "cancer_history": {
       "ai": "yes",
-      "quote": "عندي سرطان في الثدي",
+      "quote": "كان عندي سرطان في الثدي من خمس سنين",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -775,12 +775,12 @@
       "filled": false
     },
     "pain_over_6_weeks": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "من تلات شهور",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "steroids_osteoporosis": {
       "ai": null,
@@ -986,7 +986,7 @@
   "flags": [],
   "events": [
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +994,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1002,7 +1002,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1010,31 +1010,47 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
-      "field": "bladder_bowel",
+      "field": "chief_complaint",
       "from": null,
-      "to": "yes",
+      "to": "ضهري بيوجعني من تلات شهور",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
-      "field": "weight_loss",
+      "field": "chronic_diseases",
       "from": null,
-      "to": "no",
+      "to": "كان عندي سرطان في الثدي من خمس سنين",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
-      "field": "fever",
+      "field": "timing",
       "from": null,
-      "to": "no",
+      "to": "constant",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "بقيت مش قادرة أتحكم في البول",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:32:04+00:00",
+      "kind": "AI filled",
+      "field": "family_history",
+      "from": null,
+      "to": "سرطان في الثدي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
       "field": "cancer_history",
       "from": null,
@@ -1042,11 +1058,35 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:20:32+00:00",
+      "t": "2026-11-19T11:32:04+00:00",
       "kind": "AI filled",
-      "field": "chief_complaint",
+      "field": "bladder_bowel",
       "from": null,
-      "to": "ضهري بيوجعني من تلات شهور",
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:32:04+00:00",
+      "kind": "AI filled",
+      "field": "fever",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:32:04+00:00",
+      "kind": "AI filled",
+      "field": "weight_loss",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:32:04+00:00",
+      "kind": "AI filled",
+      "field": "pain_over_6_weeks",
+      "from": null,
+      "to": "yes",
       "who": "Language model"
     }
   ],

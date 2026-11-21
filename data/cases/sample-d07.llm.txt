@@ -1,1 +1,11 @@
-{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "يمكن من كام شهر", "evidence_quote": "يمكن من كام شهر"}, "giving_way": {"value": "yes", "evidence_quote": "أحيانًا"}, "swelling": {"value": "yes", "evidence_quote": "آه شوية"}, "chief_complaint": {"value": "ركبتي الشمال", "evidence_quote": "ركبتي الشمال"}}}
+{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "من كام شهر", "evidence_quote": "من كام شهر"}, "pain_score": {"value": "متوسط", "evidence_quote": "متوسط"}, "instability": {"value": "yes", "evidence_quote": "أحيانًا"}, "swelling": {"value": "yes", "evidence_quote": "شوية"}}}
+---
+{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "من كام شهر", "evidence_quote": "من كام شهر"}, "pain_severity": {"value": 5, "evidence_quote": "متوسط"}, "worse_with": {"value": "الركبة بتخونك", "evidence_quote": "الركبة بتخونك"}, "swelling": {"value": "yes", "evidence_quote": "شوية"}}}
+---
+{"fields": {"chief_complaint": {"value": "ركبتي الشمال", "evidence_quote": "ركبتي الشمال"}, "timing": {"value": "intermittent", "evidence_quote": "أحيانًا"}, "swelling": {"value": "yes", "evidence_quote": "شوية"}}}
+---
+{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "من كام شهر", "evidence_quote": "من كام شهر"}, "pain_score": {"value": "متوسط", "evidence_quote": "متوسط"}, "instability": {"value": "أحيانًا", "evidence_quote": "أحيانًا"}, "swelling": {"value": "شوية", "evidence_quote": "شوية"}}}
+---
+{"fields": {"site": {"value": "knee", "evidence_quote": "ركبتي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "من كام شهر", "evidence_quote": "من كام شهر"}, "pain_score": {"value": "متوسط", "evidence_quote": "متوسط"}, "instability": {"value": "أحيانًا", "evidence_quote": "أحيانًا"}, "swelling": {"value": "شوية", "evidence_quote": "شوية"}}}
+---
+{"fields": {"giving_way": {"value": "yes", "evidence_quote": "الركبة بتخونك"}, "locking_catching": {"value": "none", "evidence_quote": "مفيش"}, "stairs": {"value": "no", "evidence_quote": "مفيش"}, "kneeling": {"value": "no", "evidence_quote": "مفيش"}, "can_straighten": {"value": "no", "evidence_quote": "مفيش"}}}

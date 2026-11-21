@@ -1,7 +1,7 @@
 {
   "id": "sample-d14",
   "created": "2026-11-18T23:48:00+00:00",
-  "updated": "2026-11-19T00:24:45+00:00",
+  "updated": "2026-11-19T11:46:14+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "فين الوجع؟ أشّر على المكان اللي بيوجعك أكتر. الكوع. في الناحية اليمين ولا الشمال ولا الاتنين؟ اليمين. إيه اللي مضايقك وجاي بسببه النهارده؟ كوعي بيوجعني لما بمسك الأدوات. بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من تلات شهور، واحدة واحدة. حصلت لك وقعة أو لوية أو ضربة أو إصابة؟ حصلت إزاي؟ لا مفيش إصابة. الوجع في الناحية اللي برا، ولا جوه، ولا ورا، ولا قدام الكوع؟ من برا. بيوجعك لما تمسك حاجة أو تشيل أو تلف إيدك، زي مقبض الباب أو برطمان، أو لما تستخدم مضرب أو أدوات؟ أيوه لما ألف الأكياس وأمسك الدرافيل. في ورم أو كتلة عند طرف الكوع؟ لا مفيش ورم ولا كتلة. الكوع بيتقفل أو بيعلّق أو مش بيتفرد كامل؟ لا مبيتقفلش وبيتفرد كامل. في تنميل أو وخز في البنصر والخنصر، خصوصاً لما تثني الكوع؟ لا مفيش تنميل في صوابعي. من صفر لعشرة، الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله. خمسة. إيه اللي بيخفّفه؟ والمسكنات بتفرق معاك؟ لما أريّح إيدي. حاسس بضعف في إيدك؟ أيوه بحس إن مسكتي ضعفت. جرّبت علاج قبل كده، زي علاج طبيعي أو أدوية أو حقن؟ وفرق معاك؟ لبست رباط ودهان. بتشتغل إيه؟ وشغلك فيه وقوف كتير أو شيل حاجات تقيلة أو حركات متكررة؟ سباك وشغلي فيه لف وشد كتير. بتلعب رياضة أو بتتمرن بانتظام؟ إيه هي؟ مبتمرنش. عندك سخونية أو رعشة أو عرق بالليل؟ لا مفيش سخونية. الوجع بيصحّيك بالليل أو بيفضل موجود وإنت مرتاح؟ لا بنام عادي.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -31,48 +31,48 @@
       "filled": true
     },
     "one_or_many": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "one_place",
+      "quote": "الكوع",
+      "value": "one_place",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "exact_spot": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "one_spot",
+      "quote": "الكوع",
+      "value": "one_spot",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "also_neck_back": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش سخونية",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "onset": {
-      "ai": "من تلات شهور",
-      "quote": "من تلات شهور",
-      "value": "من تلات شهور",
+      "ai": "من تلات شهور، واحدة واحدة",
+      "quote": "من تلات شهور، واحدة واحدة",
+      "value": "من تلات شهور، واحدة واحدة",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "onset_type": {
-      "ai": "gradual",
-      "quote": "واحدة واحدة",
-      "value": "gradual",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "injury": {
       "ai": "no",
-      "quote": "مفيش إصابة",
+      "quote": "لا مفيش إصابة",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -103,12 +103,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لما ألف الأكياس وأمسك الدرافيل",
+      "quote": "أيوه لما ألف الأكياس وأمسك الدرافيل",
+      "value": "لما ألف الأكياس وأمسك الدرافيل",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": "لما أريّح إيدي",
@@ -135,20 +135,20 @@
       "filled": false
     },
     "swelling": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش ورم ولا كتلة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش تنميل في صوابعي",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "weakness": {
       "ai": "yes",
@@ -207,12 +207,12 @@
       "filled": false
     },
     "instability": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "none",
+      "quote": "لا مبيتقفلش وبيتفرد كامل",
+      "value": "none",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "function": {
       "ai": null,
@@ -223,12 +223,12 @@
       "filled": false
     },
     "prior_problems": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش إصابة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "other_joints": {
       "ai": null,
@@ -287,9 +287,9 @@
       "filled": false
     },
     "occupation": {
-      "ai": "سباك وشغلي فيه لف وشد كتير",
+      "ai": "plumber, involves a lot of twisting and pulling",
       "quote": "سباك وشغلي فيه لف وشد كتير",
-      "value": "سباك وشغلي فيه لف وشد كتير",
+      "value": "plumber, involves a lot of twisting and pulling",
       "decision": "",
       "edited": false,
       "filled": true
@@ -303,9 +303,9 @@
       "filled": false
     },
     "sport_activity": {
-      "ai": "مبتمرنش",
+      "ai": "no",
       "quote": "مبتمرنش",
-      "value": "مبتمرنش",
+      "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
@@ -424,7 +424,7 @@
     },
     "fever": {
       "ai": "no",
-      "quote": "مفيش سخونية",
+      "quote": "لا مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -656,7 +656,7 @@
     },
     "elbow_swelling": {
       "ai": "no",
-      "quote": "مفيش ورم ولا كتلة",
+      "quote": "لا مفيش ورم ولا كتلة",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -664,7 +664,7 @@
     },
     "elbow_locking": {
       "ai": "no",
-      "quote": "مبيتقفلش وبيتفرد كامل",
+      "quote": "لا مبيتقفلش وبيتفرد كامل",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -672,7 +672,7 @@
     },
     "ulnar_numbness": {
       "ai": "no",
-      "quote": "مفيش تنميل في صوابعي",
+      "quote": "لا مفيش تنميل في صوابعي",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -719,12 +719,12 @@
       "filled": false
     },
     "grip_weakness": {
-      "ai": "yes",
-      "quote": "أيوه بحس إن مسكتي ضعفت",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "daily_use": {
       "ai": null,
@@ -986,7 +986,7 @@
   "flags": [],
   "events": [
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +994,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,31 +1002,39 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
-      "field": "chief_complaint",
+      "field": "one_or_many",
       "from": null,
-      "to": "كوعي بيوجعني لما بمسك الأدوات",
+      "to": "one_place",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "exact_spot",
+      "from": null,
+      "to": "one_spot",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "also_neck_back",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
-      "to": "من تلات شهور",
+      "to": "من تلات شهور، واحدة واحدة",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "injury",
       "from": null,
@@ -1034,47 +1042,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
-      "field": "elbow_site",
+      "field": "worse_with",
       "from": null,
-      "to": "outer",
+      "to": "لما ألف الأكياس وأمسك الدرافيل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
-      "field": "grip_lift_twist",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:45+00:00",
-      "kind": "AI filled",
-      "field": "elbow_swelling",
+      "field": "swelling",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
-      "field": "elbow_locking",
+      "field": "numbness",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
-      "kind": "AI filled",
-      "field": "ulnar_numbness",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "pain_severity",
       "from": null,
@@ -1082,7 +1074,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "better_with",
       "from": null,
@@ -1090,7 +1082,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "weakness",
       "from": null,
@@ -1098,15 +1090,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
-      "kind": "AI filled",
-      "field": "grip_weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "prior_treatment",
       "from": null,
@@ -1114,23 +1098,55 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "night_pain",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "كوعي بيوجعني لما بمسك الأدوات",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "prior_problems",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "instability",
+      "from": null,
+      "to": "none",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "occupation",
       "from": null,
-      "to": "سباك وشغلي فيه لف وشد كتير",
+      "to": "plumber, involves a lot of twisting and pulling",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "sport_activity",
       "from": null,
-      "to": "مبتمرنش",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
@@ -1138,9 +1154,41 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:24:45+00:00",
+      "t": "2026-11-19T11:46:14+00:00",
       "kind": "AI filled",
-      "field": "night_pain",
+      "field": "elbow_site",
+      "from": null,
+      "to": "outer",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "grip_lift_twist",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "elbow_swelling",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "elbow_locking",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:46:14+00:00",
+      "kind": "AI filled",
+      "field": "ulnar_numbness",
       "from": null,
       "to": "no",
       "who": "Language model"

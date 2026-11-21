@@ -1,19 +1,23 @@
 {
   "id": "d16",
   "created": "2026-11-19T00:10:29+00:00",
-  "updated": "2026-11-19T00:12:07+00:00",
+  "updated": "2026-11-19T11:06:20+00:00",
   "source": "audio",
   "audio_file": "d16.aac",
-  "transcript": "فين الواجع شاور على المكان اللي بيوقعك أكتر رقبتي الواجع في مكان واحد بس ولا في أكتر من مكان في الرقبة والكتف إه اللي مدائك و جايب سبب النهاردة رقبتي بتوقعني و إيدي بائد بتطلخبت بدأ امتى بدأ فجأ ولا بتدريج من سبعة شهور واحدة واحدة حصلت لك واعة أو اللوية أو دربة أو إصابة حصلت الزاي لا ما فيش واعة الواجع بيزيد في الكتفة أو الدراعة أيوة بينزل في الدراعة الشمال لحد الكوعة في تنميل أو وغز في الدراعك أو إيدك أو صودعك أيوة تنميل في صوابعي في ضعف في الدراعك أو إيدك أو بتوقع حاجات من إيدك أيوة بوقع كباية من إيدي إيدك بأت متلخبطة في الحركات الدقيقة زي الأزرار أو مشيطك أو توزنك بأسوأ أيوة مش بارف أأفل الأزرار و مشيطي بأت أوحش حصلت تغير في التحكم في البول أو البراز لا التباول عادي مع واجع الرقبة في دوخة أو إغماء أو زغلالة أو سعوبة في البلع أو تؤلف الكلم لا ما فيش دوخة ولا زغلالة صعبة لفر أبتك أو تجن تحنيها وهي متيبسة أيوة صعبة لفر أبتي وهي متيبسة بيجيلك صداع خصوصا ورا الروس أيوة بيجيل صداع ورا الروس من صفر العشرة الواجع أدقي عشرة يعني أسوأ واجع ممكن تتخيله ستة إيه اللي بيزوده لما بصل تحت كتير بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجة تييل أو حركات متكررة محاسب وبقعود قدامكم بيوتر الواجع بيصحيك بالليل أو بيفضل موجود وينتا مرتاح لا بنام عادي عندك سخونية أو راش أو عرق بالليل لا ما فيش سخونية وزنك نزل من غير سبب لا وزني سابد اتعالكت من ورم أو سرطون قبل كده لا ما فيش",
+  "transcript": "فين الوجع؟ شاور على المكان اللي بيوجعك أكتر رقابتي الوجع في مكان واحد بس ولا في أكتر من مكان؟ في الرقبة والكتف إيه اللي مدايقك وجاي بسببه النهاردة؟ رقابتي بتوجعني وإيدي بقت بتتلخبط بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من سبع شهور واحدة واحدة حصلت لك وقعة أو لوي أو ضربة أو إصابة؟ حصلت إزاي؟ لا، ما فيش وقعة الوجع بيزيد في الكتف أو الدراع؟ أيوة، بينزل في الدراع الشمال لحد الكوع فيه تنميل أو وغز في دراعك أو إيدك أو صوابعك؟ أيوة، تنميل في صوابعي فيه ضعف في دراعك أو إيدك أو بتوقع حاجات من إيدك؟ أيوة، بوقع الكباية من إيدي إيدك بقت متلخبطة في الحركات الدقيقة زي الأزرار أو مشيتك أو توازنك بقوا أسوأ؟ أيوة، مش بعرف أقفل الأزرار ومشيتي بقت أوحش حصل تغير في التحكم في البول أو البراز؟ لا، التبول عادي مع وجع الرقبة فيه دوخة أو إغماء أو زغللة أو صعوبة في البلد؟ أو تقلف الكلام؟ لا، ما فيش دوخة ولا زغللة صعب تلف رقبتك أو تحنيها وهي متيبسة؟ أيوة، صعب لف رقبتي وهي متيبسة بيجي لك صداع خصوصاً ورا الراس؟ أيوة، بيجي لصداع ورا الراس من صفر لعشرة، الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله؟ ستة إيه اللي بيزوده؟ لما بص لتحت كتير بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات؟ وجعك متكررة؟ محاسب وبقعد قدام الكمبيوتر الوجع بيصحيك بالليل أو بيفضل موجود وإنت مرتاح؟ لا، بنام عادي عندك سخونية أو رعش أو عرق بالليل؟ لا، ما فيش سخونية وزنك نزل من غير سبب؟ لا، وزني سابق اتعالجت من ورم أو سرطان قبل كده؟ لا، ما فيش",
   "asr": {
-    "model": "small",
+    "model": "large-v3",
     "language": "ar",
     "duration_s": 110.9,
-    "seconds_to_transcribe": 95.2
+    "seconds_to_transcribe": 25.0
   },
   "busy": null,
   "error": null,
-  "model": null,
+  "model": {
+    "llm": "qwen3:14b",
+    "backend": "openai",
+    "prompt_version": "v1"
+  },
   "fields": {
     "site": {
       "ai": null,
@@ -56,12 +60,12 @@
       "filled": false
     },
     "onset": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "من سبع شهور",
+      "quote": "من سبع شهور",
+      "value": "من سبع شهور",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "onset_type": {
       "ai": null,
@@ -72,12 +76,12 @@
       "filled": false
     },
     "injury": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، ما فيش وقعة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "pain_severity": {
       "ai": null,
@@ -96,20 +100,20 @@
       "filled": false
     },
     "radiation": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "بينزل في الدراع الشمال لحد الكوع",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات",
+      "quote": "بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات",
+      "value": "بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": null,
@@ -120,12 +124,12 @@
       "filled": false
     },
     "night_pain": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، بنام عادي",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "morning_stiffness_min": {
       "ai": null,
@@ -144,20 +148,20 @@
       "filled": false
     },
     "numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "تنميل في صوابعي",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "weakness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "ضعف في دراعك",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_treatment": {
       "ai": null,
@@ -280,20 +284,20 @@
       "filled": false
     },
     "family_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لا، ما فيش",
+      "quote": "وزني سابق اتعالجت من ورم أو سرطان قبل كده؟ لا، ما فيش",
+      "value": "لا، ما فيش",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "occupation": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "محاسب وبقعد قدام الكمبيوتر",
+      "quote": "محاسب وبقعد قدام الكمبيوتر",
+      "value": "محاسب وبقعد قدام الكمبيوتر",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "dominant_hand": {
       "ai": null,
@@ -304,28 +308,28 @@
       "filled": false
     },
     "sport_activity": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لا، ما فيش",
+      "quote": "لا، ما فيش",
+      "value": "لا، ما فيش",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "smoking": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، ما فيش",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "patient_belief": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لا، ما فيش",
+      "quote": "لا، ما فيش",
+      "value": "لا، ما فيش",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "trauma_mechanism": {
       "ai": null,
@@ -424,28 +428,28 @@
       "filled": false
     },
     "fever": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، ما فيش سخونية",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "weight_loss": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، وزني سابق اتعالجت من ورم أو سرطان قبل كده؟ لا، ما فيش",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "cancer_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا، ما فيش",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "bladder_bowel": {
       "ai": null,
@@ -984,8 +988,144 @@
       "filled": false
     }
   },
-  "flags": [],
-  "events": [],
+  "flags": [
+    {
+      "field": "site",
+      "issue": "model_error: The model server did not answer within 600 seconds."
+    },
+    {
+      "field": "onset_type",
+      "issue": "value_not_allowed",
+      "value": "بالتدريج"
+    },
+    {
+      "field": "pain_severity",
+      "issue": "not_a_number",
+      "value": "ستة"
+    }
+  ],
+  "events": [
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "onset",
+      "from": null,
+      "to": "من سبع شهور",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "injury",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "radiation",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "numbness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "weakness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "worse_with",
+      "from": null,
+      "to": "بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "night_pain",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "family_history",
+      "from": null,
+      "to": "لا، ما فيش",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "occupation",
+      "from": null,
+      "to": "محاسب وبقعد قدام الكمبيوتر",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "sport_activity",
+      "from": null,
+      "to": "لا، ما فيش",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "smoking",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "patient_belief",
+      "from": null,
+      "to": "لا، ما فيش",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "fever",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "weight_loss",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:06:20+00:00",
+      "kind": "AI filled",
+      "field": "cancer_history",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    }
+  ],
   "comment": "",
   "reviewed": false,
   "report_seen": false

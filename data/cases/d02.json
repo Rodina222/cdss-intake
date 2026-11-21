@@ -1,21 +1,21 @@
 {
   "id": "d02",
   "created": "2026-11-18T23:48:30+00:00",
-  "updated": "2026-11-19T00:19:03+00:00",
+  "updated": "2026-11-19T11:28:38+00:00",
   "source": "audio",
   "audio_file": "d02.mp3",
-  "transcript": "اهلا بحضرتك ايه المشكلة ضهري بيوقعني من امتة من شهرين فيه حاجة تانية بتحصل وزني نزل حوالي 8 كيلو من غير معام الرجيم الواجع بيصحيك بالليل ايه وبيصحيني بالليل فيه تنميل في رجلك ايه وتنميل من رجل الشمال",
+  "transcript": "أهلاً بحضرتك، إيه المشكلة؟ ضهري بيوجعني من إمتى؟ من شهرين في حاجة تانية بتحصل؟ وزني نزل حوالي 8 كيلو من غير معم الرجيم الوجع بيصحيك بالليل؟ أيوة بيصحيني بالليل فيه تنميل في رجلك؟ أيوة تنميل من رجلي الشمال",
   "asr": {
-    "model": "small",
+    "model": "large-v3",
     "language": "ar",
     "duration_s": 24.6,
-    "seconds_to_transcribe": 10.1
+    "seconds_to_transcribe": 3.7
   },
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -28,12 +28,12 @@
       "filled": true
     },
     "side": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "left",
+      "quote": "من رجلي الشمال",
+      "value": "left",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "one_or_many": {
       "ai": null,
@@ -52,12 +52,12 @@
       "filled": false
     },
     "also_neck_back": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "في حاجة تانية بتحصل؟",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "onset": {
       "ai": "من شهرين",
@@ -108,12 +108,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "الوجع بيصحيك بالليل",
+      "quote": "الوجع بيصحيك بالليل",
+      "value": "الوجع بيصحيك بالليل",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": null,
@@ -125,7 +125,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "وبيصحيني بالليل",
+      "quote": "أيوة بيصحيني بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -148,12 +148,12 @@
       "filled": false
     },
     "numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "فيه تنميل في رجلك؟ أيوة تنميل من رجلي الشمال",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "weakness": {
       "ai": null,
@@ -180,9 +180,9 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": "ضهري بيوقعني",
-      "quote": "ضهري بيوقعني",
-      "value": "ضهري بيوقعني",
+      "ai": "ضهري بيوجعني من إمتى؟",
+      "quote": "ضهري بيوجعني من إمتى؟",
+      "value": "ضهري بيوجعني من إمتى؟",
       "decision": "",
       "edited": false,
       "filled": true
@@ -437,7 +437,7 @@
     },
     "weight_loss": {
       "ai": "yes",
-      "quote": "وزني نزل حوالي 8 كيلو من غير معام الرجيم",
+      "quote": "وزني نزل حوالي 8 كيلو",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -765,7 +765,7 @@
     },
     "leg_numb_weak": {
       "ai": "yes",
-      "quote": "وتنميل من رجل الشمال",
+      "quote": "فيه تنميل في رجلك",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -780,12 +780,12 @@
       "filled": false
     },
     "pain_over_6_weeks": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "من شهرين",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "steroids_osteoporosis": {
       "ai": null,
@@ -796,12 +796,12 @@
       "filled": false
     },
     "lying_down": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "worse",
+      "quote": "الوجع بيصحيك بالليل",
+      "value": "worse",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "hip_site": {
       "ai": null,
@@ -991,7 +991,7 @@
   "flags": [],
   "events": [
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -999,7 +999,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "also_neck_back",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "side",
+      "from": null,
+      "to": "left",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1007,15 +1023,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
-      "field": "weight_loss",
+      "field": "worse_with",
       "from": null,
-      "to": "yes",
+      "to": "الوجع بيصحيك بالليل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1023,19 +1039,51 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
-      "field": "leg_numb_weak",
+      "field": "numbness",
       "from": null,
       "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:19:03+00:00",
+      "t": "2026-11-19T11:28:38+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
-      "to": "ضهري بيوقعني",
+      "to": "ضهري بيوجعني من إمتى؟",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "weight_loss",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "pain_over_6_weeks",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "lying_down",
+      "from": null,
+      "to": "worse",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T11:28:38+00:00",
+      "kind": "AI filled",
+      "field": "leg_numb_weak",
+      "from": null,
+      "to": "yes",
       "who": "Language model"
     }
   ],

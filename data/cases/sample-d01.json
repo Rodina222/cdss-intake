@@ -1,7 +1,7 @@
 {
   "id": "sample-d01",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T00:32:17+00:00",
+  "updated": "2026-11-19T12:06:39+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي مضايقك النهاردة؟ ركبتي اليمين بتوجعني. بدأت من إمتى؟ من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور. الوجع كام من صفر لعشرة؟ حوالي ستة. إيه اللي بيزوّده؟ لما أنزل السلم. فيه ورم؟ أيوه الركبة متورمة شوية. الوجع بيصحيك بالليل؟ أيوه كذا مرة. فيه سخونية؟ لا مفيش سخونية.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -64,19 +64,19 @@
     },
     "onset_type": {
       "ai": "gradual",
-      "quote": "واحدة واحدة",
+      "quote": "بدأت واحدة واحدة من غير ما أتعور",
       "value": "gradual",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "injury": {
-      "ai": "no",
-      "quote": "من غير ما أتعور",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "pain_severity": {
       "ai": 6,
@@ -136,7 +136,7 @@
     },
     "swelling": {
       "ai": "yes",
-      "quote": "الركبة متورمة شوية",
+      "quote": "أيوه الركبة متورمة شوية",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -887,12 +887,12 @@
       "filled": false
     },
     "stairs": {
-      "ai": "yes",
-      "quote": "لما أنزل السلم",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "kneeling": {
       "ai": null,
@@ -986,7 +986,7 @@
   "flags": [],
   "events": [
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +994,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,7 +1002,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1010,7 +1010,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "onset_type",
       "from": null,
@@ -1018,15 +1018,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
-      "kind": "AI filled",
-      "field": "injury",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "pain_severity",
       "from": null,
@@ -1034,7 +1026,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "worse_with",
       "from": null,
@@ -1042,15 +1034,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
-      "kind": "AI filled",
-      "field": "night_pain",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "swelling",
       "from": null,
@@ -1058,15 +1042,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
-      "field": "fever",
+      "field": "night_pain",
       "from": null,
-      "to": "no",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1074,11 +1058,11 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:17+00:00",
+      "t": "2026-11-19T12:06:39+00:00",
       "kind": "AI filled",
-      "field": "stairs",
+      "field": "fever",
       "from": null,
-      "to": "yes",
+      "to": "no",
       "who": "Language model"
     }
   ],

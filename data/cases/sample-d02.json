@@ -1,7 +1,7 @@
 {
   "id": "sample-d02",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T00:32:31+00:00",
+  "updated": "2026-11-19T12:07:22+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ ضهري بيوجعني. من إمتى؟ من شهرين. فيه حاجة تانية بتحصل؟ وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم. الوجع بيصحيك بالليل؟ أيوه بيصحيني بالليل. فيه تنميل في رجلك؟ أيوه تنميل في رجلي الشمال.",
@@ -9,8 +9,8 @@
   "busy": null,
   "error": null,
   "model": {
-    "llm": "opencode/deepseek-v4.1-flash-free",
-    "backend": "opencode",
+    "llm": "qwen3:14b",
+    "backend": "openai",
     "prompt_version": "v1"
   },
   "fields": {
@@ -47,12 +47,12 @@
       "filled": false
     },
     "also_neck_back": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "onset": {
       "ai": "من شهرين",
@@ -103,12 +103,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "value": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "better_with": {
       "ai": null,
@@ -120,7 +120,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "أيوه بيصحيني بالليل",
+      "quote": "بيصحيني بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -183,12 +183,12 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "constant",
+      "quote": "بيصحيني بالليل",
+      "value": "constant",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": null,
@@ -759,12 +759,12 @@
       "filled": false
     },
     "leg_numb_weak": {
-      "ai": "yes",
-      "quote": "تنميل في رجلي الشمال",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "foot_catching": {
       "ai": null,
@@ -983,10 +983,16 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "leg_numb_weak",
+      "issue": "quote_not_in_transcript",
+      "quote": "فيه تنميل في رجلي الشمال."
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,15 +1000,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
-      "field": "chief_complaint",
+      "field": "also_neck_back",
       "from": null,
-      "to": "ضهري بيوجعني",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1010,15 +1016,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
-      "field": "weight_loss",
+      "field": "worse_with",
       "from": null,
-      "to": "yes",
+      "to": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1026,7 +1032,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1034,9 +1040,25 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T00:32:31+00:00",
+      "t": "2026-11-19T12:07:22+00:00",
       "kind": "AI filled",
-      "field": "leg_numb_weak",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "ضهري بيوجعني",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T12:07:22+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "constant",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-19T12:07:22+00:00",
+      "kind": "AI filled",
+      "field": "weight_loss",
       "from": null,
       "to": "yes",
       "who": "Language model"

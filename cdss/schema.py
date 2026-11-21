@@ -63,7 +63,7 @@ Rules:
 1. The transcript has no speaker labels. The assistant's questions and the patient's answers are mixed together. Use only what the PATIENT states. A question in the transcript is not an answer.
 2. Fill a field only if the patient clearly answered it. If it was not asked, or the answer is unclear, leave the field out. Never guess and never infer.
 3. For every field you fill, give evidence_quote: the patient's own words, copied exactly from the transcript (a short span, in the original Arabic). Do not translate or correct the quote.
-4. Use exactly the allowed values for enum fields. For number fields give a number. For text fields give a short phrase in the patient's own Arabic words, copied from the transcript.
+4. For enum fields use exactly one of the allowed values, written in English as listed (for yes/no fields write yes or no, never نعم or لا). If the patient's answer does not clearly match an allowed value, leave the field out. For number fields give a number. For text fields give a short phrase in the patient's own Arabic words, copied from the transcript.
 5. Do not give any diagnosis, treatment advice, dose, score or probability.
 6. Do not use any tools, do not read or write files, and do not add commentary. Reply with only the JSON object, in this shape:
 {"fields": {"<field_id>": {"value": <value>, "evidence_quote": "<exact words from the transcript>"}}}"""
@@ -73,14 +73,17 @@ Example output: {"fields": {"site": {"value": "shoulder", "evidence_quote": "ك�
 Note that the example leaves out every field the patient did not address (pain score, swelling, and so on)."""
 
 
-def schema_for_prompt():
+def schema_for_prompt(fields=None):
     out = []
-    for f in SCHEMA:
+    for f in (SCHEMA if fields is None else fields):
         opt = f" allowed: {f['options']}" if f["type"] == "enum" else ""
         rf = " [red flag]" if f["red_flag"] else ""
         out.append(f"- {f['id']} ({f['type']}){opt}{rf}: {f['question_en']}")
     return "\n".join(out)
 
 
-def build_user_prompt(transcript):
-    return f"Form fields:\n{schema_for_prompt()}\n\n{EXAMPLE}\n\nTranscript:\n{transcript}\n\nReturn the JSON now."
+def build_user_prompt(transcript, fields=None):
+    note = ("This list is only one part of the form. The conversation may not cover some or all of these fields. "
+            "Fill a field only if the assistant asked about it and the patient answered. "
+            "For a red-flag field write no only if the patient's own words deny it. If nothing here was discussed, return {\"fields\": {}}.")
+    return f"Form fields:\n{schema_for_prompt(fields)}\n\n{note}\n\n{EXAMPLE}\n\nTranscript:\n{transcript}\n\nReturn the JSON now."
