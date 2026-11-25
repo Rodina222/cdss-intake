@@ -111,13 +111,13 @@ Open <http://localhost:8501> on the computer running the app.
 
 ### Access from another device or an external URL
 
-The Streamlit server is configured to listen on all IPv4 interfaces (`0.0.0.0`), so it can accept connections addressed to the host computer. After starting the app, Streamlit prints the available Local, Network, and (where provided by the hosting environment) External URLs. Open the Network or External URL from the other device—for example, a hosted environment may provide an address such as `http://130.15.5.74:8501`. Use the actual URL shown by your environment; the example IP can change and is not guaranteed to be publicly reachable.
+The Streamlit server is configured to listen on all IPv4 interfaces (`0.0.0.0`), so it can accept connections addressed to the host computer. After starting the app, Streamlit prints the available Local, Network, and, where provided by the hosting environment, External URLs. Open the Network or External URL from the other device. Use the actual URL shown by your environment.
 
 If the URL does not load, check that:
 
 1. The dashboard process is still running and listening on port `8501`.
-2. The host firewall, cloud security group, and any network routing/NAT permit inbound TCP traffic to port `8501`.
-3. You are using the host's reachable address. A private `10.x.x.x` Network URL is generally only reachable from the same private network; public access may require a managed tunnel or reverse proxy.
+2. The host firewall, cloud security group, and network routing/NAT permit inbound TCP traffic to port `8501`.
+3. You are using the host's reachable address. A private `10.x.x.x` Network URL is generally only reachable from the same private network; public access requires a managed tunnel or reverse proxy.
 
 Before sharing the dashboard, set a strong password using one of these methods.
 
@@ -127,7 +127,7 @@ In `.streamlit/secrets.toml`:
 APP_PASSWORD = "choose-a-long-unique-password"
 ```
 
-Or set `APP_PASSWORD` in the environment. Keep secrets out of the repository. Do not expose this app to the public internet without authentication and appropriate HTTPS, network access controls, and privacy/security review. Binding to `0.0.0.0` makes the server listen on all network interfaces; it does not itself make the app publicly reachable or provide HTTPS.
+Or set `APP_PASSWORD` in the environment. Keep secrets out of the repository. Do not expose this app to the public internet without authentication and appropriate HTTPS, network access controls, and privacy/security review.
 
 ## Dashboard workflow
 
@@ -158,6 +158,58 @@ python scripts/seed_samples.py
 ```
 
 The scripts and dashboard use the same case files and can be used independently.
+
+## Evaluation metrics
+
+Run `python scripts/03_evaluate.py` after adding extracted cases and matching files in `data/gold/<case-id>.json`. The script evaluates model output against the gold answer keys and saves field-level results to `data/scores.csv`.
+
+Scoring uses the model's original AI values, not later doctor edits. It compares every schema field that is present in the prediction or gold answer key.
+
+| Metric | Meaning |
+| --- | --- |
+| Correct | The prediction and gold value match. |
+| Wrong value | Both fields are present, but the values differ. |
+| Missed | The gold answer exists, but the model did not fill it. |
+| Invented | The model filled a field that is absent from the gold answer. |
+| Field accuracy / recall | `correct / (correct + wrong value + missed)` |
+| Precision | `correct / (correct + wrong value + invented)` |
+| Recall | `correct / (correct + wrong value + missed)` |
+| F1 | Harmonic mean of precision and recall |
+| Coverage | `(correct + wrong value) / (correct + wrong value + missed)` |
+
+Red flags, doctor-review actions, value validation, transcription, and performance are also reported:
+
+| Metric | Meaning |
+| --- | --- |
+| Red-flag `yes` caught | Gold `yes` red flags whose extracted value is also correct. |
+| Red-flag recall | `red_flag_yes_caught / red_flag_yes_total` |
+| Red-flag `yes` missed or wrong | Gold `yes` red flags that were missed or incorrectly extracted. |
+| Red-flag answers invented | The model filled a red flag, but it is absent from the gold answer. |
+| Discarded values | Values removed by schema, evidence, enum, number, or question checks. |
+| Discard rate | `discarded / (discarded + filled)` |
+| Doctor approved | Number of retained fields marked approved by a doctor. |
+| Doctor edited | Number of retained fields edited by a doctor. |
+| Doctor flagged | Number of retained fields marked as flagged. |
+| Edit rate | `doctor_edited / filled` |
+| Mean extraction time | Mean extraction time per scored case, in seconds. |
+
+### Metric breakdowns
+
+The evaluation report additionally provides:
+
+- Precision, recall, F1, and four status counts by intake module.
+- Precision, recall, F1, and status counts for each scored case.
+- Per-field incorrect rows containing case ID, field ID, status, gold value, and model value.
+- A list of extracted cases with no matching gold answer key.
+- ASR word error rate (WER) and character error rate (CER) for audio cases that have both Whisper transcription and a matching scripted transcript.
+- Rejected-value reasons reported by the extraction checks.
+
+WER and CER are calculated using an edit distance after Arabic text normalization:
+
+- **WER:** word-level edit distance divided by words in the reference transcript.
+- **CER:** character-level edit distance divided by characters in the reference transcript.
+
+The field-level comparison also tracks the module and whether a field is a red flag in `data/scores.csv`. Evaluation currently uses only extracted cases with a matching gold file; cases without extraction or gold answers are not included in the aggregate field metrics.
 
 ## Speech-to-text configuration
 
@@ -192,16 +244,17 @@ streamlit_app.py            Streamlit dashboard entry point
 cdss/                       Core pipeline, configuration, storage, and reporting
 scripts/                    Transcription, extraction, evaluation, and server helpers
 data/audio/                 Uploaded recordings
-data/transcripts/            Saved transcripts
- data/cases/                 Structured case JSON files
- data/gold/                  Optional hand-written answer keys
-data/reports/                Generated Markdown reports
-samples/                     Role-played sample dialogues
-schema.json                  Intake question template
-tests/                       Core and dashboard tests
-.env.example                 Environment variable template
-requirements.txt             Dashboard and pipeline dependencies
-requirements-whisper.txt     Optional local transcription dependencies
+data/transcripts/           Saved transcripts
+data/cases/                 Structured case JSON files
+data/gold/                  Optional hand-written answer keys
+data/reports/               Generated Markdown reports
+data/scores.csv             Evaluation results
+samples/                    Role-played sample dialogues
+schema.json                 Intake question template
+tests/                      Core and dashboard tests
+.env.example                Environment variable template
+requirements.txt            Dashboard and pipeline dependencies
+requirements-whisper.txt    Optional local transcription dependencies
 ```
 
 The application requires transcript evidence for filled answers, rejects unsupported values, and leaves unanswered fields explicitly unanswered. A red flag is reported absent only when the patient explicitly says no. Reports contain no diagnosis, treatment, dose, score, or probability, and doctor edits preserve the original model value for evaluation.
