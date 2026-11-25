@@ -1,86 +1,30 @@
 # CDSS Intake
 
-A local, doctor-in-the-loop orthopedic pre-consultation dashboard. It turns a role-played intake recording or transcript into structured case data, evidence-linked answers, a reviewable report, and an evaluation against a gold answer key.
+A doctor-in-the-loop orthopedic pre-consultation dashboard. CDSS Intake turns role-played intake recordings or transcripts into structured case data, evidence-linked answers, reviewable reports, and evaluation results.
 
-> **Clinical safety:** CDSS Intake is a decision-support prototype, not a diagnostic or treatment system. It must use role-played dialogues rather than real patient data unless the deployment has been approved for that use. A clinician should review every extracted value before use.
+> **Clinical safety:** CDSS Intake is a decision-support prototype, not a diagnostic or treatment system. Use role-played dialogues rather than real patient data unless your deployment has been approved for that use. A clinician must review every extracted value before use.
 
 ## What it does
 
-- Accepts an audio recording or pasted Egyptian/English Arabic transcript.
+- Accepts audio recordings or pasted Egyptian/English Arabic transcripts.
 - Transcribes audio locally with `faster-whisper`.
-- Extracts answers from the transcript with a configurable language model.
-- Keeps only values supported by direct evidence from the patient's words.
-- Presents answers in a Streamlit dashboard for summary, review, reporting, editing, and history.
-- Saves doctor approvals, edits, flags, comments, and audit events.
-- Generates a Markdown history report containing no diagnosis, treatment, dose, score, or probability.
+- Extracts transcript-supported answers with a configurable language model.
+- Provides summary, doctor review, reporting, editing, and audit history in a Streamlit dashboard.
 - Evaluates extracted cases against optional hand-written answer keys.
-
-```text
-Audio recording
-      |
-      v
-scripts/01_transcribe.py --> data/transcripts
-      |
-      v
-scripts/02_extract.py --> data/cases/<case-id>.json
-                             |                    |
-                             v                    v
-                       Streamlit dashboard --> data/reports/<case-id>.md
-                             |
-                             v
-scripts/03_evaluate.py <--> data/gold/<case-id>.json
-```
-
-The scripts and dashboard use the same case files, so either interface can be used independently.
-
-## Features
-
-- **Audio and text intake:** upload m4a, wav, mp3, ogg, flac, opus, webm, aac, or mp4 files, or paste a transcript.
-- **Evidence checks:** every filled value must appear in the transcript and use a permitted enum or number.
-- **Red flags:** reported `yes` answers are highlighted; `no` answers are recorded only when stated; unanswered red flags are marked for follow-up.
-- **Doctor review:** approve, edit, or flag each extracted field, with the original AI value retained.
-- **Audit history:** changes and review actions record the signed-in reviewer and timestamp.
-- **Password protection:** optional shared-dashboard sign-in through `APP_PASSWORD` or Streamlit secrets.
-- **Evaluation:** compare field accuracy, wrong, missed, and invented values, and red-flag detection against answer keys.
-- **Seed cases:** load 31 role-played sample cases for demonstrations and offline testing.
-
-## Project structure
-
-```text
-streamlit_app.py            Streamlit dashboard entry point
-cdss/                       Core pipeline, configuration, storage, reporting, and scoring
-scripts/                    Transcription, extraction, evaluation, seeding, and server helpers
-data/
-  audio/                    Uploaded recordings
-data/cases/                 Structured case JSON files
-data/gold/                  Optional hand-written answer keys
-data/reports/               Generated Markdown reports
-data/transcripts/           Saved transcripts
-samples/                    Bundled role-played sample dialogues
-schema.json                 Intake question template
-tests/                      Core and dashboard tests
-.env.example                Environment variable template
-requirements.txt            Dashboard and pipeline dependencies
-requirements-whisper.txt    Optional local transcription dependencies
-```
 
 ## Requirements
 
-- Python 3.10 or newer
-- `pip`
-- Optional: a local [Ollama](https://ollama.com/) installation
-- Optional: OpenCode and access to an OpenCode Zen model
-- Optional: a GPU or CPU capable of running Whisper for transcription
+- Python 3.10 or newer and `pip`
+- Optional: Ollama or OpenCode with access to a compatible language model
+- Optional: a capable CPU or GPU for local Whisper transcription
 
 ## Installation
 
+Create and activate a virtual environment:
+
 ```bash
 python -m venv .venv
-```
 
-Activate the environment:
-
-```bash
 # Windows
 .venv\Scripts\activate
 
@@ -88,16 +32,19 @@ Activate the environment:
 source .venv/bin/activate
 ```
 
-Install dependencies:
+Install the dashboard and pipeline dependencies:
 
 ```bash
 python -m pip install -r requirements.txt
+```
 
-# Only on the computer that transcribes audio
+Only on the computer that will transcribe audio, install the optional transcription dependencies:
+
+```bash
 python -m pip install -r requirements-whisper.txt
 ```
 
-Create your local configuration:
+Create local configuration from the example file:
 
 ```bash
 # Windows
@@ -107,21 +54,19 @@ copy .env.example .env
 cp .env.example .env
 ```
 
-Never commit `.env`, patient data, real recordings, or generated private case files.
+Configure a language-model backend in `.env` as described below. Never commit `.env`, credentials, real recordings, patient data, or generated private case files.
 
 ## Configure a language model
 
-The extraction backend is configured in `.env`. Use one backend at a time.
+Choose one backend in `.env`.
 
-### Option A: Ollama (recommended for local processing)
+### Ollama (local processing)
 
-Install Ollama, then download a model:
+Install Ollama, download a model, and configure its OpenAI-compatible API:
 
 ```bash
 ollama pull qwen3:14b
 ```
-
-The default settings in `.env.example` use Ollama through its OpenAI-compatible API:
 
 ```dotenv
 LLM_BACKEND=openai
@@ -130,15 +75,7 @@ OPENAI_MODEL=qwen3:14b
 OPENAI_API_KEY=ollama
 ```
 
-For a faster, weaker model:
-
-```bash
-ollama pull qwen2.5:7b-instruct
-```
-
-Then set `OPENAI_MODEL=qwen2.5:7b-instruct`.
-
-### Option B: OpenCode Zen
+### OpenCode Zen
 
 Install and sign in to OpenCode, then configure:
 
@@ -148,68 +85,83 @@ OPENCODE_MODEL=opencode/deepseek-v4.1-flash-free
 OPENCODE_CMD=opencode run -m {model} {prompt}
 ```
 
-Hosted models may retain or process submitted text. Use role-played dialogues only unless your organization has approved the provider and privacy terms.
+Hosted models may retain or process submitted text. Use role-played dialogues only unless your organization has approved the provider and its privacy terms.
 
-### Check the model
+To check the configured model, run:
 
 ```bash
 python scripts/check_llm.py
 ```
 
-If an OpenCode command fails because your installed CLI uses different flags, run:
-
-```bash
-opencode run --help
-```
-
-Then update `OPENCODE_CMD` while retaining the `{model}` and `{prompt}` placeholders.
-
 ## Run the dashboard
+
+Start the dashboard from the repository root:
 
 ```bash
 python scripts/serve.py
 ```
 
-Or run Streamlit directly:
+Or invoke Streamlit directly:
 
 ```bash
 streamlit run streamlit_app.py
 ```
 
-Open <http://localhost:8501>.
+Open <http://localhost:8501> on the computer running the app.
 
-Before the dashboard is shared, create `.streamlit/secrets.toml`:
+### Access from another device or an external URL
+
+The Streamlit server is configured to listen on all IPv4 interfaces (`0.0.0.0`), so it can accept connections addressed to the host computer. After starting the app, Streamlit prints the available Local, Network, and (where provided by the hosting environment) External URLs. Open the Network or External URL from the other device—for example, a hosted environment may provide an address such as `http://130.15.5.74:8501`. Use the actual URL shown by your environment; the example IP can change and is not guaranteed to be publicly reachable.
+
+If the URL does not load, check that:
+
+1. The dashboard process is still running and listening on port `8501`.
+2. The host firewall, cloud security group, and any network routing/NAT permit inbound TCP traffic to port `8501`.
+3. You are using the host's reachable address. A private `10.x.x.x` Network URL is generally only reachable from the same private network; public access may require a managed tunnel or reverse proxy.
+
+Before sharing the dashboard, set a strong password using one of these methods.
+
+In `.streamlit/secrets.toml`:
 
 ```toml
-APP_PASSWORD = "choose-a-long-password"
+APP_PASSWORD = "choose-a-long-unique-password"
 ```
 
-Alternatively, set `APP_PASSWORD` in `.env`. Set a real password before exposing the app beyond a trusted local machine.
+Or set `APP_PASSWORD` in the environment. Keep secrets out of the repository. Do not expose this app to the public internet without authentication and appropriate HTTPS, network access controls, and privacy/security review. Binding to `0.0.0.0` makes the server listen on all network interfaces; it does not itself make the app publicly reachable or provide HTTPS.
 
-## Run the command-line pipeline
+## Dashboard workflow
+
+1. Sign in and create or open a case.
+2. Upload an audio recording or paste a transcript.
+3. Transcribe the audio or save the transcript.
+4. Run extraction and check the values against the patient's words.
+5. Generate and download the report.
+6. Approve, edit, or flag fields in Doctor review, then save a comment.
+7. Optionally evaluate the case against a matching answer key.
+
+The dashboard can also import cases from data folders or seed role-played sample cases.
+
+## Command-line pipeline
 
 ```bash
-# Transcribe every recording in data/audio
+# Transcribe recordings in data/audio
 python scripts/01_transcribe.py
 
-# Extract every case that has a transcript
+# Extract cases with transcripts
 python scripts/02_extract.py
 
-# Evaluate cases that have matching answer keys in data/gold
+# Evaluate cases with matching keys in data/gold
 python scripts/03_evaluate.py
-```
 
-Add demonstration cases:
-
-```bash
+# Add demonstration cases
 python scripts/seed_samples.py
 ```
 
-The dashboard also provides **Add the 31 samples** and **Import from data folders** actions.
+The scripts and dashboard use the same case files and can be used independently.
 
 ## Speech-to-text configuration
 
-The default `small` model is suitable for a laptop. Whisper settings are controlled in `.env`:
+Whisper settings are controlled in `.env`:
 
 ```dotenv
 WHISPER_MODEL=small
@@ -217,7 +169,7 @@ WHISPER_DEVICE=auto
 WHISPER_COMPUTE=int8
 ```
 
-For a CUDA-enabled server:
+For a CUDA-enabled server, for example:
 
 ```dotenv
 WHISPER_MODEL=large-v3
@@ -227,42 +179,32 @@ WHISPER_COMPUTE=float16
 
 The first transcription downloads the selected model. Keep real clinical audio off hosted deployments unless the service has been approved for that data.
 
-## Dashboard workflow
-
-1. Sign in and create or open a case.
-2. Upload an audio recording or paste a transcript.
-3. Transcribe or save the transcript.
-4. Run extraction.
-5. Review the field values and evidence in the Summary screen.
-6. Generate and download the report.
-7. Approve, edit, or flag each field in Doctor review.
-8. Save a doctor comment and review the audit history.
-9. Optionally score the case against a matching gold answer key.
-
 ## Customize the template
 
-`schema.json` defines the intake questions and allowed values. It is created or loaded on application startup as needed.
+`schema.json` defines the intake questions and allowed values. Fields include a stable ID, module, bilingual question text, type, optional allowed values, and whether they are red flags. Change the template only with approval from the responsible clinical owner and rerun the tests after modifications.
 
-Fields can define:
+## Data, privacy, and project structure
 
-- a stable `id`;
-- a module and bilingual question text;
-- a type such as `enum`, `number`, or `text`; 
-- allowed options; and
-- whether the field is a red flag.
+The app stores uploaded audio, transcripts, case JSON, and reports under `data/`. Treat these files as potentially sensitive. Do not commit real patient information, identifiable recordings, credentials, or private case files. Ollama processes locally; a hosted model backend may send transcript content to an external provider.
 
-Change the template only with approval from the responsible clinical owner, and rerun the tests after any modification.
+```text
+streamlit_app.py            Streamlit dashboard entry point
+cdss/                       Core pipeline, configuration, storage, and reporting
+scripts/                    Transcription, extraction, evaluation, and server helpers
+data/audio/                 Uploaded recordings
+data/transcripts/            Saved transcripts
+ data/cases/                 Structured case JSON files
+ data/gold/                  Optional hand-written answer keys
+data/reports/                Generated Markdown reports
+samples/                     Role-played sample dialogues
+schema.json                  Intake question template
+tests/                       Core and dashboard tests
+.env.example                 Environment variable template
+requirements.txt             Dashboard and pipeline dependencies
+requirements-whisper.txt     Optional local transcription dependencies
+```
 
-## Data and privacy behavior
-
-- Extraction only runs remotely if a hosted backend such as OpenCode is selected.
-- Ollama keeps processing on the local machine.
-- Every answer requires a matching quote from the transcript.
-- Unknown enum values and unsupported numbers are discarded.
-- Unanswered fields remain explicitly unanswered.
-- A red flag is reported absent only when the patient explicitly says `no`.
-- Reports and UI labels state that this is not a diagnosis.
-- A doctor correction does not alter the original model value used for evaluation.
+The application requires transcript evidence for filled answers, rejects unsupported values, and leaves unanswered fields explicitly unanswered. A red flag is reported absent only when the patient explicitly says no. Reports contain no diagnosis, treatment, dose, score, or probability, and doctor edits preserve the original model value for evaluation.
 
 ## Tests
 
@@ -273,31 +215,12 @@ python tests/test_core.py
 python tests/test_app.py
 ```
 
-The tests use a fake model and do not require a Whisper download or a hosted model account.
+The tests use a fake model and do not require a Whisper download or hosted model account.
 
-## Sharing on a local network
+## Limits
 
-From the computer running Whisper and the selected model:
-
-```bash
-python scripts/serve.py --share
-```
-
-Other devices on the same network can open:
-
-```text
-http://<host-computer-ip>:8501
-```
-
-Allow the Streamlit port through the computer's firewall. For internet exposure, use a managed tunnel or reverse proxy and protect it with authentication. Avoid using shared hosting that does not provide the required local Whisper and model runtime.
-
-## Limits and status
-
-- The application is built and tested around role-played dialogues.
-- Whisper and real hosted/local model calls depend on models and tools outside the repository.
-- Evaluation is meaningful only when gold answer keys match the case IDs and approved template.
-- Accuracy, safety, bilingual performance, and clinical suitability require local validation before any real-world use.
+The application is built and tested around role-played dialogues. Whisper and model calls depend on tools and services outside this repository. Evaluation is meaningful only when answer keys match case IDs and the approved template. Accuracy, safety, bilingual performance, and clinical suitability require local validation before any real-world use.
 
 ## License
 
-No license file is currently included. The repository owner should add an appropriate license before redistributing or deploying the project. 
+This project is licensed under the [MIT License](LICENSE).
