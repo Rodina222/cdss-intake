@@ -45,12 +45,12 @@ WHISPER_COMPUTE = env("WHISPER_COMPUTE", "int8")     # int8 on CPU, float16 on G
 WHISPER_LANGUAGE = env("WHISPER_LANGUAGE", "ar")
 
 # language model backend: "opencode" or "openai" (any OpenAI-compatible server, for example Ollama with Qwen)
-LLM_BACKEND = env("LLM_BACKEND", "opencode")
+LLM_BACKEND = env("LLM_BACKEND", "openai")
 OPENCODE_CMD = env("OPENCODE_CMD", "opencode run -m {model} {prompt}")
-OPENCODE_MODEL = env("OPENCODE_MODEL", "opencode/glm-5.3-flash-free")
-LLM_TIMEOUT = int(env("LLM_TIMEOUT", "240"))
+OPENCODE_MODEL = env("OPENCODE_MODEL", "opencode/deepseek-v4.1-flash-free")
+LLM_TIMEOUT = int(env("LLM_TIMEOUT", "600"))
 OPENAI_BASE_URL = env("OPENAI_BASE_URL", "http://localhost:11434/v1")
-OPENAI_MODEL = env("OPENAI_MODEL", "qwen2.5:7b-instruct")
+OPENAI_MODEL = env("OPENAI_MODEL", "qwen3:14b")
 OPENAI_API_KEY = env("OPENAI_API_KEY", "ollama")
 
 PROMPT_VERSION = env("PROMPT_VERSION", "v1")
@@ -60,3 +60,9 @@ PORT = int(env("PORT", "8000"))
 
 def llm_model_name():
     return OPENCODE_MODEL if LLM_BACKEND == "opencode" else OPENAI_MODEL
+
+# Every answer must name the assistant question it responds to, and the patient quote must follow that question closely.
+# This stops the model from answering questions nobody asked. Set REQUIRE_QUESTION=0 to switch it off.
+REQUIRE_QUESTION = env("REQUIRE_QUESTION", "1") == "1"
+QUESTION_WINDOW = int(env("QUESTION_WINDOW", "300"))
+QUESTION_OVERLAP = float(env("QUESTION_OVERLAP", "0.5"))  # share of the question words that must appear just before the quote

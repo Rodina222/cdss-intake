@@ -1,7 +1,7 @@
 {
   "id": "d04",
   "created": "2026-11-18T23:48:51+00:00",
-  "updated": "2026-11-19T11:26:29+00:00",
+  "updated": "2026-11-24T23:04:18+00:00",
   "source": "audio",
   "audio_file": "d04.aac",
   "transcript": "أهلاً بحضرتك، إيه المشكلة؟ الورك اليمين بيوجعني من سنة بدأ فجأة ولا واحدة واحدة؟ واحدة واحدة الوجع بيروح مكان تاني؟ أيوة، بينزل لحد الفخد إيه اللي بيخففه؟ لما ارتاح واعد بتتيبس الصبح؟ أيوة، حوالي نص ساعة عندك ضغط؟ أيوة، عندي ضغط من عشر سنين جربت أي علاج؟ باخد مسكن",
@@ -21,19 +21,19 @@
   "fields": {
     "site": {
       "ai": "hip",
-      "quote": "الورك",
+      "quote": "الورك اليمين بيوجعني",
       "value": "hip",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "right",
-      "quote": "اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -52,6 +52,14 @@
       "filled": false
     },
     "also_neck_back": {
+      "ai": "no",
+      "quote": "أيوة، بينزل لحد الفخد",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset": {
       "ai": null,
       "quote": "",
       "value": null,
@@ -59,21 +67,13 @@
       "edited": false,
       "filled": false
     },
-    "onset": {
-      "ai": "من سنة",
-      "quote": "من سنة",
-      "value": "من سنة",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
     "onset_type": {
-      "ai": "gradual",
-      "quote": "واحدة واحدة",
-      "value": "gradual",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "injury": {
       "ai": null,
@@ -100,28 +100,28 @@
       "filled": false
     },
     "radiation": {
-      "ai": "yes",
-      "quote": "بيروح مكان تاني",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "worse_with": {
-      "ai": "لما ارتاح",
-      "quote": "لما ارتاح",
-      "value": "لما ارتاح",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
-      "ai": "اعد بتتيبس الصبح",
-      "quote": "اعد بتتيبس الصبح",
-      "value": "اعد بتتيبس الصبح",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "night_pain": {
       "ai": null,
@@ -132,20 +132,20 @@
       "filled": false
     },
     "morning_stiffness_min": {
-      "ai": 30,
-      "quote": "حوالي نص ساعة",
-      "value": 30,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "عندي ضغط",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -164,12 +164,12 @@
       "filled": false
     },
     "prior_treatment": {
-      "ai": "باخد مسكن",
-      "quote": "باخد مسكن",
-      "value": "باخد مسكن",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "diabetes": {
       "ai": null,
@@ -180,12 +180,12 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": "الورك اليمين بيوجعني من سنة",
-      "quote": "الورك اليمين بيوجعني من سنة",
-      "value": "الورك اليمين بيوجعني من سنة",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "timing": {
       "ai": "intermittent",
@@ -196,16 +196,16 @@
       "filled": true
     },
     "painkillers_help": {
-      "ai": "yes",
-      "quote": "بيروح مكان تاني",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "stiffness": {
       "ai": "yes",
-      "quote": "بتتيبس الصبح",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -244,20 +244,20 @@
       "filled": false
     },
     "chronic_diseases": {
-      "ai": "عندي ضغط من عشر سنين",
-      "quote": "عندي ضغط من عشر سنين",
-      "value": "عندي ضغط من عشر سنين",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "medications": {
-      "ai": "باخد مسكن",
-      "quote": "باخد مسكن",
-      "value": "باخد مسكن",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "steroids": {
       "ai": null,
@@ -757,7 +757,7 @@
     },
     "leg_pain_below_knee": {
       "ai": "yes",
-      "quote": "بينزل لحد الفخد",
+      "quote": "واحدة واحدة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -780,12 +780,12 @@
       "filled": false
     },
     "pain_over_6_weeks": {
-      "ai": "yes",
-      "quote": "من عشر سنين",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "steroids_osteoporosis": {
       "ai": null,
@@ -805,7 +805,7 @@
     },
     "hip_site": {
       "ai": "groin",
-      "quote": "الورك اليمين",
+      "quote": "واحدة واحدة",
       "value": "groin",
       "decision": "",
       "edited": false,
@@ -813,7 +813,7 @@
     },
     "hip_pain_travels": {
       "ai": "yes",
-      "quote": "بينزل لحد الفخد",
+      "quote": "أيوة، بينزل لحد الفخد",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -836,12 +836,12 @@
       "filled": false
     },
     "hip_provokers": {
-      "ai": "yes",
-      "quote": "عندي ضغط من عشر سنين",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "hip_mechanical": {
       "ai": null,
@@ -868,12 +868,12 @@
       "filled": false
     },
     "walking_distance": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "حوالي نص ساعة",
+      "quote": "حوالي نص ساعة",
+      "value": "حوالي نص ساعة",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "giving_way": {
       "ai": null,
@@ -990,14 +990,72 @@
   },
   "flags": [
     {
-      "field": "steroids_osteoporosis",
-      "issue": "quote_not_in_transcript",
-      "quote": "مفيش سخونية"
+      "field": "side",
+      "issue": "answer_not_after_question",
+      "quote": "الورك اليمين بيوجعني"
+    },
+    {
+      "field": "onset",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "onset_type",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "radiation",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "better_with",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "morning_stiffness_min",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "swelling",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "prior_treatment",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "function",
+      "issue": "answer_not_after_question",
+      "quote": "بيروح مكان تاني"
+    },
+    {
+      "field": "chronic_diseases",
+      "issue": "answer_not_after_question",
+      "quote": "عندي ضغط من عشر سنين"
+    },
+    {
+      "field": "painkillers_help",
+      "issue": "value_not_allowed",
+      "value": "بأخد مسكن"
+    },
+    {
+      "field": "exertion_chest",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة، حوالي نص ساعة"
+    },
+    {
+      "field": "steroid_alcohol",
+      "issue": "answer_not_after_question",
+      "quote": "عندي ضغط من عشر سنين"
+    },
+    {
+      "field": "pain_over_6_weeks",
+      "issue": "answer_not_after_question",
+      "quote": "من عشر سنين"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1005,87 +1063,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
-      "field": "side",
+      "field": "also_neck_back",
       "from": null,
-      "to": "right",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من سنة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "radiation",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "لما ارتاح",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "better_with",
-      "from": null,
-      "to": "اعد بتتيبس الصبح",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "morning_stiffness_min",
-      "from": null,
-      "to": "30",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "prior_treatment",
-      "from": null,
-      "to": "باخد مسكن",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "chief_complaint",
-      "from": null,
-      "to": "الورك اليمين بيوجعني من سنة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "timing",
       "from": null,
@@ -1093,15 +1079,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "painkillers_help",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "stiffness",
       "from": null,
@@ -1109,23 +1087,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "chronic_diseases",
-      "from": null,
-      "to": "عندي ضغط من عشر سنين",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "medications",
-      "from": null,
-      "to": "باخد مسكن",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "hip_site",
       "from": null,
@@ -1133,7 +1095,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "hip_pain_travels",
       "from": null,
@@ -1141,15 +1103,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
-      "field": "hip_provokers",
+      "field": "walking_distance",
       "from": null,
-      "to": "yes",
+      "to": "حوالي نص ساعة",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "leg_pain_below_knee",
       "from": null,
@@ -1157,23 +1119,16 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:26:29+00:00",
+      "t": "2026-11-24T23:04:18+00:00",
       "kind": "AI filled",
       "field": "lying_down",
       "from": null,
       "to": "better",
       "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:26:29+00:00",
-      "kind": "AI filled",
-      "field": "pain_over_6_weeks",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 73.8
 }

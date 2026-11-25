@@ -1,7 +1,7 @@
 {
   "id": "sample-d04",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:09:55+00:00",
+  "updated": "2026-11-24T23:58:39+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ الورك اليمين بيوجعني من سنة. بدأ فجأة ولا واحدة واحدة؟ واحدة واحدة. الوجع بيروح مكان تاني؟ أيوه بينزل لحد الفخذ. إيه اللي بيخففه؟ لما أرتاح وأقعد. بتتيبس الصبح؟ أيوه حوالي نص ساعة. عندك سكر؟ أيوه عندي سكر من عشر سنين. جربت أي علاج؟ باخد مسكن.",
@@ -16,19 +16,19 @@
   "fields": {
     "site": {
       "ai": "hip",
-      "quote": "الورك",
+      "quote": "الورك اليمين بيوجعني من سنة",
       "value": "hip",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "right",
-      "quote": "اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -47,6 +47,14 @@
       "filled": false
     },
     "also_neck_back": {
+      "ai": "no",
+      "quote": "أيوه حوالي نص ساعة",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset": {
       "ai": null,
       "quote": "",
       "value": null,
@@ -54,21 +62,13 @@
       "edited": false,
       "filled": false
     },
-    "onset": {
-      "ai": "من سنة",
-      "quote": "من سنة",
-      "value": "من سنة",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
     "onset_type": {
-      "ai": "gradual",
-      "quote": "واحدة واحدة",
-      "value": "gradual",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "injury": {
       "ai": null,
@@ -95,12 +95,12 @@
       "filled": false
     },
     "radiation": {
-      "ai": "yes",
-      "quote": "بينزل لحد الفخذ",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "worse_with": {
       "ai": null,
@@ -111,12 +111,12 @@
       "filled": false
     },
     "better_with": {
-      "ai": "لما أرتاح وأقعد",
-      "quote": "لما أرتاح وأقعد",
-      "value": "لما أرتاح وأقعد",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "night_pain": {
       "ai": null,
@@ -127,12 +127,12 @@
       "filled": false
     },
     "morning_stiffness_min": {
-      "ai": 30,
-      "quote": "حوالي نص ساعة",
-      "value": 30,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "swelling": {
       "ai": null,
@@ -159,16 +159,16 @@
       "filled": false
     },
     "prior_treatment": {
-      "ai": "باخد مسكن",
-      "quote": "باخد مسكن",
-      "value": "باخد مسكن",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "diabetes": {
       "ai": "yes",
-      "quote": "أيوه عندي سكر",
+      "quote": "أيوه عندي سكر من عشر سنين",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -183,16 +183,16 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "intermittent",
+      "quote": "واحدة واحدة",
+      "value": "intermittent",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": "yes",
-      "quote": "جربت أي علاج؟ باخد مسكن",
+      "quote": "لما أرتاح وأقعد",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -200,7 +200,7 @@
     },
     "stiffness": {
       "ai": "yes",
-      "quote": "بتتيبس الصبح",
+      "quote": "أيوه حوالي نص ساعة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -247,12 +247,12 @@
       "filled": false
     },
     "medications": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "باخد مسكن",
+      "quote": "باخد مسكن",
+      "value": "باخد مسكن",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "steroids": {
       "ai": null,
@@ -279,12 +279,12 @@
       "filled": false
     },
     "family_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "عندي سكر من عشر سنين",
+      "quote": "أيوه عندي سكر من عشر سنين",
+      "value": "عندي سكر من عشر سنين",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "occupation": {
       "ai": null,
@@ -752,7 +752,7 @@
     },
     "leg_pain_below_knee": {
       "ai": "yes",
-      "quote": "بينزل لحد الفخذ",
+      "quote": "أيوه بينزل لحد الفخذ",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -783,12 +783,12 @@
       "filled": false
     },
     "steroids_osteoporosis": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "أيوه عندي سكر من عشر سنين",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "lying_down": {
       "ai": "better",
@@ -799,16 +799,16 @@
       "filled": true
     },
     "hip_site": {
-      "ai": "outer_hip",
-      "quote": "الورك اليمين",
-      "value": "outer_hip",
+      "ai": "thigh",
+      "quote": "بيروح مكان تاني؟ أيوه بينزل لحد الفخذ",
+      "value": "thigh",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "hip_pain_travels": {
       "ai": "yes",
-      "quote": "بينزل لحد الفخذ",
+      "quote": "أيوه بينزل لحد الفخذ",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -831,9 +831,9 @@
       "filled": false
     },
     "hip_provokers": {
-      "ai": "yes",
+      "ai": "no",
       "quote": "لما أرتاح وأقعد",
-      "value": "yes",
+      "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
@@ -856,7 +856,7 @@
     },
     "steroid_alcohol": {
       "ai": "yes",
-      "quote": "عندي سكر من عشر سنين",
+      "quote": "أيوه عندي سكر من عشر سنين",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -983,10 +983,45 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "side",
+      "issue": "answer_not_after_question",
+      "quote": "الورك اليمين"
+    },
+    {
+      "field": "onset",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "onset_type",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "radiation",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "better_with",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "morning_stiffness_min",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "prior_treatment",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "fever",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش سخونية"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,63 +1029,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
-      "field": "side",
+      "field": "also_neck_back",
       "from": null,
-      "to": "right",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من سنة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "radiation",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "better_with",
-      "from": null,
-      "to": "لما أرتاح وأقعد",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "morning_stiffness_min",
-      "from": null,
-      "to": "30",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "prior_treatment",
-      "from": null,
-      "to": "باخد مسكن",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1058,23 +1045,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
-      "field": "stiffness",
+      "field": "timing",
       "from": null,
-      "to": "yes",
+      "to": "intermittent",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
-      "kind": "AI filled",
-      "field": "diabetes",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "painkillers_help",
       "from": null,
@@ -1082,15 +1061,47 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
-      "field": "hip_site",
+      "field": "stiffness",
       "from": null,
-      "to": "outer_hip",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
+      "kind": "AI filled",
+      "field": "diabetes",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:58:39+00:00",
+      "kind": "AI filled",
+      "field": "medications",
+      "from": null,
+      "to": "باخد مسكن",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:58:39+00:00",
+      "kind": "AI filled",
+      "field": "family_history",
+      "from": null,
+      "to": "عندي سكر من عشر سنين",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:58:39+00:00",
+      "kind": "AI filled",
+      "field": "hip_site",
+      "from": null,
+      "to": "thigh",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "hip_pain_travels",
       "from": null,
@@ -1098,15 +1109,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "hip_provokers",
       "from": null,
-      "to": "yes",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "steroid_alcohol",
       "from": null,
@@ -1114,7 +1125,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "leg_pain_below_knee",
       "from": null,
@@ -1122,15 +1133,24 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:09:55+00:00",
+      "t": "2026-11-24T23:58:39+00:00",
       "kind": "AI filled",
       "field": "lying_down",
       "from": null,
       "to": "better",
       "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:58:39+00:00",
+      "kind": "AI filled",
+      "field": "steroids_osteoporosis",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 73.9
 }

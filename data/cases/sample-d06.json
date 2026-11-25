@@ -1,7 +1,7 @@
 {
   "id": "sample-d06",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:12:20+00:00",
+  "updated": "2026-11-25T00:01:03+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي مضايقك؟ رقبتي بتوجعني من تلات أسابيع، والوجع بينزل في دراعي. فيه تنميل؟ أيوه تنميل في صوابعي. إيه اللي بيزوّد الوجع؟ لما أقعد قدام الكمبيوتر كتير. الوجع بيصحيك بالليل؟ لا بنام عادي. فيه تغيير في التبول أو الإخراج؟ لا التبول والإخراج عادي. فيه سخونية؟ لا مفيش سخونية.",
@@ -16,51 +16,51 @@
   "fields": {
     "site": {
       "ai": "neck",
-      "quote": "رقبتي",
+      "quote": "رقبتي بتوجعني من تلات أسابيع",
       "value": "neck",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "both",
-      "quote": "في دراعي",
-      "value": "both",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
-      "ai": "more_than_one",
-      "quote": "الوجع بينزل في دراعي",
-      "value": "more_than_one",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "exact_spot": {
-      "ai": "one_spot",
-      "quote": "في صوابعي",
-      "value": "one_spot",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "also_neck_back": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "لا التبول والإخراج عادي",
       "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "onset": {
-      "ai": "من تلات أسابيع",
-      "quote": "من تلات أسابيع",
-      "value": "من تلات أسابيع",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset_type": {
       "ai": null,
@@ -95,20 +95,20 @@
       "filled": false
     },
     "radiation": {
-      "ai": "yes",
-      "quote": "والوجع بينزل في دراعي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "worse_with": {
-      "ai": "لما أقعد قدام الكمبيوتر كتير",
-      "quote": "لما أقعد قدام الكمبيوتر كتير",
-      "value": "لما أقعد قدام الكمبيوتر كتير",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -119,12 +119,12 @@
       "filled": false
     },
     "night_pain": {
-      "ai": "no",
-      "quote": "لا بنام عادي",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "morning_stiffness_min": {
       "ai": null,
@@ -143,12 +143,12 @@
       "filled": false
     },
     "numbness": {
-      "ai": "yes",
-      "quote": "أيوه تنميل في صوابعي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "weakness": {
       "ai": null,
@@ -424,7 +424,7 @@
     },
     "fever": {
       "ai": "no",
-      "quote": "مفيش سخونية",
+      "quote": "لا مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -448,7 +448,7 @@
     },
     "bladder_bowel": {
       "ai": "no",
-      "quote": "التبول والإخراج عادي",
+      "quote": "لا التبول والإخراج عادي",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -463,12 +463,12 @@
       "filled": false
     },
     "neuro_vascular": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه تنميل في صوابعي",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "immune": {
       "ai": null,
@@ -519,12 +519,12 @@
       "filled": false
     },
     "arm_pain": {
-      "ai": "yes",
-      "quote": "والوجع بينزل في دراعي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "arm_numbness": {
       "ai": "yes",
@@ -983,10 +983,44 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "onset",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "radiation",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "worse_with",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "night_pain",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "numbness",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "swelling",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "injury",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "arm_pain",
+      "issue": "answer_not_after_question",
+      "quote": "الوجع بينزل في دراعي"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +1028,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1002,71 +1036,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "both",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "one_or_many",
-      "from": null,
-      "to": "more_than_one",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "exact_spot",
-      "from": null,
-      "to": "one_spot",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من تلات أسابيع",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "radiation",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "numbness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "لما أقعد قدام الكمبيوتر كتير",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "night_pain",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1074,15 +1044,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
-      "kind": "AI filled",
-      "field": "bladder_bowel",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
@@ -1090,15 +1052,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
-      "field": "arm_pain",
+      "field": "bladder_bowel",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-25T00:01:03+00:00",
+      "kind": "AI filled",
+      "field": "neuro_vascular",
       "from": null,
       "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "arm_numbness",
       "from": null,
@@ -1106,7 +1076,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "neck_movement",
       "from": null,
@@ -1114,7 +1084,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:12:20+00:00",
+      "t": "2026-11-25T00:01:03+00:00",
       "kind": "AI filled",
       "field": "bladder_bowel_neck",
       "from": null,
@@ -1124,5 +1094,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 74.3
 }

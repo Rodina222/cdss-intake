@@ -251,8 +251,6 @@ with st.sidebar:
     st.divider()
     st.caption(f"Signed in as **{ME}**")
     st.caption(f"Open case: **{cc['id']}**" if cc else "No case open")
-    if not PASSWORD:
-        st.warning("No APP_PASSWORD set. Anyone with the address can use this app.")
 
 page = st.session_state.page
 
@@ -333,7 +331,7 @@ if page == "Cases":
             st.success(f"Imported {len(made)} case(s)." if made else "Nothing new in the data folders.")
             if made:
                 st.rerun()
-        if b3.button("Add the 21 samples"):
+        if b3.button("Add the 31 samples"):
             made = samples.seed_samples()
             st.success(f"Added {len(made)} sample cases." if made else "The sample cases are already there.")
             if made:
@@ -394,6 +392,8 @@ elif page == "Intake":
                 except RuntimeError:
                     pass
             st.rerun()
+        if any(str(x.get("issue", "")).startswith("model_error") for x in c.get("flags") or []):
+            st.warning("The language model failed on part of this case, so some fields were not filled. Press Run extraction again.")
         if c.get("flags"):
             with st.expander(f"{len(c['flags'])} value(s) discarded by the checks"):
                 st.dataframe(pd.DataFrame([{"field": x["field"], "why": x["issue"].replace("_", " "), "detail": x.get("quote") or x.get("value") or ""} for x in c["flags"]]),
@@ -518,11 +518,12 @@ elif page == "Evaluation":
                     + (f" No answer key for: {', '.join(s['cases_without_gold'])}." if s["cases_without_gold"] else ""))
         else:
             cn = s["counts"]
-            cols = st.columns(6)
+            cols = st.columns(7)
             for col, (label, v) in zip(cols, [("Cases scored", len(s["cases_scored"])),
                                               ("Field accuracy", "n/a" if s["accuracy"] is None else f"{round(s['accuracy'] * 100)}%"),
                                               ("Wrong values", cn["wrong value"]), ("Missed fields", cn["missed"]), ("Invented fields", cn["invented"]),
-                                              ("Red-flag yes caught", f"{s['red_flag_yes_caught']} / {s['red_flag_yes_total']}")]):
+                                              ("Red-flag yes caught", f"{s['red_flag_yes_caught']} / {s['red_flag_yes_total']}"),
+                                              ("Red flags invented", s.get("red_flag_invented", 0))]):
                 col.metric(label, v)
             if s["cases_without_gold"]:
                 st.caption("No answer key for: " + ", ".join(s["cases_without_gold"]))

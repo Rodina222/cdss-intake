@@ -1,7 +1,7 @@
 {
   "id": "sample-d19",
   "created": "2026-11-18T23:48:00+00:00",
-  "updated": "2026-11-19T12:00:07+00:00",
+  "updated": "2026-11-24T23:52:41+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "فين الوجع؟ أشّر على المكان اللي بيوجعك أكتر. رجلي. في الناحية اليمين ولا الشمال ولا الاتنين؟ اليمين. إيه اللي مضايقك وجاي بسببه النهارده؟ كعب رجلي بيوجعني وصباعي الكبير بيورم. الوجع فين: قدام الكاحل، ولا برا، ولا جوه، ولا ورا عند الكعب، ولا في وسط القدم، ولا في الصوابع؟ ورا عند الكعب وفي الصباع الكبير. بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من تمن شهور، واحدة واحدة. حصلت لك وقعة أو لوية أو ضربة أو إصابة؟ حصلت إزاي؟ لا مفيش وقعة. في ورم؟ في مكان واحد ولا القدم والكاحل كلهم؟ في رجل واحدة ولا الاتنين؟ أيوه في الصباع الكبير بس، ورجل واحدة. الكاحل بيخونك أو بيلتوي كتير؟ أول لوية كانت إمتى، وبتحصل كام مرة؟ لا الكاحل مبيخونيش. تقدر تقف وتمشي عليها؟ أقف وأمشي بس بصعوبة. تقدر تمشي قد إيه قبل ما الوجع يشتد؟ حوالي عشر دقايق. صعب تلاقي جزمة مناسبة، أو بتستخدم نعل طبي أو جزمة خاصة؟ أيوه صعب ألاقي جزمة مناسبة وبستخدم نعل طبي. شكل رجلك أو صوابعك اتغيّر، زي القدم المفلطحة أو نتوء؟ أيوه فيه نتوء جنب الصباع الكبير. في تنميل أو حرقان في رجليك؟ أيوه حرقان في الرجلين بالليل. حصلت لك نوبات فجأة من احمرار وسخونة وورم ووجع، خصوصاً في الصباع الكبير؟ أيوه حصلت لي نوبة احمرار وسخونية في الصباع الكبير. في وجع أو ورم أو حساسية في السمانة في رجل واحدة؟ لا مفيش وجع في السمانة. عندك أمراض مزمنة زي السكر أو الضغط أو الروماتويد أو هشاشة العظام؟ عندي سكر من خمستاشر سنة. من صفر لعشرة، الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله. سبعة. عندك سخونية أو رعشة أو عرق بالليل؟ لا مفيش سخونية. في مفصل أحمر وسخن وبيوجع جداً، خصوصاً مع سخونية؟ لا مفيش مفصل أحمر وسخن دلوقتي.",
@@ -32,7 +32,7 @@
     },
     "one_or_many": {
       "ai": "one_place",
-      "quote": "في الصباع الكبير بس",
+      "quote": "في رجل واحدة",
       "value": "one_place",
       "decision": "",
       "edited": false,
@@ -40,7 +40,7 @@
     },
     "exact_spot": {
       "ai": "one_spot",
-      "quote": "في الصباع الكبير بس",
+      "quote": "ورا عند الكعب وفي الصباع الكبير",
       "value": "one_spot",
       "decision": "",
       "edited": false,
@@ -48,7 +48,7 @@
     },
     "also_neck_back": {
       "ai": "no",
-      "quote": "لا مفيش وقعة",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -63,12 +63,12 @@
       "filled": true
     },
     "onset_type": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "gradual",
+      "quote": "من تمن شهور، واحدة واحدة",
+      "value": "gradual",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "injury": {
       "ai": "no",
@@ -79,40 +79,40 @@
       "filled": true
     },
     "pain_severity": {
-      "ai": 7,
-      "quote": "سبعة",
-      "value": 7,
+      "ai": 10,
+      "quote": "عشرة يعني أسوأ وجع ممكن تتخيله",
+      "value": 10,
       "decision": "",
       "edited": false,
       "filled": true
     },
     "character": {
-      "ai": "ورم",
-      "quote": "صباعي الكبير بيورم",
-      "value": "ورم",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "radiation": {
       "ai": "yes",
-      "quote": "حرقان في الرجلين بالليل",
+      "quote": "أيوه حرقان في الرجلين بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "worse_with": {
-      "ai": "الوقت اللي بتحصل فيه النوبة",
-      "quote": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
-      "value": "الوقت اللي بتحصل فيه النوبة",
+      "ai": "صعب ألاقي جزمة مناسبة",
+      "quote": "أيوه صعب ألاقي جزمة مناسبة",
+      "value": "صعب ألاقي جزمة مناسبة",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "better_with": {
       "ai": "لا مفيش",
-      "quote": "لا مفيش",
+      "quote": "لا مفيش وجع في السمانة",
       "value": "لا مفيش",
       "decision": "",
       "edited": false,
@@ -120,43 +120,43 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "حرقان في الرجلين بالليل",
+      "quote": "أيوه حرقان في الرجلين بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "morning_stiffness_min": {
-      "ai": 10,
-      "quote": "تقدر تمشي قد إيه قبل ما الوجع يشتد؟ حوالي عشر دقايق",
-      "value": 10,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "في الصباع الكبير بس",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": "yes",
-      "quote": "حرقان في الرجلين بالليل",
+      "quote": "أيوه حرقان في الرجلين بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "weakness": {
-      "ai": "no",
-      "quote": "لا مفيش",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "prior_treatment": {
       "ai": "بستخدم نعل طبي",
@@ -167,12 +167,12 @@
       "filled": true
     },
     "diabetes": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "عندي سكر من خمستاشر سنة",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "chief_complaint": {
       "ai": "كعب رجلي بيوجعني وصباعي الكبير بيورم",
@@ -183,12 +183,12 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "constant",
+      "quote": "من تمن شهور، واحدة واحدة",
+      "value": "constant",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": null,
@@ -207,12 +207,12 @@
       "filled": false
     },
     "instability": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "none",
+      "quote": "لا الكاحل مبيخونيش",
+      "value": "none",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "function": {
       "ai": "أقف وأمشي بس بصعوبة",
@@ -223,20 +223,20 @@
       "filled": true
     },
     "prior_problems": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش وقعة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "other_joints": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه حرقان في الرجلين بالليل",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "chronic_diseases": {
       "ai": "عندي سكر من خمستاشر سنة",
@@ -247,36 +247,36 @@
       "filled": true
     },
     "medications": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
+      "quote": "أيوه صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
+      "value": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "steroids": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش وجع في السمانة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "blood_thinners": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش وجع في السمانة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "allergies": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش وجع في السمانة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "family_history": {
       "ai": "عندي سكر من خمستاشر سنة",
@@ -288,39 +288,39 @@
     },
     "occupation": {
       "ai": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
-      "quote": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
+      "quote": "أيوه صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
       "value": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "dominant_hand": {
-      "ai": "right",
-      "quote": "اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "sport_activity": {
-      "ai": "لا مفيش وقعة",
-      "quote": "لا مفيش وقعة",
-      "value": "لا مفيش وقعة",
+      "ai": "حرقان في الرجلين بالليل",
+      "quote": "أيوه حرقان في الرجلين بالليل",
+      "value": "حرقان في الرجلين بالليل",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "smoking": {
-      "ai": "no",
-      "quote": "لا مفيش سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "patient_belief": {
       "ai": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
-      "quote": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
+      "quote": "أيوه حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
       "value": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
       "decision": "",
       "edited": false,
@@ -432,7 +432,7 @@
     },
     "weight_loss": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -440,7 +440,7 @@
     },
     "cancer_history": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -448,7 +448,7 @@
     },
     "bladder_bowel": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -456,7 +456,7 @@
     },
     "constant_worsening": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -472,7 +472,7 @@
     },
     "immune": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -480,7 +480,7 @@
     },
     "hot_red_joint": {
       "ai": "yes",
-      "quote": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
+      "quote": "أيوه حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -488,7 +488,7 @@
     },
     "recent_infection_procedure": {
       "ai": "no",
-      "quote": "لا مفيش وقعة",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -496,7 +496,7 @@
     },
     "injected_drugs": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -504,7 +504,7 @@
     },
     "saddle_numbness": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -512,7 +512,7 @@
     },
     "exertion_chest": {
       "ai": "no",
-      "quote": "لا مفيش سخونية",
+      "quote": "مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -911,36 +911,36 @@
       "filled": false
     },
     "foot_site": {
-      "ai": "back_heel",
-      "quote": "ورا عند الكعب",
-      "value": "back_heel",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "foot_swelling": {
-      "ai": "yes",
-      "quote": "في الصباع الكبير بس",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "ankle_instability": {
-      "ai": "no",
-      "quote": "لا الكاحل مبيخونيش",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "footwear": {
-      "ai": "yes",
-      "quote": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "foot_deformity": {
       "ai": null,
@@ -951,20 +951,20 @@
       "filled": false
     },
     "foot_numbness": {
-      "ai": "yes",
-      "quote": "حرقان في الرجلين بالليل",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "gout_attacks": {
-      "ai": "yes",
-      "quote": "حصلت لي نوبة احمرار وسخونية في الصباع الكبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "calf_pain": {
       "ai": null,
@@ -985,29 +985,38 @@
   },
   "flags": [
     {
-      "field": "prior_problems",
-      "issue": "value_not_allowed",
-      "value": "لا مفيش وقعة"
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه في الصباع الكبير بس"
     },
     {
-      "field": "instability",
-      "issue": "value_not_allowed",
-      "value": "لا الكاحل مبيخونيش"
+      "field": "character",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه في الصباع الكبير بس"
     },
     {
-      "field": "foot_deformity",
+      "field": "morning_stiffness_min",
       "issue": "quote_not_in_transcript",
-      "quote": "في نتوء جنب الصباع الكبير"
+      "quote": "حولا عشر دقايق"
     },
     {
-      "field": "foot_walk_distance",
+      "field": "stiffness",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه فيه نتوء جنب الصباع الكبير"
+    },
+    {
+      "field": "painkillers_help",
       "issue": "quote_not_in_transcript",
-      "quote": "تقريبًا عشر دقايق"
+      "quote": "حول عشر دقايق"
+    },
+    {
+      "field": "ankle_foot",
+      "issue": "model_error: The model server did not answer within 600 seconds."
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1015,7 +1024,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1023,7 +1032,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "one_or_many",
       "from": null,
@@ -1031,7 +1040,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "exact_spot",
       "from": null,
@@ -1039,7 +1048,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1047,15 +1056,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "character",
-      "from": null,
-      "to": "ورم",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1063,7 +1064,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "onset_type",
+      "from": null,
+      "to": "gradual",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "injury",
       "from": null,
@@ -1071,23 +1080,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "worse_with",
       "from": null,
-      "to": "الوقت اللي بتحصل فيه النوبة",
+      "to": "صعب ألاقي جزمة مناسبة",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "better_with",
       "from": null,
@@ -1095,15 +1096,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "radiation",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1111,15 +1104,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "prior_treatment",
-      "from": null,
-      "to": "بستخدم نعل طبي",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1127,31 +1112,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
-      "field": "weakness",
+      "field": "prior_treatment",
       "from": null,
-      "to": "no",
+      "to": "بستخدم نعل طبي",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
-      "field": "morning_stiffness_min",
+      "field": "pain_severity",
       "from": null,
       "to": "10",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
-      "field": "pain_severity",
+      "field": "radiation",
       "from": null,
-      "to": "7",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1159,7 +1144,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "constant",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "function",
       "from": null,
@@ -1167,7 +1160,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "prior_problems",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "other_joints",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "chronic_diseases",
       "from": null,
@@ -1175,7 +1184,55 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "diabetes",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "instability",
+      "from": null,
+      "to": "none",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "steroids",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "blood_thinners",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "allergies",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
+      "kind": "AI filled",
+      "field": "medications",
+      "from": null,
+      "to": "صعب ألاقي جزمة مناسبة وبستخدم نعل طبي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "family_history",
       "from": null,
@@ -1183,7 +1240,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "occupation",
       "from": null,
@@ -1191,31 +1248,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "dominant_hand",
-      "from": null,
-      "to": "right",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "sport_activity",
       "from": null,
-      "to": "لا مفيش وقعة",
+      "to": "حرقان في الرجلين بالليل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "smoking",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "patient_belief",
       "from": null,
@@ -1223,7 +1264,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
@@ -1231,7 +1272,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "weight_loss",
       "from": null,
@@ -1239,7 +1280,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "cancer_history",
       "from": null,
@@ -1247,7 +1288,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "bladder_bowel",
       "from": null,
@@ -1255,7 +1296,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "constant_worsening",
       "from": null,
@@ -1263,7 +1304,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "neuro_vascular",
       "from": null,
@@ -1271,7 +1312,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "immune",
       "from": null,
@@ -1279,7 +1320,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "hot_red_joint",
       "from": null,
@@ -1287,7 +1328,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "recent_infection_procedure",
       "from": null,
@@ -1295,7 +1336,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "injected_drugs",
       "from": null,
@@ -1303,7 +1344,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "saddle_numbness",
       "from": null,
@@ -1311,63 +1352,16 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:00:07+00:00",
+      "t": "2026-11-24T23:52:41+00:00",
       "kind": "AI filled",
       "field": "exertion_chest",
       "from": null,
       "to": "no",
       "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "foot_site",
-      "from": null,
-      "to": "back_heel",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "foot_swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "ankle_instability",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "foot_numbness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "gout_attacks",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:00:07+00:00",
-      "kind": "AI filled",
-      "field": "footwear",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 772.7
 }

@@ -1,7 +1,7 @@
 {
   "id": "d15",
   "created": "2026-11-19T00:01:00+00:00",
-  "updated": "2026-11-19T11:08:30+00:00",
+  "updated": "2026-11-24T22:41:55+00:00",
   "source": "audio",
   "audio_file": "d15.aac",
   "transcript": "فين الوجع شاور على المكان اللي بيوجعك أكتر؟ إيدي في النحية اليمين ولا الشمال ولا الاتنين؟ الاتنين بس اليمين أكتر إيه اللي مضايقك وجايب سببه النهاردة؟ إيدي بتنمل وبتصحيني بالليل بدأ إمتى بدأ فجأة ولا بالتدريج؟ من أربع شهور واحدة واحدة فيه تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى السباع الصغير سليم وما فيهوش أعراض؟ أيوة السباع الصغير سليم بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة الجبيرة أو الحقن فرقت معاك قبل كده؟ أيوة الجبيرة فرقت معايا عندك أمراض مزمنة زي السكر أو الضغط أو الروموتويد أو هشاشة العظام؟ لا أخطر عندي ضغط دم بتشتغل إيه وشغلك فيه وقوف كتير أو شيل حاجات تقيلة أو حركات متكررة؟ سكرتير سكرتير وبكتب على الكمبيوتر طول الليل بتستخدم إيدك اليمين ولا الشمال؟ اليمين فيه تنميل أو برودة أو تغير في اللون أو ضعف حصل فجأة؟ لا مفيش برودة ولا تغير في اللون",
@@ -28,16 +28,16 @@
       "filled": true
     },
     "side": {
-      "ai": "both",
-      "quote": "الاتنين",
-      "value": "both",
+      "ai": "right",
+      "quote": "اليمين أكتر",
+      "value": "right",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "one_or_many": {
       "ai": "one_place",
-      "quote": "واحدة واحدة",
+      "quote": "إيدي بتنمل وبتصحيني بالليل",
       "value": "one_place",
       "decision": "",
       "edited": false,
@@ -45,7 +45,7 @@
     },
     "exact_spot": {
       "ai": "wide_area",
-      "quote": "في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى السباع الصغير سليم",
+      "quote": "إيدي بتنمل وبتصحيني بالليل",
       "value": "wide_area",
       "decision": "",
       "edited": false,
@@ -53,7 +53,7 @@
     },
     "also_neck_back": {
       "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
+      "quote": "السباع الصغير سليم",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -68,20 +68,20 @@
       "filled": false
     },
     "onset_type": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "gradual",
+      "quote": "من أربع شهور واحدة واحدة",
+      "value": "gradual",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "injury": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "أيوة الجبيرة فرقت معايا",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "pain_severity": {
       "ai": null,
@@ -108,9 +108,9 @@
       "filled": false
     },
     "worse_with": {
-      "ai": "تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز",
-      "quote": "بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز",
-      "value": "تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز",
+      "ai": "تستخدم أدوات بتهتز",
+      "quote": "أيوة بيزيد لما بسوق وامسك الموبايل",
+      "value": "تستخدم أدوات بتهتز",
       "decision": "",
       "edited": false,
       "filled": true
@@ -125,7 +125,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "بيصحيك بالليل",
+      "quote": "أيوة بيصحيني ثلاث مرات في الليلة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -140,33 +140,33 @@
       "filled": false
     },
     "swelling": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش ورم ولا كتلة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
-      "decision": "",
-      "edited": false,
-      "filled": false
-    },
-    "weakness": {
       "ai": "yes",
-      "quote": "إيدك ضعيفة",
+      "quote": "أيوة السباع الصغير سليم",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
+    "weakness": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
     "prior_treatment": {
-      "ai": "الجبيرة",
-      "quote": "الجبيرة فرقت معايا",
-      "value": "الجبيرة",
+      "ai": "الجبيرة فرقت معايا",
+      "quote": "أيوة الجبيرة فرقت معايا",
+      "value": "الجبيرة فرقت معايا",
       "decision": "",
       "edited": false,
       "filled": true
@@ -188,12 +188,12 @@
       "filled": false
     },
     "timing": {
-      "ai": "intermittent",
-      "quote": "بيصحيك بالليل",
-      "value": "intermittent",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "painkillers_help": {
       "ai": null,
@@ -204,12 +204,12 @@
       "filled": false
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوة بيصحيني ثلاث مرات في الليلة",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -220,16 +220,16 @@
       "filled": false
     },
     "function": {
-      "ai": "صعب أقفل الأزرار وأفتح البرطمان",
-      "quote": "صعب أقفل الأزرار وأفتح البرطمان",
-      "value": "صعب أقفل الأزرار وأفتح البرطمان",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "prior_problems": {
       "ai": "yes",
-      "quote": "الجبيرة فرقت معايا",
+      "quote": "أيوة الجبيرة فرقت معايا",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -244,9 +244,9 @@
       "filled": false
     },
     "chronic_diseases": {
-      "ai": "no",
+      "ai": "لا أخطر عندي ضغط دم",
       "quote": "لا أخطر عندي ضغط دم",
-      "value": "no",
+      "value": "لا أخطر عندي ضغط دم",
       "decision": "",
       "edited": false,
       "filled": true
@@ -260,44 +260,44 @@
       "filled": false
     },
     "steroids": {
-      "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "blood_thinners": {
-      "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "allergies": {
-      "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "family_history": {
-      "ai": "لا أخطر عندي ضغط دم",
-      "quote": "لا أخطر عندي ضغط دم",
-      "value": "لا أخطر عندي ضغط دم",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "occupation": {
-      "ai": "سكرتير",
-      "quote": "سكرتير",
-      "value": "سكرتير",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "dominant_hand": {
       "ai": "right",
@@ -308,25 +308,25 @@
       "filled": true
     },
     "sport_activity": {
-      "ai": "سكرتير سكرتير وبكتب على الكمبيوتر طول الليل",
-      "quote": "سكرتير سكرتير وبكتب على الكمبيوتر طول الليل",
-      "value": "سكرتير سكرتير وبكتب على الكمبيوتر طول الليل",
+      "ai": "سكرتير وبكتب على الكمبيوتر طول الليل",
+      "quote": "سكرتير وبكتب على الكمبيوتر طول الليل",
+      "value": "سكرتير وبكتب على الكمبيوتر طول الليل",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "smoking": {
-      "ai": "no",
-      "quote": "لا",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "patient_belief": {
-      "ai": "بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة",
-      "quote": "بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة",
-      "value": "بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة",
+      "ai": "لا مفيش برودة ولا تغير في اللون",
+      "quote": "لا مفيش برودة ولا تغير في اللون",
+      "value": "لا مفيش برودة ولا تغير في اللون",
       "decision": "",
       "edited": false,
       "filled": true
@@ -484,44 +484,44 @@
       "filled": true
     },
     "hot_red_joint": {
-      "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "recent_infection_procedure": {
-      "ai": "no",
-      "quote": "الجبيرة فرقت معايا",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "injected_drugs": {
-      "ai": "no",
-      "quote": "الجبيرة فرقت معايا",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "saddle_numbness": {
-      "ai": "no",
-      "quote": "لا مفيش ورم ولا كتلة",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "exertion_chest": {
       "ai": null,
       "quote": "",
       "value": null,
       "decision": "",
       "edited": false,
       "filled": false
+    },
+    "recent_infection_procedure": {
+      "ai": "yes",
+      "quote": "أيوة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "injected_drugs": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
+    "saddle_numbness": {
+      "ai": "yes",
+      "quote": "أيوة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "exertion_chest": {
+      "ai": "yes",
+      "quote": "أيوة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
     },
     "arm_pain": {
       "ai": null,
@@ -684,16 +684,16 @@
       "filled": false
     },
     "numb_fingers": {
-      "ai": "تنمل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
-      "quote": "فيه تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
-      "value": "تنمل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
+      "ai": "تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
+      "quote": "الإبهام والسبابة والوسطى",
+      "value": "تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "spares_little_finger": {
       "ai": "yes",
-      "quote": "السباع الصغير سليم",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -701,7 +701,7 @@
     },
     "night_waking": {
       "ai": "yes",
-      "quote": "بيصحيك بالليل",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -709,7 +709,7 @@
     },
     "shake_relief": {
       "ai": "yes",
-      "quote": "لما تنفض إيدك أو ترفعها بيخف",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -717,7 +717,7 @@
     },
     "provoked_by": {
       "ai": "yes",
-      "quote": "لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -725,7 +725,7 @@
     },
     "grip_weakness": {
       "ai": "yes",
-      "quote": "إيدك ضعيفة",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -733,23 +733,23 @@
     },
     "daily_use": {
       "ai": "yes",
-      "quote": "صعب أقفل الأزرار وأفتح البرطمان",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "lump_swelling": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش ورم ولا كتلة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "splint_injection": {
       "ai": "yes",
-      "quote": "الجبيرة فرقت معايا",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -990,29 +990,24 @@
   },
   "flags": [
     {
-      "field": "better_with",
+      "field": "weakness",
       "issue": "quote_not_in_transcript",
-      "quote": "بيخف لما تنفض إيدك أو ترفعها"
+      "quote": "أيوة إيدك ضعيفة"
     },
     {
-      "field": "numbness",
+      "field": "instability",
       "issue": "quote_not_in_transcript",
-      "quote": "بيتنمل"
+      "quote": "بيزيد لما تسوق وامسك الموبايل"
     },
     {
-      "field": "onset",
-      "issue": "quote_not_in_transcript",
-      "quote": "بدأت من أربع شهور"
-    },
-    {
-      "field": "onset_type",
-      "issue": "value_not_allowed",
-      "value": "بالتدريج"
+      "field": "function",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة صعب أقفل الأزرار وأفتح البرطمان"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1020,15 +1015,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
-      "to": "both",
+      "to": "right",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "one_or_many",
       "from": null,
@@ -1036,7 +1031,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "exact_spot",
       "from": null,
@@ -1044,7 +1039,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1052,31 +1047,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "worse_with",
+      "field": "injury",
       "from": null,
-      "to": "تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "weakness",
+      "field": "numbness",
       "from": null,
       "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "prior_treatment",
-      "from": null,
-      "to": "الجبيرة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1084,23 +1071,47 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "timing",
+      "field": "worse_with",
       "from": null,
-      "to": "intermittent",
+      "to": "تستخدم أدوات بتهتز",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "function",
+      "field": "prior_treatment",
       "from": null,
-      "to": "صعب أقفل الأزرار وأفتح البرطمان",
+      "to": "الجبيرة فرقت معايا",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
+      "kind": "AI filled",
+      "field": "onset_type",
+      "from": null,
+      "to": "gradual",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:41:55+00:00",
+      "kind": "AI filled",
+      "field": "swelling",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:41:55+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "prior_problems",
       "from": null,
@@ -1108,39 +1119,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "chronic_diseases",
       "from": null,
-      "to": "no",
+      "to": "لا أخطر عندي ضغط دم",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "steroids",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "blood_thinners",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "allergies",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "dominant_hand",
       "from": null,
@@ -1148,79 +1135,39 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "sport_activity",
       "from": null,
-      "to": "سكرتير سكرتير وبكتب على الكمبيوتر طول الليل",
+      "to": "سكرتير وبكتب على الكمبيوتر طول الليل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "occupation",
-      "from": null,
-      "to": "سكرتير",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "patient_belief",
       "from": null,
-      "to": "بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة",
+      "to": "لا مفيش برودة ولا تغير في اللون",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "smoking",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "family_history",
-      "from": null,
-      "to": "لا أخطر عندي ضغط دم",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "saddle_numbness",
       "from": null,
-      "to": "no",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "injected_drugs",
+      "field": "exertion_chest",
       "from": null,
-      "to": "no",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "immune",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
-      "kind": "AI filled",
-      "field": "recent_infection_procedure",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "neuro_vascular",
       "from": null,
@@ -1228,23 +1175,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
-      "field": "hot_red_joint",
+      "field": "recent_infection_procedure",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:41:55+00:00",
+      "kind": "AI filled",
+      "field": "immune",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "numb_fingers",
       "from": null,
-      "to": "تنمل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
+      "to": "تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "spares_little_finger",
       "from": null,
@@ -1252,7 +1207,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "night_waking",
       "from": null,
@@ -1260,7 +1215,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "shake_relief",
       "from": null,
@@ -1268,7 +1223,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "provoked_by",
       "from": null,
@@ -1276,7 +1231,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "grip_weakness",
       "from": null,
@@ -1284,7 +1239,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "daily_use",
       "from": null,
@@ -1292,7 +1247,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:08:30+00:00",
+      "t": "2026-11-24T22:41:55+00:00",
+      "kind": "AI filled",
+      "field": "lump_swelling",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:41:55+00:00",
       "kind": "AI filled",
       "field": "splint_injection",
       "from": null,
@@ -1302,5 +1265,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 134.0
 }

@@ -1,7 +1,7 @@
 {
   "id": "d20",
   "created": "2026-11-19T00:18:52+00:00",
-  "updated": "2026-11-19T10:48:00+00:00",
+  "updated": "2026-11-24T22:30:31+00:00",
   "source": "audio",
   "audio_file": "d20.aac",
   "transcript": "فين الوجع شاور على المكان اللي بيوجعك أكتر؟ ركبتي في الناحية اليمين ولا الشمال ولا الاتنين؟ الشمال الوجع في مكان واحد بس ولا في أكتر من مكان؟ مكان واحد إيه اللي مدايقك وجاي بسببه النهاردة؟ ركبتي ورمت وبقت حمرة وسخنة ومش قادرة أمشي بدأ إمتى؟ بدأ فجأة ولا بالتدريج؟ من ثلاث أيام فجأة حصلت لك وقع أولوي أو ضربة أو إصابة حصلت إزاي؟ لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟ عشرة يعني أسوأ وجع ممكن تتخيله؟ تسعة عندك سخونية أو رعشة أو عرق بالليل؟ أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً عندك عدوة قريبة أو حقنة أو عملية في المكان ده مؤخراً؟ أيوة خدت حقنة في الركبة من أسبوع عندك حاجة بتضعف المناعة أو بتاخد أدوية بتضعف المناعة؟ أيوة باخد كورتيزون عشان الروماتويل بتاخد أي حاجة بالحقن من غير وصف الطبيب؟ لا ما باخدش حاجة بالحقن الوجع سابت وبيزيد مع الوقت؟ أيوة الوجع سابت وبيزيد الوجع بيصحيك بالليل أو بيفضل موجود وانت مرتاح؟ أيوة بيصحيني وبيهداش وزنك نزل من غير سبب؟ لا وزني سابت اتعالجت من ورم أو سرطان قبل كده؟ لا عمري ما اتعالجت من ورم فيه تنميل أو بروز؟ برودة أو تغير في اللون أو ضعف حصل فجأة؟ لا ما فيش تنميل ولا برودة فيه ورم أو سخنية في الرجبة؟ بدأت امتى؟ أيوة ورم كبير تقدر تقف وتمشي عليها؟ تقدر تفرد الرجبة وتتنيها؟ لا ما اقدرش اقف عليها بتاخد أدوية إيه دلوقتي؟ بتاخد كورتيزون وإيه تاني مسيلات دم؟ باخد كورتيزون وميثو تريكاست وما باخدش مسيلات دم وما باخدش مسيلات دم وما باخدش مسيلات دم وما باخدش مسيلات دم",
@@ -44,16 +44,16 @@
       "filled": true
     },
     "exact_spot": {
-      "ai": "one_spot",
-      "quote": "مكان واحد",
-      "value": "one_spot",
+      "ai": "wide_area",
+      "quote": "ركبتي ورمت وبقت حمرة وسخنة ومش قادرة أمشي",
+      "value": "wide_area",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "also_neck_back": {
       "ai": "no",
-      "quote": "لا ما فيش وقع",
+      "quote": "لا ما فيش تنميل ولا برودة",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -76,12 +76,12 @@
       "filled": false
     },
     "injury": {
-      "ai": "no",
-      "quote": "لا ما فيش وقع",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "pain_severity": {
       "ai": null,
@@ -100,20 +100,20 @@
       "filled": false
     },
     "radiation": {
-      "ai": "no",
-      "quote": "لا ما فيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "worse_with": {
-      "ai": "السخونية",
-      "quote": "خصوصاً مع سخونيته",
-      "value": "السخونية",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -124,12 +124,12 @@
       "filled": false
     },
     "night_pain": {
-      "ai": "yes",
-      "quote": "أيوة عندي سخونية ورعشة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "morning_stiffness_min": {
       "ai": null,
@@ -140,16 +140,16 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "ورمت",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": "no",
-      "quote": "لا ما فيش تنميل",
+      "quote": "لا",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -157,83 +157,83 @@
     },
     "weakness": {
       "ai": "no",
-      "quote": "لا ما اقدرش اقف عليها",
+      "quote": "لا",
       "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "prior_treatment": {
-      "ai": "خدت حقنة في الركبة من أسبوع",
-      "quote": "خدت حقنة في الركبة من أسبوع",
-      "value": "خدت حقنة في الركبة من أسبوع",
+      "ai": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "quote": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "value": "بتاخد كورتيزون وإيه تاني مسيلات دم",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "diabetes": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا عمري ما اتعالجت من ورم",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "chief_complaint": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "ورمت وبقت حمرة وسخنة ومش قادرة أمشي",
+      "quote": "ورمت وبقت حمرة وسخنة ومش قادرة أمشي",
+      "value": "ورمت وبقت حمرة وسخنة ومش قادرة أمشي",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "constant",
+      "quote": "أيوة الوجع سابت وبيزيد",
+      "value": "constant",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "ما باخدش مسيلات دم",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوة بيصحيني",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "none",
+      "quote": "لا ما فيش تنميل ولا برودة",
+      "value": "none",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لا ما اقدرش اقف عليها",
+      "quote": "لا ما اقدرش اقف عليها",
+      "value": "لا ما اقدرش اقف عليها",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوة الركبة حمرة وسخنة وبتوجع جداً",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "other_joints": {
       "ai": null,
@@ -244,28 +244,28 @@
       "filled": false
     },
     "chronic_diseases": {
-      "ai": null,
-      "quote": "",
-      "value": null,
-      "decision": "",
-      "edited": false,
-      "filled": false
-    },
-    "medications": {
-      "ai": null,
-      "quote": "",
-      "value": null,
-      "decision": "",
-      "edited": false,
-      "filled": false
-    },
-    "steroids": {
-      "ai": "yes",
-      "quote": "بتاخد كورتيزون",
-      "value": "yes",
+      "ai": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "quote": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "value": "بتاخد كورتيزون وإيه تاني مسيلات دم",
       "decision": "",
       "edited": false,
       "filled": true
+    },
+    "medications": {
+      "ai": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "quote": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "value": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "steroids": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
     },
     "blood_thinners": {
       "ai": "no",
@@ -276,6 +276,14 @@
       "filled": true
     },
     "allergies": {
+      "ai": "no",
+      "quote": "ما باخدش مسيلات دم",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "family_history": {
       "ai": null,
       "quote": "",
       "value": null,
@@ -283,21 +291,13 @@
       "edited": false,
       "filled": false
     },
-    "family_history": {
-      "ai": "لا عمري ما اتعالجت من ورم فيه تنميل أو بروز",
-      "quote": "لا عمري ما اتعالجت من ورم فيه تنميل أو بروز",
-      "value": "لا عمري ما اتعالجت من ورم فيه تنميل أو بروز",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
     "occupation": {
-      "ai": "لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟",
-      "quote": "لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟",
-      "value": "لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "dominant_hand": {
       "ai": null,
@@ -324,12 +324,12 @@
       "filled": false
     },
     "patient_belief": {
-      "ai": "أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً",
-      "quote": "أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً",
-      "value": "أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "trauma_mechanism": {
       "ai": null,
@@ -436,32 +436,32 @@
       "filled": true
     },
     "weight_loss": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "cancer_history": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "bladder_bowel": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا ما فيش تنميل ولا برودة",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "constant_worsening": {
       "ai": "yes",
-      "quote": "الوجع سابت وبيزيد مع الوقت",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -476,12 +476,12 @@
       "filled": true
     },
     "immune": {
-      "ai": "yes",
-      "quote": "أيوة باخد كورتيزون عشان الروماتويل",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "hot_red_joint": {
       "ai": "yes",
@@ -516,12 +516,12 @@
       "filled": true
     },
     "exertion_chest": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "arm_pain": {
       "ai": null,
@@ -876,44 +876,44 @@
       "filled": false
     },
     "giving_way": {
-      "ai": "no",
-      "quote": "لا ما فيش وقع",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "locking_catching": {
-      "ai": "none",
-      "quote": "لا ما فيش تنميل ولا برودة",
-      "value": "none",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "stairs": {
-      "ai": "no",
-      "quote": "لا ما فيش تنميل ولا برودة",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "kneeling": {
-      "ai": "no",
-      "quote": "لا ما فيش تنميل ولا برودة",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "can_straighten": {
-      "ai": "no",
-      "quote": "لا ما اقدرش اقف عليها",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "foot_site": {
       "ai": null,
@@ -995,49 +995,64 @@
       "value": "فجأة"
     },
     {
+      "field": "injury",
+      "issue": "answer_not_after_question",
+      "quote": "لا"
+    },
+    {
       "field": "pain_severity",
       "issue": "not_a_number",
       "value": "عشرة"
     },
     {
-      "field": "character",
-      "issue": "quote_not_in_transcript",
-      "quote": "حمرة وسخنة وبيوجع جداً"
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "ورمت"
     },
     {
-      "field": "better_with",
-      "issue": "quote_not_in_transcript",
-      "quote": "لا ما فيش حاجة"
+      "field": "steroids",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة باخد كورتيزون"
     },
     {
-      "field": "sport_activity",
-      "issue": "quote_not_in_transcript",
-      "quote": "لا ما باخدش مسيلات دم"
+      "field": "other_joints",
+      "issue": "answer_not_after_question",
+      "quote": "فيه تنميل"
     },
     {
-      "field": "smoking",
-      "issue": "quote_not_in_transcript",
-      "quote": "لا ما باخدش مسيلات دم"
+      "field": "immune",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة باخد كورتيزون"
     },
     {
-      "field": "weight_loss",
+      "field": "giving_way",
       "issue": "quote_not_in_transcript",
-      "quote": "لا ما فيش وزنك نزل من غير سبب"
+      "quote": "لا، مفيش سخونية"
     },
     {
-      "field": "cancer_history",
+      "field": "locking_catching",
       "issue": "quote_not_in_transcript",
-      "quote": "لا عمري ما اتعالجت من ورم أو سرطان قبل كده"
+      "quote": "لا، مفيش سخونية"
     },
     {
-      "field": "injected_drugs",
+      "field": "stairs",
       "issue": "quote_not_in_transcript",
-      "quote": "لا ما باخدش مسيلات دم"
+      "quote": "لا، مفيش سخونية"
+    },
+    {
+      "field": "kneeling",
+      "issue": "quote_not_in_transcript",
+      "quote": "لا، مفيش سخونية"
+    },
+    {
+      "field": "can_straighten",
+      "issue": "quote_not_in_transcript",
+      "quote": "لا، مفيش سخونية"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1045,7 +1060,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1053,7 +1068,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "one_or_many",
       "from": null,
@@ -1061,7 +1076,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "exact_spot",
+      "from": null,
+      "to": "wide_area",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1069,15 +1092,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "exact_spot",
-      "from": null,
-      "to": "one_spot",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1085,47 +1100,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "injury",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "radiation",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "السخونية",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "night_pain",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1133,7 +1108,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "weakness",
       "from": null,
@@ -1141,23 +1116,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "prior_treatment",
       "from": null,
-      "to": "خدت حقنة في الركبة من أسبوع",
+      "to": "بتاخد كورتيزون وإيه تاني مسيلات دم",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "steroids",
+      "field": "stiffness",
       "from": null,
       "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "blood_thinners",
       "from": null,
@@ -1165,31 +1140,87 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "family_history",
+      "field": "chronic_diseases",
       "from": null,
-      "to": "لا عمري ما اتعالجت من ورم فيه تنميل أو بروز",
+      "to": "بتاخد كورتيزون وإيه تاني مسيلات دم",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "occupation",
+      "field": "function",
       "from": null,
-      "to": "لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟",
+      "to": "لا ما اقدرش اقف عليها",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "patient_belief",
+      "field": "painkillers_help",
       "from": null,
-      "to": "أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً",
+      "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "diabetes",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "instability",
+      "from": null,
+      "to": "none",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "prior_problems",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "constant",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "allergies",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "medications",
+      "from": null,
+      "to": "بتاخد كورتيزون وإيه تاني مسيلات دم",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "chief_complaint",
+      "from": null,
+      "to": "ورمت وبقت حمرة وسخنة ومش قادرة أمشي",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
@@ -1197,7 +1228,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "hot_red_joint",
       "from": null,
@@ -1205,7 +1236,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "recent_infection_procedure",
       "from": null,
@@ -1213,15 +1244,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "immune",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "constant_worsening",
       "from": null,
@@ -1229,15 +1252,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "saddle_numbness",
+      "field": "bladder_bowel",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "weight_loss",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
+      "kind": "AI filled",
+      "field": "cancer_history",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
       "field": "neuro_vascular",
       "from": null,
@@ -1245,41 +1284,17 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "giving_way",
+      "field": "saddle_numbness",
       "from": null,
       "to": "no",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T10:48:00+00:00",
+      "t": "2026-11-24T22:30:31+00:00",
       "kind": "AI filled",
-      "field": "locking_catching",
-      "from": null,
-      "to": "none",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "stairs",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "kneeling",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T10:48:00+00:00",
-      "kind": "AI filled",
-      "field": "can_straighten",
+      "field": "exertion_chest",
       "from": null,
       "to": "no",
       "who": "Language model"
@@ -1287,5 +1302,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 246.5
 }

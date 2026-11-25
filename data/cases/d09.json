@@ -1,7 +1,7 @@
 {
   "id": "d09",
   "created": "2026-11-18T23:49:48+00:00",
-  "updated": "2026-11-19T11:21:30+00:00",
+  "updated": "2026-11-24T22:59:28+00:00",
   "source": "audio",
   "audio_file": "d09.aac",
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ ظهري بيوجعني من 3 شهور وكان عندي سرطان في السادي من 5 سنين الوجع بيصحيك بالليل؟ أيوة كل ليلة فيه تغيير في التباول أو الإخراج؟ أيوة بقيت مش قادرة أتحكم في البول وزنك نزل من غير سابق؟ لا وزني سابق فيه سخونية؟ لا مفيش سخونية",
@@ -20,12 +20,12 @@
   },
   "fields": {
     "site": {
-      "ai": "back",
-      "quote": "ظهري",
-      "value": "back",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "side": {
       "ai": null,
@@ -53,19 +53,19 @@
     },
     "also_neck_back": {
       "ai": "yes",
-      "quote": "كان عندي سرطان في السادي من 5 سنين",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "onset": {
-      "ai": "من 3 شهور",
-      "quote": "من 3 شهور",
-      "value": "من 3 شهور",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset_type": {
       "ai": null,
@@ -108,12 +108,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": "تغيير في التباول أو الإخراج",
-      "quote": "تغيير في التباول أو الإخراج",
-      "value": "تغيير في التباول أو الإخراج",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -124,12 +124,12 @@
       "filled": false
     },
     "night_pain": {
-      "ai": "yes",
-      "quote": "كل ليلة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "morning_stiffness_min": {
       "ai": null,
@@ -140,12 +140,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "no",
-      "quote": "لا مفيش سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -156,12 +156,12 @@
       "filled": false
     },
     "weakness": {
-      "ai": "yes",
-      "quote": "مش قادرة أتحكم في البول",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "prior_treatment": {
       "ai": null,
@@ -180,12 +180,12 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": "ظهرى بيوجعني من 3 شهور",
-      "quote": "ظهرى بيوجعني من 3 شهور",
-      "value": "ظهرى بيوجعني من 3 شهور",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "timing": {
       "ai": null,
@@ -196,12 +196,12 @@
       "filled": false
     },
     "painkillers_help": {
-      "ai": "yes",
-      "quote": "أيوة كل ليلة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "stiffness": {
       "ai": null,
@@ -221,7 +221,7 @@
     },
     "function": {
       "ai": "بقيت مش قادرة أتحكم في البول",
-      "quote": "بقيت مش قادرة أتحكم في البول",
+      "quote": "أيوة كل ليلة فيه تغيير في التباول أو الإخراج؟ أيوة بقيت مش قادرة أتحكم في البول",
       "value": "بقيت مش قادرة أتحكم في البول",
       "decision": "",
       "edited": false,
@@ -244,12 +244,12 @@
       "filled": false
     },
     "chronic_diseases": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "كان عندي سرطان في السادي من 5 سنين",
+      "quote": "كان عندي سرطان في السادي من 5 سنين",
+      "value": "كان عندي سرطان في السادي من 5 سنين",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "medications": {
       "ai": null,
@@ -284,12 +284,12 @@
       "filled": false
     },
     "family_history": {
-      "ai": "سرطان في السادي",
-      "quote": "كان عندي سرطان في السادي",
-      "value": "سرطان في السادي",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "occupation": {
       "ai": null,
@@ -429,31 +429,31 @@
     },
     "fever": {
       "ai": "no",
-      "quote": "مفيش سخونية",
+      "quote": "لا مفيش سخونية",
       "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "weight_loss": {
-      "ai": "no",
-      "quote": "لا وزني سابق",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "cancer_history": {
       "ai": "yes",
-      "quote": "كان عندي سرطان",
+      "quote": "لا",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
+    "cancer_history": {
+      "ai": null,
+      "quote": "",
+      "value": null,
+      "decision": "",
+      "edited": false,
+      "filled": false
+    },
     "bladder_bowel": {
       "ai": "yes",
-      "quote": "أيوة كل ليلة فيه تغيير في التباول أو الإخراج",
+      "quote": "أيوة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -780,28 +780,28 @@
       "filled": false
     },
     "pain_over_6_weeks": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "من 3 شهور",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "steroids_osteoporosis": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "lying_down": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "worse",
+      "quote": "أيوة",
+      "value": "worse",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "hip_site": {
       "ai": null,
@@ -988,18 +988,32 @@
       "filled": false
     }
   },
-  "flags": [],
-  "events": [
+  "flags": [
     {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "site",
-      "from": null,
-      "to": "back",
-      "who": "Language model"
+      "field": "onset",
+      "issue": "bad_shape"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
+      "field": "night_pain",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "injury",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "swelling",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "cancer_history",
+      "issue": "answer_not_after_question",
+      "quote": "كان عندي سرطان في السادي من 5 سنين"
+    }
+  ],
+  "events": [
+    {
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1007,63 +1021,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
-      "field": "onset",
+      "field": "chronic_diseases",
       "from": null,
-      "to": "من 3 شهور",
+      "to": "كان عندي سرطان في السادي من 5 سنين",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "night_pain",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "تغيير في التباول أو الإخراج",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "chief_complaint",
-      "from": null,
-      "to": "ظهرى بيوجعني من 3 شهور",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "painkillers_help",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
       "field": "function",
       "from": null,
@@ -1071,23 +1037,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "family_history",
-      "from": null,
-      "to": "سرطان في السادي",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
-      "kind": "AI filled",
-      "field": "cancer_history",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:21:30+00:00",
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
       "field": "bladder_bowel",
       "from": null,
@@ -1095,23 +1045,48 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
       "field": "weight_loss",
       "from": null,
-      "to": "no",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:21:30+00:00",
+      "t": "2026-11-24T22:59:28+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
       "to": "no",
       "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:59:28+00:00",
+      "kind": "AI filled",
+      "field": "pain_over_6_weeks",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:59:28+00:00",
+      "kind": "AI filled",
+      "field": "steroids_osteoporosis",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T22:59:28+00:00",
+      "kind": "AI filled",
+      "field": "lying_down",
+      "from": null,
+      "to": "worse",
+      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 60.6
 }

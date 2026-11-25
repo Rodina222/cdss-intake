@@ -1,6 +1,6 @@
 """Start the dashboard: python scripts/serve.py
 Same as: streamlit run streamlit_app.py
-Add --share to let other computers on your network open it (set APP_PASSWORD first)."""
+Add --share to let other computers on your network open it."""
 import subprocess
 import sys
 from pathlib import Path

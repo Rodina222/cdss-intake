@@ -5,6 +5,8 @@ from cdss import config, llm
 print(f"Backend: {config.LLM_BACKEND}   Model: {config.llm_model_name()}")
 if config.LLM_BACKEND == "opencode":
     print("Command template:", config.OPENCODE_CMD)
+else:
+    print("Server:", config.OPENAI_BASE_URL, "  timeout:", config.LLM_TIMEOUT, "s   question check:", "on" if config.REQUIRE_QUESTION else "off")
 try:
     out = llm.call_llm("Reply with exactly this JSON and nothing else.", '{"ok": true}')
 except Exception as e:

@@ -6,6 +6,7 @@ import tempfile
 from pathlib import Path
 
 os.environ["DATA_DIR"] = tempfile.mkdtemp()
+os.environ["REQUIRE_QUESTION"] = "0"  # the older tests use a fake model that gives no question
 os.environ["SCHEMA_PATH"] = str(Path(os.environ["DATA_DIR"]) / "schema.json")
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
@@ -33,7 +34,7 @@ def check(cond, msg):
     print("ok  ", msg)
 
 made = samples.seed_samples()
-check(len(made) == 21, "seed adds 21 sample cases")
+check(len(made) == 31, "seed adds 31 sample cases")
 check((config.GOLD_DIR / "d01.json").exists() and (config.GOLD_DIR / "sample-d01.json").exists(), "gold files copied")
 check(samples.seed_samples() == [], "seeding twice adds nothing")
 
@@ -90,4 +91,16 @@ except RuntimeError as e:
 cl, fl = validate({"fields": {"site": {"value": "KNEE", "evidence_quote": "ركبتى"}}}, "ركبتي اليمين")
 check("site" in cl and cl["site"]["value"] == "knee", "quote matched after Arabic spelling normalisation")
 check(parse_json('blah {"fields": {}} blah') == {"fields": {}}, "JSON found inside extra text")
+# the question check: an answer must follow a question the assistant really asked
+config.REQUIRE_QUESTION = True
+tr = "الوجع بيصحيني. عندك سخونية؟ لا مفيش سخونية. وزنك نزل؟ لا ثابت."
+good = validate({"fields": {"fever": {"value": "no", "question": "عندك سخونية؟", "evidence_quote": "لا مفيش سخونية"}}}, tr)
+check("fever" in good[0], "answer after a real question is accepted")
+bad = validate({"fields": {"weight_loss": {"value": "no", "question": "وزنك نزل؟", "evidence_quote": "لا مفيش سخونية"}}}, tr)
+check("weight_loss" not in bad[0] and bad[1][0]["issue"] == "answer_not_after_question", "answer that belongs to a different question is discarded")
+made_up = validate({"fields": {"night_pain": {"value": "no", "question": "الوجع بيصحيك؟", "evidence_quote": "لا ثابت"}}}, tr)
+check("night_pain" not in made_up[0] and made_up[1][0]["issue"] == "question_not_in_transcript", "question the assistant never asked is discarded")
+none = validate({"fields": {"fever": {"value": "no", "evidence_quote": "لا مفيش سخونية"}}}, tr)
+check("fever" not in none[0] and none[1][0]["issue"] == "no_question_quote", "answer without a question is discarded")
+config.REQUIRE_QUESTION = False
 print(f"\nAll {n} checks passed.")

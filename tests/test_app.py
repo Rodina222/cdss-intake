@@ -6,6 +6,7 @@ import tempfile
 from pathlib import Path
 
 os.environ["DATA_DIR"] = tempfile.mkdtemp()
+os.environ["REQUIRE_QUESTION"] = "0"  # the older tests use a fake model that gives no question
 os.environ["SCHEMA_PATH"] = str(Path(os.environ["DATA_DIR"]) / "schema.json")
 os.environ["APP_PASSWORD"] = "secret-pw"
 ROOT = Path(__file__).resolve().parent.parent
@@ -40,10 +41,10 @@ at.text_input[1].set_value("secret-pw"); at.button[0].click(); at.run()
 noexc(at, "after login")
 check(at.session_state.me == "Dr Test", "signed in with a name")
 
-# add the 21 samples from the Cases page
-[b for b in at.button if b.label == "Add the 21 samples"][0].click(); at.run()
+# add the 31 samples from the Cases page
+[b for b in at.button if b.label == "Add the 31 samples"][0].click(); at.run()
 noexc(at, "seed samples")
-check(len(store.list_cases()) == 21, "21 sample cases created")
+check(len(store.list_cases()) == 31, "31 sample cases created")
 
 # create a new case from pasted text
 at.text_area[0].set_value("أهلا، ضهري بيوجعني. من شهرين. وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم.")

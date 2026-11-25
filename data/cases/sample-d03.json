@@ -1,7 +1,7 @@
 {
   "id": "sample-d03",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:08:37+00:00",
+  "updated": "2026-11-24T23:57:25+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي تعبك؟ كتفي الشمال بيوجعني جامد. حصل إيه؟ وقعت من على السلم امبارح وأنا نازل. الوجع كام من صفر لعشرة؟ تمانية. حاسس بضعف في إيدك؟ أيوه مش قادر أرفع إيدي. فيه ورم؟ لا مفيش ورم. فيه تنميل؟ لا مفيش تنميل.",
@@ -16,51 +16,51 @@
   "fields": {
     "site": {
       "ai": "shoulder",
-      "quote": "كتفي",
+      "quote": "كتفي الشمال بيوجعني جامد",
       "value": "shoulder",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "left",
-      "quote": "الشمال",
-      "value": "left",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
-      "ai": "one_place",
-      "quote": "بيوجعني جامد",
-      "value": "one_place",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "exact_spot": {
-      "ai": "one_spot",
-      "quote": "بيوجعني جامد",
-      "value": "one_spot",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "also_neck_back": {
-      "ai": "no",
-      "quote": "لا مفيش ورم",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset": {
-      "ai": "امبارح",
-      "quote": "امبارح",
-      "value": "امبارح",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset_type": {
       "ai": null,
@@ -71,20 +71,20 @@
       "filled": false
     },
     "injury": {
-      "ai": "yes",
-      "quote": "وقعت من على السلم",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "pain_severity": {
-      "ai": 8,
-      "quote": "تمانية",
-      "value": 8,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "character": {
       "ai": null,
@@ -135,28 +135,28 @@
       "filled": false
     },
     "swelling": {
-      "ai": "no",
-      "quote": "مفيش ورم",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
-      "ai": "no",
-      "quote": "مفيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "weakness": {
-      "ai": "yes",
-      "quote": "أيوه مش قادر أرفع إيدي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "prior_treatment": {
       "ai": null,
@@ -199,12 +199,12 @@
       "filled": false
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه مش قادر أرفع إيدي",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -327,20 +327,20 @@
       "filled": false
     },
     "trauma_mechanism": {
-      "ai": "وقعت من على السلم",
-      "quote": "وقعت من على السلم",
-      "value": "وقعت من على السلم",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "can_bear_weight": {
-      "ai": "no",
-      "quote": "مش قادر أرفع إيدي",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "high_energy": {
       "ai": null,
@@ -351,20 +351,20 @@
       "filled": false
     },
     "injury_when": {
-      "ai": "امبارح",
-      "quote": "امبارح",
-      "value": "امبارح",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "immediate_function": {
-      "ai": "no",
-      "quote": "مش قادر أرفع إيدي",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "snap_pop": {
       "ai": null,
@@ -375,12 +375,12 @@
       "filled": false
     },
     "swelling_24h": {
-      "ai": "no",
-      "quote": "مفيش ورم",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "deformity": {
       "ai": null,
@@ -399,12 +399,12 @@
       "filled": false
     },
     "numb_cold": {
-      "ai": "no",
-      "quote": "مفيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "head_neck_injury": {
       "ai": null,
@@ -607,12 +607,12 @@
       "filled": false
     },
     "can_lift_arm": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "أيوه مش قادر أرفع إيدي",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "dislocation": {
       "ai": null,
@@ -983,10 +983,49 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "onset",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "onset_type",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "injury",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "pain_severity",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "weakness",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "swelling",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "numbness",
+      "issue": "bad_shape"
+    },
+    {
+      "field": "prior_problems",
+      "issue": "answer_not_after_question",
+      "quote": "وقعت من على السلم امبارح وأنا نازل"
+    },
+    {
+      "field": "painkillers_help",
+      "issue": "answer_not_after_question",
+      "quote": "لا مفيش ورم"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T12:08:37+00:00",
+      "t": "2026-11-24T23:57:25+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,87 +1033,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "left",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "exact_spot",
-      "from": null,
-      "to": "one_spot",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "also_neck_back",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "one_or_many",
-      "from": null,
-      "to": "one_place",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "امبارح",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "injury",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "pain_severity",
-      "from": null,
-      "to": "8",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "numbness",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
+      "t": "2026-11-24T23:57:25+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1082,49 +1041,17 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:08:37+00:00",
+      "t": "2026-11-24T23:57:25+00:00",
       "kind": "AI filled",
-      "field": "trauma_mechanism",
+      "field": "stiffness",
       "from": null,
-      "to": "وقعت من على السلم",
+      "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:08:37+00:00",
+      "t": "2026-11-24T23:57:25+00:00",
       "kind": "AI filled",
-      "field": "can_bear_weight",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "injury_when",
-      "from": null,
-      "to": "امبارح",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "immediate_function",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "swelling_24h",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:08:37+00:00",
-      "kind": "AI filled",
-      "field": "numb_cold",
+      "field": "can_lift_arm",
       "from": null,
       "to": "no",
       "who": "Language model"
@@ -1132,5 +1059,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 60.8
 }

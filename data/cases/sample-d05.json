@@ -1,7 +1,7 @@
 {
   "id": "sample-d05",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:11:12+00:00",
+  "updated": "2026-11-24T23:59:49+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي حصل؟ لويت رجلي وأنا بلعب كورة من يومين. أنهي رجل؟ الشمال، الكاحل بتاعي. قدرت تقف عليها بعدها؟ لا مقدرتش أقف عليها خالص. فيه ورم؟ أيوه ورم كبير. الوجع كام من صفر لعشرة؟ سبعة. فيه تنميل؟ لا مفيش تنميل.",
@@ -16,7 +16,7 @@
   "fields": {
     "site": {
       "ai": "ankle_foot",
-      "quote": "الكاحل",
+      "quote": "لويت رجلي وأنا بلعب كورة من يومين. أنهي رجل؟ الشمال، الكاحل بتاعي",
       "value": "ankle_foot",
       "decision": "",
       "edited": false,
@@ -32,19 +32,19 @@
     },
     "one_or_many": {
       "ai": "one_place",
-      "quote": "الكاحل",
+      "quote": "لا مقدرتش أقف عليها خالص",
       "value": "one_place",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "exact_spot": {
-      "ai": "one_spot",
-      "quote": "الكاحل",
-      "value": "one_spot",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "also_neck_back": {
       "ai": "no",
@@ -55,12 +55,12 @@
       "filled": true
     },
     "onset": {
-      "ai": "من يومين",
-      "quote": "من يومين",
-      "value": "من يومين",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset_type": {
       "ai": null,
@@ -71,12 +71,12 @@
       "filled": false
     },
     "injury": {
-      "ai": "yes",
-      "quote": "لويت رجلي وأنا بلعب كورة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "pain_severity": {
       "ai": 7,
@@ -135,12 +135,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "أيوه ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": "no",
@@ -215,12 +215,12 @@
       "filled": false
     },
     "function": {
-      "ai": "لا مقدرتش أقف عليها خالص",
-      "quote": "لا مقدرتش أقف عليها خالص",
-      "value": "لا مقدرتش أقف عليها خالص",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "prior_problems": {
       "ai": null,
@@ -327,20 +327,20 @@
       "filled": false
     },
     "trauma_mechanism": {
-      "ai": "لويت رجلي وأنا بلعب كورة",
-      "quote": "لويت رجلي وأنا بلعب كورة",
-      "value": "لويت رجلي وأنا بلعب كورة",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "can_bear_weight": {
-      "ai": "no",
-      "quote": "لا مقدرتش أقف عليها خالص",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "high_energy": {
       "ai": null,
@@ -351,12 +351,12 @@
       "filled": false
     },
     "injury_when": {
-      "ai": "من يومين",
-      "quote": "من يومين",
-      "value": "من يومين",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "immediate_function": {
       "ai": null,
@@ -375,12 +375,12 @@
       "filled": false
     },
     "swelling_24h": {
-      "ai": "yes",
-      "quote": "أيوه ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "deformity": {
       "ai": null,
@@ -399,12 +399,12 @@
       "filled": false
     },
     "numb_cold": {
-      "ai": "no",
-      "quote": "لا مفيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "head_neck_injury": {
       "ai": null,
@@ -919,12 +919,12 @@
       "filled": true
     },
     "foot_swelling": {
-      "ai": "yes",
-      "quote": "أيوه ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "ankle_instability": {
       "ai": null,
@@ -975,18 +975,44 @@
       "filled": false
     },
     "foot_walk_distance": {
-      "ai": "لا مقدرتش أقف عليها خالص",
-      "quote": "لا مقدرتش أقف عليها خالص",
-      "value": "لا مقدرتش أقف عليها خالص",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "exact_spot",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه ورم كبير"
+    },
+    {
+      "field": "injury",
+      "issue": "answer_not_after_question",
+      "quote": "لويت رجلي وأنا بلعب كورة من يومين."
+    },
+    {
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه ورم كبير"
+    },
+    {
+      "field": "fever",
+      "issue": "quote_not_in_transcript",
+      "quote": "مفيش سخونية"
+    },
+    {
+      "field": "foot_swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه ورم كبير"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,31 +1020,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "left",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "one_or_many",
-      "from": null,
-      "to": "one_place",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "exact_spot",
-      "from": null,
-      "to": "one_spot",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1026,31 +1028,23 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
-      "field": "onset",
+      "field": "one_or_many",
       "from": null,
-      "to": "من يومين",
+      "to": "one_place",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
-      "field": "injury",
+      "field": "side",
       "from": null,
-      "to": "yes",
+      "to": "left",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "pain_severity",
       "from": null,
@@ -1058,7 +1052,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1066,7 +1060,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1074,55 +1068,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "function",
-      "from": null,
-      "to": "لا مقدرتش أقف عليها خالص",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "trauma_mechanism",
-      "from": null,
-      "to": "لويت رجلي وأنا بلعب كورة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "can_bear_weight",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "swelling_24h",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "numb_cold",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "injury_when",
-      "from": null,
-      "to": "من يومين",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "foot_site",
       "from": null,
@@ -1130,31 +1076,16 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "foot_swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
+      "t": "2026-11-24T23:59:49+00:00",
       "kind": "AI filled",
       "field": "foot_numbness",
       "from": null,
       "to": "no",
       "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:11:12+00:00",
-      "kind": "AI filled",
-      "field": "foot_walk_distance",
-      "from": null,
-      "to": "لا مقدرتش أقف عليها خالص",
-      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 70.4
 }

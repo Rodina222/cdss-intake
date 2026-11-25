@@ -1,7 +1,7 @@
 {
   "id": "d05",
   "created": "2026-11-18T23:49:04+00:00",
-  "updated": "2026-11-19T11:25:07+00:00",
+  "updated": "2026-11-24T23:03:04+00:00",
   "source": "audio",
   "audio_file": "d05.aac",
   "transcript": "أهلاً بحضرتك، إيه اللي حصل؟ لويت رجلي وأنا بلعب كرة من يومين أنهي رجل؟ الشمال، الكاح البتاعي قدرت تقف عليها بعدها؟ لا، ما قدرتش أقف عليها خالص في ورم؟ أيوة، ورم كبير الوجع كام من صفر العشرة؟ سبعة في تنميل؟ لا، ما فيش تنميل",
@@ -21,19 +21,19 @@
   "fields": {
     "site": {
       "ai": "ankle_foot",
-      "quote": "الكاح",
+      "quote": "الشمال، الكاح البتاعي",
       "value": "ankle_foot",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "left",
-      "quote": "الشمال",
-      "value": "left",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -52,20 +52,20 @@
       "filled": false
     },
     "also_neck_back": {
-      "ai": "no",
-      "quote": "لا، ما فيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset": {
-      "ai": "من يومين",
-      "quote": "من يومين",
-      "value": "من يومين",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "onset_type": {
       "ai": null,
@@ -76,16 +76,16 @@
       "filled": false
     },
     "injury": {
-      "ai": "yes",
-      "quote": "لويت رجلي وأنا بلعب كرة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "pain_severity": {
       "ai": 7,
-      "quote": "الوجع كام من صفر العشرة؟ سبعة",
+      "quote": "سبعة",
       "value": 7,
       "decision": "",
       "edited": false,
@@ -140,16 +140,16 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "في ورم؟ أيوة، ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": "no",
-      "quote": "في تنميل؟ لا، ما فيش تنميل",
+      "quote": "لا، ما فيش تنميل",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -332,20 +332,20 @@
       "filled": false
     },
     "trauma_mechanism": {
-      "ai": "لعب كرة",
-      "quote": "بلعب كرة",
-      "value": "لعب كرة",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "can_bear_weight": {
-      "ai": "no",
-      "quote": "لا، ما قدرتش أقف عليها خالص",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "high_energy": {
       "ai": null,
@@ -356,12 +356,12 @@
       "filled": false
     },
     "injury_when": {
-      "ai": "من يومين",
-      "quote": "من يومين",
-      "value": "من يومين",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "immediate_function": {
       "ai": null,
@@ -380,12 +380,12 @@
       "filled": false
     },
     "swelling_24h": {
-      "ai": "yes",
-      "quote": "ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "deformity": {
       "ai": null,
@@ -404,12 +404,12 @@
       "filled": false
     },
     "numb_cold": {
-      "ai": "no",
-      "quote": "لا، ما فيش تنميل",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "head_neck_injury": {
       "ai": null,
@@ -916,20 +916,20 @@
       "filled": false
     },
     "foot_site": {
-      "ai": "front_ankle",
-      "quote": "الكاح البتاعي",
-      "value": "front_ankle",
+      "ai": "back_heel",
+      "quote": "الشمال، الكاح البتاعي",
+      "value": "back_heel",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "foot_swelling": {
-      "ai": "yes",
-      "quote": "ورم كبير",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "ankle_instability": {
       "ai": null,
@@ -957,7 +957,7 @@
     },
     "foot_numbness": {
       "ai": "no",
-      "quote": "ما فيش تنميل",
+      "quote": "لا، ما فيش تنميل",
       "value": "no",
       "decision": "",
       "edited": false,
@@ -980,18 +980,44 @@
       "filled": false
     },
     "foot_walk_distance": {
-      "ai": "لا، ما قدرتش أقف عليها خالص",
-      "quote": "لا، ما قدرتش أقف عليها خالص",
-      "value": "لا، ما قدرتش أقف عليها خالص",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "injury",
+      "issue": "answer_not_after_question",
+      "quote": "لويت رجلي وأنا بلعب كرة من يومين"
+    },
+    {
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة، ورم كبير"
+    },
+    {
+      "field": "chief_complaint",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة، ورم كبير"
+    },
+    {
+      "field": "fever",
+      "issue": "quote_not_in_transcript",
+      "quote": "لا، ما فيش سخونية"
+    },
+    {
+      "field": "foot_swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة، ورم كبير"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T11:25:07+00:00",
+      "t": "2026-11-24T23:03:04+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -999,47 +1025,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "left",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "also_neck_back",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "onset",
-      "from": null,
-      "to": "من يومين",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "injury",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
+      "t": "2026-11-24T23:03:04+00:00",
       "kind": "AI filled",
       "field": "pain_severity",
       "from": null,
@@ -1047,7 +1033,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:25:07+00:00",
+      "t": "2026-11-24T23:03:04+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1055,79 +1041,24 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "trauma_mechanism",
-      "from": null,
-      "to": "لعب كرة",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "injury_when",
-      "from": null,
-      "to": "من يومين",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "can_bear_weight",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "swelling_24h",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "numb_cold",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
+      "t": "2026-11-24T23:03:04+00:00",
       "kind": "AI filled",
       "field": "foot_site",
       "from": null,
-      "to": "front_ankle",
+      "to": "back_heel",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "foot_swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
+      "t": "2026-11-24T23:03:04+00:00",
       "kind": "AI filled",
       "field": "foot_numbness",
       "from": null,
       "to": "no",
       "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:25:07+00:00",
-      "kind": "AI filled",
-      "field": "foot_walk_distance",
-      "from": null,
-      "to": "لا، ما قدرتش أقف عليها خالص",
-      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 48.4
 }

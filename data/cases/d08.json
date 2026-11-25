@@ -1,7 +1,7 @@
 {
   "id": "d08",
   "created": "2026-11-18T23:49:38+00:00",
-  "updated": "2026-11-19T11:22:18+00:00",
+  "updated": "2026-11-24T23:00:34+00:00",
   "source": "audio",
   "audio_file": "d08.aac",
   "transcript": "اهلا بحضرتك ايه المشكلة؟ ايدي اليمين بتنمل بالليل من امتى؟ من شهر الوجع بيصحيك من النوم؟ ايوة الوجع بيصحيني من النوم حسة بضعف؟ ايوة الحاجة بتقع من ايدي جربتي اي علاج؟ لبست كبيرة بالليل عندك سكر؟ لا مفيش سكر",
@@ -21,19 +21,19 @@
   "fields": {
     "site": {
       "ai": "wrist_hand",
-      "quote": "ايدي",
+      "quote": "ايدي اليمين",
       "value": "wrist_hand",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "right",
-      "quote": "اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -125,7 +125,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "بيصحيني من النوم",
+      "quote": "ايوة الوجع بيصحيني من النوم",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -141,35 +141,35 @@
     },
     "swelling": {
       "ai": "no",
-      "quote": "مفيش سكر",
+      "quote": "لا مفيش سكر",
       "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "من شهر",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "weakness": {
       "ai": "yes",
-      "quote": "حسة بضعف",
+      "quote": "ايوة",
       "value": "yes",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "prior_treatment": {
-      "ai": "لما جربتي اي علاج",
-      "quote": "جربتي اي علاج",
-      "value": "لما جربتي اي علاج",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "diabetes": {
       "ai": "no",
@@ -180,36 +180,36 @@
       "filled": true
     },
     "chief_complaint": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "ايدي اليمين بتنمل بالليل",
+      "quote": "ايدي اليمين بتنمل بالليل",
+      "value": "ايدي اليمين بتنمل بالليل",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "timing": {
       "ai": "intermittent",
-      "quote": "بالليل",
+      "quote": "من شهر",
       "value": "intermittent",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "painkillers_help": {
-      "ai": "no",
-      "quote": "لا مفيش سكر",
-      "value": "no",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "stiffness": {
       "ai": null,
       "quote": "",
       "value": null,
       "decision": "",
       "edited": false,
       "filled": false
+    },
+    "stiffness": {
+      "ai": "yes",
+      "quote": "ايوة",
+      "value": "yes",
+      "decision": "",
+      "edited": false,
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -300,12 +300,12 @@
       "filled": false
     },
     "dominant_hand": {
-      "ai": "right",
-      "quote": "ايدي اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "sport_activity": {
       "ai": null,
@@ -324,12 +324,12 @@
       "filled": false
     },
     "patient_belief": {
-      "ai": "لا مفيش سكر",
-      "quote": "لا مفيش سكر",
-      "value": "لا مفيش سكر",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "trauma_mechanism": {
       "ai": null,
@@ -508,12 +508,12 @@
       "filled": false
     },
     "saddle_numbness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لا مفيش سكر",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "exertion_chest": {
       "ai": null,
@@ -700,12 +700,12 @@
       "filled": false
     },
     "night_waking": {
-      "ai": "yes",
-      "quote": "بيصحيك من النوم",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "shake_relief": {
       "ai": null,
@@ -724,20 +724,20 @@
       "filled": false
     },
     "grip_weakness": {
-      "ai": "yes",
-      "quote": "حسة بضعف",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "daily_use": {
-      "ai": "yes",
-      "quote": "الحاجة بتقع من ايدي",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "lump_swelling": {
       "ai": null,
@@ -748,12 +748,12 @@
       "filled": false
     },
     "splint_injection": {
-      "ai": "no",
-      "quote": "لا مفيش سكر",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "leg_pain_below_knee": {
       "ai": null,
@@ -990,14 +990,34 @@
   },
   "flags": [
     {
-      "field": "numbness",
+      "field": "prior_treatment",
       "issue": "quote_not_in_transcript",
-      "quote": "بتتنمل"
+      "quote": "لما"
+    },
+    {
+      "field": "painkillers_help",
+      "issue": "answer_not_after_question",
+      "quote": "ايوة الوجع بيصحيني من النوم"
+    },
+    {
+      "field": "night_waking",
+      "issue": "value_not_allowed",
+      "value": "ايوة الوجع بيصحيني من النوم"
+    },
+    {
+      "field": "grip_weakness",
+      "issue": "value_not_allowed",
+      "value": "حسة بضعف"
+    },
+    {
+      "field": "splint_injection",
+      "issue": "value_not_allowed",
+      "value": "لا مفيش سكر"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1005,15 +1025,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "right",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1021,7 +1033,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
+      "kind": "AI filled",
+      "field": "numbness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1029,7 +1049,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "weakness",
       "from": null,
@@ -1037,15 +1057,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "prior_treatment",
-      "from": null,
-      "to": "لما جربتي اي علاج",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "swelling",
       "from": null,
@@ -1053,23 +1065,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "timing",
-      "from": null,
-      "to": "intermittent",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "painkillers_help",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
       "field": "diabetes",
       "from": null,
@@ -1077,63 +1073,48 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
-      "field": "dominant_hand",
-      "from": null,
-      "to": "right",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "patient_belief",
-      "from": null,
-      "to": "لا مفيش سكر",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "numb_fingers",
+      "field": "chief_complaint",
       "from": null,
       "to": "ايدي اليمين بتنمل بالليل",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
-      "field": "night_waking",
+      "field": "timing",
+      "from": null,
+      "to": "intermittent",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:00:34+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
       "from": null,
       "to": "yes",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:18+00:00",
+      "t": "2026-11-24T23:00:34+00:00",
       "kind": "AI filled",
-      "field": "grip_weakness",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "daily_use",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:18+00:00",
-      "kind": "AI filled",
-      "field": "splint_injection",
+      "field": "saddle_numbness",
       "from": null,
       "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:00:34+00:00",
+      "kind": "AI filled",
+      "field": "numb_fingers",
+      "from": null,
+      "to": "ايدي اليمين بتنمل بالليل",
       "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 65.9
 }

@@ -25,3 +25,6 @@ for cid in todo:
     print(f"{cid}: {n} fields filled, {len(c['flags'])} discarded by the checks")
     for fl in c["flags"]:
         print("    discarded:", fl)
+    failed = [fl for fl in c["flags"] if str(fl.get("issue", "")).startswith("model_error")]
+    if failed:
+        print(f"    WARNING: {len(failed)} model call(s) failed, so part of this case was not filled. Run it again.")

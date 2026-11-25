@@ -3,7 +3,7 @@ import json
 import re
 from .schema import BY_ID, SCHEMA, SYSTEM_PROMPT, build_user_prompt
 from .textutil import normalize_arabic
-from . import llm
+from . import config, llm
 
 
 def parse_json(raw):
@@ -60,8 +60,36 @@ def validate(parsed, transcript):
             flags.append({"field": fid, "issue": "no_evidence_quote"}); continue
         if normalize_arabic(quote) not in t_norm:
             flags.append({"field": fid, "issue": "quote_not_in_transcript", "quote": quote}); continue
+        if config.REQUIRE_QUESTION:
+            why = _question_problem(str(item.get("question", "")), quote, t_norm)
+            if why:
+                flags.append({"field": fid, "issue": why, "quote": quote}); continue
         clean[fid] = {"value": val, "evidence_quote": quote}
     return clean, flags
+
+
+def _tokens(text):
+    return {w for w in re.findall(r"\w+", text) if len(w) > 1}
+
+
+def _question_problem(question, quote, t_norm):
+    """None if the quote sits right after a question that matches the one the model named; else the reason.
+
+    The model rarely copies a question letter for letter (it shortens or rephrases it, and a question can span two
+    sentences), so the match is by words: at least QUESTION_OVERLAP of the question's words must occur in the text
+    just before the quote."""
+    nq, nquote = normalize_arabic(question.strip()), normalize_arabic(quote)
+    qtok = _tokens(nq)
+    if not qtok:
+        return "no_question_quote"
+    pos = t_norm.find(nquote)
+    while pos != -1:
+        window = t_norm[max(0, pos - min(config.QUESTION_WINDOW, 2 * len(nq) + 80)):pos]
+        common = qtok & _tokens(window)
+        if len(common) / len(qtok) >= config.QUESTION_OVERLAP and any(len(w) >= 4 for w in common):
+            return None
+        pos = t_norm.find(nquote, pos + 1)
+    return "answer_not_after_question"
 
 
 CHUNK = 14  # fields per model call: small models lose fields on long lists

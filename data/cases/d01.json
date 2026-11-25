@@ -1,7 +1,7 @@
 {
   "id": "d01",
   "created": "2026-11-18T23:48:08+00:00",
-  "updated": "2026-11-19T11:30:01+00:00",
+  "updated": "2026-11-24T23:07:49+00:00",
   "source": "audio",
   "audio_file": "d01.aac",
   "transcript": "أهلاً بحضرتك، إيه اللي مضايقك النهاردة؟ رجبتي اليمين بتوجعني بدأت من إمتى؟ من حوالي ثلاث شهور وبدأت واحدة واحدة من غير ما تعور الوجع كام من صفر العشرة؟ حوالي ستة إيه اللي بيزوده؟ لما أنزل السلم فيه ورم؟ أيوة، الرجبة متورمة شوية الوجع بيصحيك بالليل؟ أيوة كذا مرة فيه سخونية؟ لا، ما فيه سخونية",
@@ -21,19 +21,19 @@
   "fields": {
     "site": {
       "ai": "shoulder",
-      "quote": "رجبتي",
+      "quote": "رجبتي اليمين بتوجعني",
       "value": "shoulder",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "right",
-      "quote": "اليمين",
-      "value": "right",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -60,20 +60,20 @@
       "filled": false
     },
     "onset": {
-      "ai": "من حوالي ثلاث شهور",
-      "quote": "من حوالي ثلاث شهور",
-      "value": "من حوالي ثلاث شهور",
+      "ai": "من حوالي ثلاث شهور وبدأت واحدة واحدة",
+      "quote": "من حوالي ثلاث شهور وبدأت واحدة واحدة",
+      "value": "من حوالي ثلاث شهور وبدأت واحدة واحدة",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "onset_type": {
-      "ai": "gradual",
-      "quote": "بدأت واحدة واحدة",
-      "value": "gradual",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "injury": {
       "ai": null,
@@ -125,7 +125,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "الوجع بيصحيك بالليل",
+      "quote": "أيوة كذا مرة",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -140,12 +140,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "الرجبة متورمة شوية",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -180,20 +180,20 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": "رجبتي اليمين بتوجعني",
-      "quote": "رجبتي اليمين بتوجعني",
-      "value": "رجبتي اليمين بتوجعني",
+      "ai": "رجبتي اليمين بتوجعني بدأت من إمتى؟",
+      "quote": "رجبتي اليمين بتوجعني بدأت من إمتى؟",
+      "value": "رجبتي اليمين بتوجعني بدأت من إمتى؟",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "constant",
+      "quote": "حوالي ستة",
+      "value": "constant",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
       "ai": null,
@@ -204,12 +204,12 @@
       "filled": false
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوة كذا مرة",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -220,12 +220,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "لما أنزل السلم فيه ورم؟",
+      "quote": "لما أنزل السلم فيه ورم؟",
+      "value": "لما أنزل السلم فيه ورم؟",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -589,51 +589,51 @@
     },
     "overhead_activity": {
       "ai": "no",
-      "quote": "لا، ما فيه سخونية",
+      "quote": "من حوالي ثلاث شهور",
       "value": "no",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "night_lying": {
-      "ai": "yes",
-      "quote": "أيوة كذا مرة",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "stiffness_reach": {
-      "ai": "no",
-      "quote": "لا، ما فيه سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "can_lift_arm": {
-      "ai": "no",
-      "quote": "لا، ما فيه سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "dislocation": {
-      "ai": "no",
-      "quote": "لا، ما فيه سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "neck_arm_symptoms": {
-      "ai": "no",
-      "quote": "لا، ما فيه سخونية",
-      "value": "no",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "first_dislocation": {
       "ai": null,
@@ -993,11 +993,16 @@
       "field": "pain_severity",
       "issue": "not_a_number",
       "value": "ستة"
+    },
+    {
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوة، الرجبة متورمة شوية"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1005,31 +1010,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "right",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
-      "to": "من حوالي ثلاث شهور",
+      "to": "من حوالي ثلاث شهور وبدأت واحدة واحدة",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "worse_with",
       "from": null,
@@ -1037,15 +1026,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1053,15 +1034,39 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
-      "to": "رجبتي اليمين بتوجعني",
+      "to": "رجبتي اليمين بتوجعني بدأت من إمتى؟",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "constant",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:07:49+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "لما أنزل السلم فيه ورم؟",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:07:49+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
@@ -1069,49 +1074,9 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:30:01+00:00",
+      "t": "2026-11-24T23:07:49+00:00",
       "kind": "AI filled",
       "field": "overhead_activity",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "night_lying",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "stiffness_reach",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "can_lift_arm",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "dislocation",
-      "from": null,
-      "to": "no",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:30:01+00:00",
-      "kind": "AI filled",
-      "field": "neck_arm_symptoms",
       "from": null,
       "to": "no",
       "who": "Language model"
@@ -1119,5 +1084,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 89.6
 }

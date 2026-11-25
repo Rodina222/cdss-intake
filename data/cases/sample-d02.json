@@ -1,7 +1,7 @@
 {
   "id": "sample-d02",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:07:22+00:00",
+  "updated": "2026-11-24T23:56:24+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه المشكلة؟ ضهري بيوجعني. من إمتى؟ من شهرين. فيه حاجة تانية بتحصل؟ وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم. الوجع بيصحيك بالليل؟ أيوه بيصحيني بالليل. فيه تنميل في رجلك؟ أيوه تنميل في رجلي الشمال.",
@@ -16,7 +16,7 @@
   "fields": {
     "site": {
       "ai": "back",
-      "quote": "ضهري",
+      "quote": "ضهري بيوجعني",
       "value": "back",
       "decision": "",
       "edited": false,
@@ -103,12 +103,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
-      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
-      "value": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -120,7 +120,7 @@
     },
     "night_pain": {
       "ai": "yes",
-      "quote": "بيصحيني بالليل",
+      "quote": "أيوه بيصحيني بالليل",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -144,7 +144,7 @@
     },
     "numbness": {
       "ai": "yes",
-      "quote": "تنميل في رجلي الشمال",
+      "quote": "أيوه تنميل في رجلي الشمال",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -184,7 +184,7 @@
     },
     "timing": {
       "ai": "constant",
-      "quote": "بيصحيني بالليل",
+      "quote": "أيوه بيصحيني بالليل",
       "value": "constant",
       "decision": "",
       "edited": false,
@@ -199,12 +199,12 @@
       "filled": false
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه تنميل في رجلي الشمال",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -215,12 +215,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "value": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -431,12 +431,12 @@
       "filled": false
     },
     "weight_loss": {
-      "ai": "yes",
-      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "cancer_history": {
       "ai": null,
@@ -463,12 +463,12 @@
       "filled": false
     },
     "neuro_vascular": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه تنميل في رجلي الشمال.",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "immune": {
       "ai": null,
@@ -759,12 +759,12 @@
       "filled": false
     },
     "leg_numb_weak": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "أيوه تنميل في رجلي الشمال",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "foot_catching": {
       "ai": null,
@@ -985,14 +985,14 @@
   },
   "flags": [
     {
-      "field": "leg_numb_weak",
-      "issue": "quote_not_in_transcript",
-      "quote": "فيه تنميل في رجلي الشمال."
+      "field": "weight_loss",
+      "issue": "answer_not_after_question",
+      "quote": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1000,7 +1000,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "also_neck_back",
       "from": null,
@@ -1008,7 +1008,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1016,15 +1016,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1032,7 +1024,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "numbness",
       "from": null,
@@ -1040,7 +1032,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1048,7 +1040,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
       "field": "timing",
       "from": null,
@@ -1056,9 +1048,33 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:07:22+00:00",
+      "t": "2026-11-24T23:56:24+00:00",
       "kind": "AI filled",
-      "field": "weight_loss",
+      "field": "function",
+      "from": null,
+      "to": "وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:56:24+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:56:24+00:00",
+      "kind": "AI filled",
+      "field": "neuro_vascular",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:56:24+00:00",
+      "kind": "AI filled",
+      "field": "leg_numb_weak",
       "from": null,
       "to": "yes",
       "who": "Language model"
@@ -1066,5 +1082,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 55.7
 }

@@ -1,7 +1,7 @@
 {
   "id": "sample-d07",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:13:10+00:00",
+  "updated": "2026-11-25T00:01:52+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي تعبك؟ ضهري... لا استنى، رجلي، ركبتي الشمال. من إمتى؟ مش فاكرة بالظبط، يمكن من كام شهر. الوجع كام من صفر لعشرة؟ مش عارفة، متوسط. الركبة بتخونك وإنتي ماشية؟ أحيانًا. فيه ورم؟ آه شوية.",
@@ -16,19 +16,19 @@
   "fields": {
     "site": {
       "ai": "knee",
-      "quote": "ركبتي",
+      "quote": "ركبتي الشمال",
       "value": "knee",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "side": {
-      "ai": "left",
-      "quote": "الشمال",
-      "value": "left",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -55,9 +55,9 @@
       "filled": false
     },
     "onset": {
-      "ai": "من كام شهر",
-      "quote": "من كام شهر",
-      "value": "من كام شهر",
+      "ai": "مش فاكرة بالظبط، يمكن من كام شهر",
+      "quote": "مش فاكرة بالظبط، يمكن من كام شهر",
+      "value": "مش فاكرة بالظبط، يمكن من كام شهر",
       "decision": "",
       "edited": false,
       "filled": true
@@ -79,12 +79,12 @@
       "filled": false
     },
     "pain_severity": {
-      "ai": 5,
-      "quote": "متوسط",
-      "value": 5,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "character": {
       "ai": null,
@@ -103,12 +103,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": "الركبة بتخونك",
-      "quote": "الركبة بتخونك",
-      "value": "الركبة بتخونك",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -135,12 +135,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "شوية",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -183,12 +183,12 @@
       "filled": true
     },
     "timing": {
-      "ai": "intermittent",
-      "quote": "أحيانًا",
-      "value": "intermittent",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "painkillers_help": {
       "ai": null,
@@ -215,12 +215,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "الركبة بتخونك وإنتي ماشية؟",
+      "quote": "أحيانًا",
+      "value": "الركبة بتخونك وإنتي ماشية؟",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -872,7 +872,7 @@
     },
     "giving_way": {
       "ai": "yes",
-      "quote": "الركبة بتخونك",
+      "quote": "أحيانًا",
       "value": "yes",
       "decision": "",
       "edited": false,
@@ -985,29 +985,24 @@
   },
   "flags": [
     {
-      "field": "locking_catching",
-      "issue": "quote_not_in_transcript",
-      "quote": "مفيش"
+      "field": "pain_severity",
+      "issue": "not_a_number",
+      "value": "متوسط"
     },
     {
-      "field": "stairs",
-      "issue": "quote_not_in_transcript",
-      "quote": "مفيش"
+      "field": "swelling",
+      "issue": "value_not_allowed",
+      "value": "آه شوية"
     },
     {
-      "field": "kneeling",
-      "issue": "quote_not_in_transcript",
-      "quote": "مفيش"
-    },
-    {
-      "field": "can_straighten",
-      "issue": "quote_not_in_transcript",
-      "quote": "مفيش"
+      "field": "timing",
+      "issue": "answer_not_after_question",
+      "quote": "أحيانًا"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T12:13:10+00:00",
+      "t": "2026-11-25T00:01:52+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -1015,47 +1010,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:13:10+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "left",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:13:10+00:00",
+      "t": "2026-11-25T00:01:52+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
-      "to": "من كام شهر",
+      "to": "مش فاكرة بالظبط، يمكن من كام شهر",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:13:10+00:00",
-      "kind": "AI filled",
-      "field": "pain_severity",
-      "from": null,
-      "to": "5",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:13:10+00:00",
-      "kind": "AI filled",
-      "field": "worse_with",
-      "from": null,
-      "to": "الركبة بتخونك",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:13:10+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:13:10+00:00",
+      "t": "2026-11-25T00:01:52+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1063,15 +1026,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:13:10+00:00",
+      "t": "2026-11-25T00:01:52+00:00",
       "kind": "AI filled",
-      "field": "timing",
+      "field": "function",
       "from": null,
-      "to": "intermittent",
+      "to": "الركبة بتخونك وإنتي ماشية؟",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:13:10+00:00",
+      "t": "2026-11-25T00:01:52+00:00",
       "kind": "AI filled",
       "field": "giving_way",
       "from": null,
@@ -1081,5 +1044,6 @@
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 48.4
 }

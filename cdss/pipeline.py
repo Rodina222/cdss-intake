@@ -1,5 +1,6 @@
 """The steps: create a case, transcribe its audio, extract fields. Used by the dashboard and the scripts."""
 import json
+import time
 import threading
 import traceback
 from pathlib import Path
@@ -40,7 +41,9 @@ def extract_case(case_id):
     transcript = (c.get("transcript") or "").strip()
     if not transcript:
         raise ValueError("This case has no transcript yet.")
+    t0 = time.time()
     clean, flags, raw = ex.extract(transcript)
+    took = round(time.time() - t0, 1)
     (config.CASE_DIR / f"{case_id}.llm.txt").write_text(raw or "", encoding="utf-8")
     c = store.get(case_id)
     c["fields"] = store.empty_fields()
@@ -50,6 +53,7 @@ def extract_case(case_id):
         d.update(ai=item["value"], value=item["value"], quote=item["evidence_quote"], filled=True)
         store.event(c, "AI filled", fid, None, str(item["value"]), who="Language model")
     c["flags"] = flags
+    c["extract_s"] = took
     c["model"] = {"llm": config.llm_model_name(), "backend": config.LLM_BACKEND, "prompt_version": config.PROMPT_VERSION}
     return store.save(c)
 

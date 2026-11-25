@@ -1,208 +1,187 @@
 ﻿case,field,module,red_flag,gold,model,status
+d17,site,site,False,back,back,correct
+d17,side,site,False,centre,,missed
+d17,one_or_many,site,False,,one_place,invented
+d17,exact_spot,site,False,,wide_area,invented
+d17,onset,core,False,من أسبوعين,,missed
+d17,onset_type,core,False,sudden,,missed
+d17,injury,core,False,yes,,missed
+d17,pain_severity,core,False,9,,missed
+d17,radiation,core,False,,yes,invented
+d17,worse_with,core,False,,الوقت اللي شلت عفش من صفر العشرة,invented
+d17,night_pain,core,False,yes,yes,correct
+d17,swelling,core,False,,no,invented
+d17,numbness,core,False,,yes,invented
+d17,weakness,core,False,,yes,invented
+d17,chief_complaint,core,False,ضهري بيوجعني ورجلي ضعفت,,missed
+d17,fever,red_flags,True,no,no,correct
+d17,weight_loss,red_flags,True,no,no,correct
+d17,cancer_history,red_flags,True,no,no,correct
+d17,bladder_bowel,red_flags,True,yes,,missed
+d17,constant_worsening,red_flags,True,yes,yes,correct
+d17,neuro_vascular,red_flags,True,,yes,invented
+d17,immune,red_flags,True,,no,invented
+d17,recent_infection_procedure,red_flags,True,no,no,correct
+d17,saddle_numbness,red_flags,True,yes,yes,correct
+d17,exertion_chest,red_flags,True,,no,invented
+d17,leg_pain_below_knee,back,False,yes,yes,correct
+d17,leg_numb_weak,back,False,yes,yes,correct
+d17,foot_catching,back,False,yes,yes,correct
+d17,pain_over_6_weeks,back,False,no,no,correct
+d17,steroids_osteoporosis,back,False,no,no,correct
+d17,lying_down,back,False,no_change,,missed
 sample-d07,site,site,False,knee,knee,correct
-sample-d07,side,site,False,left,left,correct
-sample-d07,onset,core,False,من كام شهر,من كام شهر,correct
-sample-d07,pain_severity,core,False,,5,invented
-sample-d07,worse_with,core,False,,الركبة بتخونك,invented
-sample-d07,swelling,core,False,yes,yes,correct
+sample-d07,side,site,False,left,,missed
+sample-d07,onset,core,False,من كام شهر,مش فاكرة بالظبط، يمكن من كام شهر,correct
+sample-d07,swelling,core,False,yes,,missed
 sample-d07,chief_complaint,core,False,,ركبتي الشمال,invented
-sample-d07,timing,core,False,,intermittent,invented
+sample-d07,function,core,False,,الركبة بتخونك وإنتي ماشية؟,invented
 sample-d07,giving_way,knee,False,,yes,invented
 sample-d06,site,site,False,neck,neck,correct
-sample-d06,side,site,False,,both,invented
-sample-d06,one_or_many,site,False,,more_than_one,invented
-sample-d06,exact_spot,site,False,,one_spot,invented
 sample-d06,also_neck_back,site,False,,no,invented
-sample-d06,onset,core,False,من تلات أسابيع,من تلات أسابيع,correct
-sample-d06,radiation,core,False,yes,yes,correct
-sample-d06,worse_with,core,False,لما أقعد قدام الكمبيوتر كتير,لما أقعد قدام الكمبيوتر كتير,correct
-sample-d06,night_pain,core,False,no,no,correct
-sample-d06,numbness,core,False,yes,yes,correct
+sample-d06,onset,core,False,من تلات أسابيع,,missed
+sample-d06,radiation,core,False,yes,,missed
+sample-d06,worse_with,core,False,لما أقعد قدام الكمبيوتر كتير,,missed
+sample-d06,night_pain,core,False,no,,missed
+sample-d06,numbness,core,False,yes,,missed
 sample-d06,chief_complaint,core,False,,رقبتي بتوجعني من تلات أسابيع، والوجع بينزل في دراعي,invented
 sample-d06,fever,red_flags,True,no,no,correct
 sample-d06,bladder_bowel,red_flags,True,no,no,correct
-sample-d06,arm_pain,neck,False,,yes,invented
+sample-d06,neuro_vascular,red_flags,True,,yes,invented
 sample-d06,arm_numbness,neck,False,,yes,invented
 sample-d06,bladder_bowel_neck,neck,True,,no,invented
 sample-d06,neck_movement,neck,False,,no,invented
 sample-d05,site,site,False,ankle_foot,ankle_foot,correct
 sample-d05,side,site,False,left,left,correct
 sample-d05,one_or_many,site,False,,one_place,invented
-sample-d05,exact_spot,site,False,,one_spot,invented
 sample-d05,also_neck_back,site,False,,no,invented
-sample-d05,onset,core,False,من يومين,من يومين,correct
-sample-d05,injury,core,False,yes,yes,correct
+sample-d05,onset,core,False,من يومين,,missed
+sample-d05,injury,core,False,yes,,missed
 sample-d05,pain_severity,core,False,7,7,correct
-sample-d05,swelling,core,False,yes,yes,correct
+sample-d05,swelling,core,False,yes,,missed
 sample-d05,numbness,core,False,no,no,correct
 sample-d05,chief_complaint,core,False,,لويت رجلي وأنا بلعب كورة من يومين,invented
-sample-d05,function,core,False,,لا مقدرتش أقف عليها خالص,invented
-sample-d05,trauma_mechanism,trauma,False,لويت رجلي وأنا بلعب كورة,لويت رجلي وأنا بلعب كورة,correct
-sample-d05,can_bear_weight,trauma,False,no,no,correct
-sample-d05,injury_when,trauma,False,,من يومين,invented
-sample-d05,swelling_24h,trauma,False,,yes,invented
-sample-d05,numb_cold,trauma,False,,no,invented
+sample-d05,trauma_mechanism,trauma,False,لويت رجلي وأنا بلعب كورة,,missed
+sample-d05,can_bear_weight,trauma,False,no,,missed
 sample-d05,foot_site,ankle_foot,False,,back_heel,invented
-sample-d05,foot_swelling,ankle_foot,False,,yes,invented
 sample-d05,foot_numbness,ankle_foot,False,,no,invented
-sample-d05,foot_walk_distance,ankle_foot,False,,لا مقدرتش أقف عليها خالص,invented
 sample-d04,site,site,False,hip,hip,correct
-sample-d04,side,site,False,right,right,correct
-sample-d04,onset,core,False,من سنة,من سنة,correct
-sample-d04,onset_type,core,False,gradual,gradual,correct
-sample-d04,radiation,core,False,yes,yes,correct
-sample-d04,better_with,core,False,لما أرتاح وأقعد,لما أرتاح وأقعد,correct
-sample-d04,morning_stiffness_min,core,False,30,30,correct
-sample-d04,prior_treatment,core,False,باخد مسكن,باخد مسكن,correct
+sample-d04,side,site,False,right,,missed
+sample-d04,also_neck_back,site,False,,no,invented
+sample-d04,onset,core,False,من سنة,,missed
+sample-d04,onset_type,core,False,gradual,,missed
+sample-d04,radiation,core,False,yes,,missed
+sample-d04,better_with,core,False,لما أرتاح وأقعد,,missed
+sample-d04,morning_stiffness_min,core,False,30,,missed
+sample-d04,prior_treatment,core,False,باخد مسكن,,missed
 sample-d04,diabetes,core,False,yes,yes,correct
 sample-d04,chief_complaint,core,False,,الورك اليمين بيوجعني من سنة,invented
+sample-d04,timing,core,False,,intermittent,invented
 sample-d04,painkillers_help,core,False,,yes,invented
 sample-d04,stiffness,core,False,,yes,invented
+sample-d04,medications,core,False,,باخد مسكن,invented
+sample-d04,family_history,core,False,,عندي سكر من عشر سنين,invented
 sample-d04,leg_pain_below_knee,back,False,,yes,invented
+sample-d04,steroids_osteoporosis,back,False,,no,invented
 sample-d04,lying_down,back,False,,better,invented
-sample-d04,hip_site,hip,False,,outer_hip,invented
+sample-d04,hip_site,hip,False,,thigh,invented
 sample-d04,hip_pain_travels,hip,False,,yes,invented
-sample-d04,hip_provokers,hip,False,,yes,invented
+sample-d04,hip_provokers,hip,False,,no,invented
 sample-d04,steroid_alcohol,hip,False,,yes,invented
 sample-d03,site,site,False,shoulder,shoulder,correct
-sample-d03,side,site,False,left,left,correct
-sample-d03,one_or_many,site,False,,one_place,invented
-sample-d03,exact_spot,site,False,,one_spot,invented
-sample-d03,also_neck_back,site,False,,no,invented
-sample-d03,onset,core,False,امبارح,امبارح,correct
-sample-d03,injury,core,False,yes,yes,correct
-sample-d03,pain_severity,core,False,8,8,correct
-sample-d03,swelling,core,False,no,no,correct
-sample-d03,numbness,core,False,no,no,correct
-sample-d03,weakness,core,False,yes,yes,correct
+sample-d03,side,site,False,left,,missed
+sample-d03,onset,core,False,امبارح,,missed
+sample-d03,injury,core,False,yes,,missed
+sample-d03,pain_severity,core,False,8,,missed
+sample-d03,swelling,core,False,no,,missed
+sample-d03,numbness,core,False,no,,missed
+sample-d03,weakness,core,False,yes,,missed
 sample-d03,chief_complaint,core,False,,كتفي الشمال بيوجعني جامد,invented
-sample-d03,trauma_mechanism,trauma,False,وقعت من على السلم,وقعت من على السلم,correct
-sample-d03,can_bear_weight,trauma,False,,no,invented
-sample-d03,injury_when,trauma,False,,امبارح,invented
-sample-d03,immediate_function,trauma,False,,no,invented
-sample-d03,swelling_24h,trauma,False,,no,invented
-sample-d03,numb_cold,trauma,False,,no,invented
+sample-d03,stiffness,core,False,,yes,invented
+sample-d03,trauma_mechanism,trauma,False,وقعت من على السلم,,missed
+sample-d03,can_lift_arm,shoulder,False,,no,invented
 sample-d02,site,site,False,back,back,correct
 sample-d02,also_neck_back,site,False,,yes,invented
 sample-d02,onset,core,False,من شهرين,من شهرين,correct
-sample-d02,worse_with,core,False,,وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم,invented
 sample-d02,night_pain,core,False,yes,yes,correct
 sample-d02,numbness,core,False,yes,yes,correct
 sample-d02,chief_complaint,core,False,,ضهري بيوجعني,invented
 sample-d02,timing,core,False,,constant,invented
-sample-d02,weight_loss,red_flags,True,yes,yes,correct
+sample-d02,stiffness,core,False,,yes,invented
+sample-d02,function,core,False,,وزني نزل حوالي ٨ كيلو من غير ما أعمل ريجيم,invented
+sample-d02,weight_loss,red_flags,True,yes,,missed
+sample-d02,neuro_vascular,red_flags,True,,yes,invented
+sample-d02,leg_numb_weak,back,False,,yes,invented
 sample-d01,site,site,False,knee,knee,correct
 sample-d01,side,site,False,right,right,correct
-sample-d01,onset,core,False,من حوالي تلات شهور,من حوالي تلات شهور,correct
-sample-d01,onset_type,core,False,gradual,gradual,correct
+sample-d01,one_or_many,site,False,,one_place,invented
+sample-d01,also_neck_back,site,False,,no,invented
+sample-d01,onset,core,False,من حوالي تلات شهور,من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور,correct
+sample-d01,onset_type,core,False,gradual,,missed
 sample-d01,injury,core,False,no,,missed
-sample-d01,pain_severity,core,False,6,6,correct
+sample-d01,pain_severity,core,False,6,,missed
 sample-d01,worse_with,core,False,لما أنزل السلم,لما أنزل السلم,correct
 sample-d01,night_pain,core,False,yes,yes,correct
-sample-d01,swelling,core,False,yes,yes,correct
+sample-d01,swelling,core,False,yes,,missed
 sample-d01,chief_complaint,core,False,,ركبتي اليمين بتوجعني,invented
+sample-d01,timing,core,False,,intermittent,invented
+sample-d01,painkillers_help,core,False,,no,invented
+sample-d01,function,core,False,,الوجع بيصحيك بالليل؟,invented
 sample-d01,fever,red_flags,True,no,no,correct
-sample-d21,site,site,False,other,back,wrong value
-sample-d21,side,site,False,,both,invented
-sample-d21,one_or_many,site,False,more_than_one,more_than_one,correct
+sample-d01,stairs,knee,False,,yes,invented
+sample-d21,site,site,False,other,other,correct
+sample-d21,one_or_many,site,False,more_than_one,,missed
 sample-d21,exact_spot,site,False,wide_area,wide_area,correct
-sample-d21,also_neck_back,site,False,,yes,invented
+sample-d21,also_neck_back,site,False,,no,invented
+sample-d21,onset_type,core,False,,sudden,invented
 sample-d21,injury,core,False,no,no,correct
-sample-d21,pain_severity,core,False,,10,invented
 sample-d21,radiation,core,False,,yes,invented
 sample-d21,night_pain,core,False,,yes,invented
-sample-d21,morning_stiffness_min,core,False,60,60,correct
-sample-d21,prior_treatment,core,False,,مش متأكد,invented
+sample-d21,morning_stiffness_min,core,False,60,,missed
+sample-d21,swelling,core,False,,no,invented
+sample-d21,prior_treatment,core,False,,يمكن شوية، مش متأكد,invented
 sample-d21,chief_complaint,core,False,تعبان ومفاصلي بتوجعني بقالي فترة,تعبان ومفاصلي بتوجعني بقالي فترة,correct
 sample-d21,timing,core,False,,intermittent,invented
-sample-d21,stiffness,core,False,yes,,missed
-sample-d21,function,core,False,,أيوه إيديا ورجليا,invented
+sample-d21,painkillers_help,core,False,,no,invented
+sample-d21,stiffness,core,False,yes,yes,correct
+sample-d21,function,core,False,,الصبح بتحس بتيبّس في الركبة؟ بياخد كام دقيقة عشان يروح؟ حوالي ساعة,invented
 sample-d21,prior_problems,core,False,,no,invented
 sample-d21,other_joints,core,False,yes,yes,correct
 sample-d21,chronic_diseases,core,False,,أبويا كان عنده روماتويد,invented
 sample-d21,family_history,core,False,أبويا كان عنده روماتويد,أبويا كان عنده روماتويد,correct
 sample-d21,fever,red_flags,True,no,no,correct
-sample-d21,weight_loss,red_flags,True,,no,invented
+sample-d21,weight_loss,red_flags,True,,yes,invented
 sample-d21,cancer_history,red_flags,True,,no,invented
-sample-d21,bladder_bowel,red_flags,True,,no,invented
-sample-d21,constant_worsening,red_flags,True,,no,invented
-sample-d21,immune,red_flags,True,,no,invented
-sample-d21,hot_red_joint,red_flags,True,,no,invented
-sample-d21,recent_infection_procedure,red_flags,True,,no,invented
-sample-d21,injected_drugs,red_flags,True,,no,invented
-sample-d21,saddle_numbness,red_flags,True,,no,invented
-sample-d21,exertion_chest,red_flags,True,,no,invented
-sample-d21,leg_pain_below_knee,back,False,,no,invented
-sample-d21,leg_numb_weak,back,False,,no,invented
-sample-d21,foot_catching,back,False,,no,invented
-sample-d21,steroids_osteoporosis,back,False,,no,invented
-sample-d21,lying_down,back,False,,no_change,invented
-sample-d20,site,site,False,knee,knee,correct
-sample-d20,side,site,False,left,left,correct
-sample-d20,one_or_many,site,False,one_place,one_place,correct
-sample-d20,exact_spot,site,False,,one_spot,invented
-sample-d20,also_neck_back,site,False,,no,invented
-sample-d20,onset,core,False,من تلات أيام,من تلات أيام,correct
-sample-d20,onset_type,core,False,sudden,,missed
-sample-d20,injury,core,False,no,no,correct
-sample-d20,pain_severity,core,False,9,9,correct
-sample-d20,night_pain,core,False,yes,yes,correct
-sample-d20,swelling,core,False,yes,yes,correct
-sample-d20,numbness,core,False,,no,invented
-sample-d20,chief_complaint,core,False,ركبتي ورمت وبقت حمرا وسخنة,ورمت وبقت حمرا وسخنة ومش قادرة أمشي,wrong value
-sample-d20,prior_problems,core,False,,no,invented
-sample-d20,medications,core,False,كورتيزون وميثوتريكسات,كورتيزون وميثوتريكسات,correct
-sample-d20,steroids,core,False,yes,yes,correct
-sample-d20,blood_thinners,core,False,no,no,correct
-sample-d20,allergies,core,False,,no,invented
-sample-d20,family_history,core,False,,لا عمري ما اتعالجت من ورم,invented
-sample-d20,occupation,core,False,,لا مفيش وقعة,invented
-sample-d20,dominant_hand,core,False,,right,invented
-sample-d20,sport_activity,core,False,,لا مبخدش حاجة بالحقن,invented
-sample-d20,patient_belief,core,False,,الركبة حمرا وسخنة وبتوجع جدًا,invented
-sample-d20,can_bear_weight,trauma,False,no,,missed
-sample-d20,fever,red_flags,True,yes,yes,correct
-sample-d20,weight_loss,red_flags,True,no,no,correct
-sample-d20,cancer_history,red_flags,True,no,no,correct
-sample-d20,constant_worsening,red_flags,True,yes,yes,correct
-sample-d20,neuro_vascular,red_flags,True,no,no,correct
-sample-d20,immune,red_flags,True,yes,yes,correct
-sample-d20,hot_red_joint,red_flags,True,yes,yes,correct
-sample-d20,recent_infection_procedure,red_flags,True,yes,yes,correct
-sample-d20,injected_drugs,red_flags,True,no,no,correct
-sample-d20,giving_way,knee,False,,no,invented
-sample-d20,locking_catching,knee,False,,none,invented
-sample-d20,stairs,knee,False,,no,invented
-sample-d20,kneeling,knee,False,,no,invented
-sample-d20,can_straighten,knee,False,,no,invented
 sample-d19,site,site,False,ankle_foot,ankle_foot,correct
 sample-d19,side,site,False,right,right,correct
 sample-d19,one_or_many,site,False,,one_place,invented
 sample-d19,exact_spot,site,False,,one_spot,invented
 sample-d19,also_neck_back,site,False,,no,invented
 sample-d19,onset,core,False,من تمن شهور,من تمن شهور، واحدة واحدة,correct
-sample-d19,onset_type,core,False,gradual,,missed
+sample-d19,onset_type,core,False,gradual,gradual,correct
 sample-d19,injury,core,False,no,no,correct
-sample-d19,pain_severity,core,False,7,7,correct
-sample-d19,character,core,False,,ورم,invented
+sample-d19,pain_severity,core,False,7,10,wrong value
 sample-d19,radiation,core,False,,yes,invented
-sample-d19,worse_with,core,False,,الوقت اللي بتحصل فيه النوبة,invented
+sample-d19,worse_with,core,False,,صعب ألاقي جزمة مناسبة,invented
 sample-d19,better_with,core,False,,لا مفيش,invented
 sample-d19,night_pain,core,False,,yes,invented
-sample-d19,morning_stiffness_min,core,False,,10,invented
-sample-d19,swelling,core,False,,yes,invented
 sample-d19,numbness,core,False,,yes,invented
-sample-d19,weakness,core,False,,no,invented
 sample-d19,prior_treatment,core,False,,بستخدم نعل طبي,invented
-sample-d19,diabetes,core,False,yes,,missed
+sample-d19,diabetes,core,False,yes,yes,correct
 sample-d19,chief_complaint,core,False,كعب رجلي بيوجعني وصباعي الكبير بيورم,كعب رجلي بيوجعني وصباعي الكبير بيورم,correct
+sample-d19,timing,core,False,,constant,invented
+sample-d19,instability,core,False,,none,invented
 sample-d19,function,core,False,,أقف وأمشي بس بصعوبة,invented
+sample-d19,prior_problems,core,False,,no,invented
+sample-d19,other_joints,core,False,,yes,invented
 sample-d19,chronic_diseases,core,False,,عندي سكر من خمستاشر سنة,invented
+sample-d19,medications,core,False,,صعب ألاقي جزمة مناسبة وبستخدم نعل طبي,invented
+sample-d19,steroids,core,False,,no,invented
+sample-d19,blood_thinners,core,False,,no,invented
+sample-d19,allergies,core,False,,no,invented
 sample-d19,family_history,core,False,,عندي سكر من خمستاشر سنة,invented
 sample-d19,occupation,core,False,,صعب ألاقي جزمة مناسبة وبستخدم نعل طبي,invented
-sample-d19,dominant_hand,core,False,,right,invented
-sample-d19,sport_activity,core,False,,لا مفيش وقعة,invented
-sample-d19,smoking,core,False,,no,invented
+sample-d19,sport_activity,core,False,,حرقان في الرجلين بالليل,invented
 sample-d19,patient_belief,core,False,,حصلت لي نوبة احمرار وسخونية في الصباع الكبير,invented
 sample-d19,can_bear_weight,trauma,False,yes,,missed
 sample-d19,fever,red_flags,True,no,no,correct
@@ -217,13 +196,13 @@ sample-d19,recent_infection_procedure,red_flags,True,,no,invented
 sample-d19,injected_drugs,red_flags,True,,no,invented
 sample-d19,saddle_numbness,red_flags,True,,no,invented
 sample-d19,exertion_chest,red_flags,True,,no,invented
-sample-d19,foot_site,ankle_foot,False,back_heel,back_heel,correct
-sample-d19,foot_swelling,ankle_foot,False,yes,yes,correct
-sample-d19,ankle_instability,ankle_foot,False,no,no,correct
-sample-d19,footwear,ankle_foot,False,yes,yes,correct
+sample-d19,foot_site,ankle_foot,False,back_heel,,missed
+sample-d19,foot_swelling,ankle_foot,False,yes,,missed
+sample-d19,ankle_instability,ankle_foot,False,no,,missed
+sample-d19,footwear,ankle_foot,False,yes,,missed
 sample-d19,foot_deformity,ankle_foot,False,yes,,missed
-sample-d19,foot_numbness,ankle_foot,False,yes,yes,correct
-sample-d19,gout_attacks,ankle_foot,False,yes,yes,correct
+sample-d19,foot_numbness,ankle_foot,False,yes,,missed
+sample-d19,gout_attacks,ankle_foot,False,yes,,missed
 sample-d19,calf_pain,ankle_foot,False,no,,missed
 sample-d19,foot_walk_distance,ankle_foot,False,حوالي عشر دقايق,,missed
 sample-d18,site,site,False,hip,hip,correct
@@ -232,80 +211,89 @@ sample-d18,one_or_many,site,False,more_than_one,more_than_one,correct
 sample-d18,also_neck_back,site,False,yes,yes,correct
 sample-d18,onset,core,False,من سنتين,,missed
 sample-d18,onset_type,core,False,gradual,,missed
-sample-d18,injury,core,False,no,no,correct
-sample-d18,pain_severity,core,False,6,6,correct
-sample-d18,character,core,False,,بينزل للركبة,invented
-sample-d18,radiation,core,False,,yes,invented
-sample-d18,worse_with,core,False,,لما أقوم من كرسي واطي,invented
-sample-d18,morning_stiffness_min,core,False,30,30,correct
-sample-d18,numbness,core,False,,no,invented
-sample-d18,weakness,core,False,,no,invented
-sample-d18,prior_treatment,core,False,,لا مبشربش كحول ولا بخد كورتيزون,invented
+sample-d18,injury,core,False,no,,missed
+sample-d18,pain_severity,core,False,6,,missed
+sample-d18,morning_stiffness_min,core,False,30,,missed
 sample-d18,chief_complaint,core,False,وركي بيوجعني ومش قادر أمشي زي الأول,وركي بيوجعني ومش قادر أمشي زي الأول,correct
-sample-d18,timing,core,False,,constant,invented
-sample-d18,painkillers_help,core,False,,no,invented
+sample-d18,timing,core,False,,intermittent,invented
 sample-d18,stiffness,core,False,,yes,invented
 sample-d18,instability,core,False,,none,invented
 sample-d18,function,core,False,,صعب ألبس الشراب,invented
 sample-d18,prior_problems,core,False,,no,invented
-sample-d18,other_joints,core,False,,yes,invented
 sample-d18,chronic_diseases,core,False,,لا مبشربش كحول ولا بخد كورتيزون,invented
 sample-d18,steroids,core,False,,no,invented
 sample-d18,blood_thinners,core,False,,no,invented
-sample-d18,allergies,core,False,,no,invented
-sample-d18,bladder_bowel,red_flags,True,no,,missed
-sample-d18,saddle_numbness,red_flags,True,no,,missed
+sample-d18,family_history,core,False,,لا مكانش عندي حاجة وأنا صغير,invented
+sample-d18,occupation,core,False,,لا مبشربش كحول ولا بخد كورتيزون,invented
+sample-d18,sport_activity,core,False,,لا مفيش,invented
+sample-d18,patient_belief,core,False,,وركي بيوجعني ومش قادر أمشي زي الأول,invented
+sample-d18,weight_loss,red_flags,True,,no,invented
+sample-d18,cancer_history,red_flags,True,,no,invented
+sample-d18,bladder_bowel,red_flags,True,no,no,correct
+sample-d18,constant_worsening,red_flags,True,,no,invented
+sample-d18,neuro_vascular,red_flags,True,,no,invented
+sample-d18,immune,red_flags,True,,no,invented
+sample-d18,recent_infection_procedure,red_flags,True,,no,invented
+sample-d18,injected_drugs,red_flags,True,,no,invented
+sample-d18,saddle_numbness,red_flags,True,no,no,correct
+sample-d18,exertion_chest,red_flags,True,,no,invented
 sample-d18,leg_pain_below_knee,back,False,,yes,invented
 sample-d18,leg_numb_weak,back,False,no,no,correct
 sample-d18,foot_catching,back,False,,no,invented
 sample-d18,pain_over_6_weeks,back,False,,yes,invented
 sample-d18,steroids_osteoporosis,back,False,,no,invented
-sample-d18,lying_down,back,False,,no_change,invented
+sample-d18,lying_down,back,False,,worse,invented
 sample-d18,hip_site,hip,False,groin,groin,correct
 sample-d18,hip_pain_travels,hip,False,yes,yes,correct
-sample-d18,limp,hip,False,yes,,missed
+sample-d18,limp,hip,False,yes,yes,correct
 sample-d18,socks_shoes,hip,False,yes,yes,correct
 sample-d18,hip_provokers,hip,False,yes,yes,correct
-sample-d18,hip_mechanical,hip,False,no,no,correct
+sample-d18,hip_mechanical,hip,False,no,,missed
 sample-d18,childhood_hip,hip,False,no,no,correct
 sample-d18,steroid_alcohol,hip,False,no,no,correct
 sample-d18,walking_distance,hip,False,حوالي ربع ساعة,ربع ساعة,correct
 sample-d17,site,site,False,back,back,correct
 sample-d17,side,site,False,centre,centre,correct
-sample-d17,one_or_many,site,False,,one_place,invented
-sample-d17,exact_spot,site,False,,wide_area,invented
 sample-d17,also_neck_back,site,False,,yes,invented
-sample-d17,onset,core,False,من أسبوعين,من أسبوعين,correct
+sample-d17,onset,core,False,من أسبوعين,من أسبوعين، فجأة بعد ما شلت عفش,correct
 sample-d17,onset_type,core,False,sudden,sudden,correct
-sample-d17,injury,core,False,yes,,missed
-sample-d17,pain_severity,core,False,9,9,correct
+sample-d17,injury,core,False,yes,yes,correct
+sample-d17,pain_severity,core,False,9,,missed
 sample-d17,radiation,core,False,,yes,invented
 sample-d17,night_pain,core,False,yes,yes,correct
+sample-d17,swelling,core,False,,no,invented
 sample-d17,numbness,core,False,,yes,invented
 sample-d17,weakness,core,False,,yes,invented
-sample-d17,prior_treatment,core,False,,أخدت كورتيزون لفترة طويلة,invented
-sample-d17,chief_complaint,core,False,ضهري بيوجعني ورجلي ضعفت,ضهري بيوجعني ورجلي ضعفت,correct
-sample-d17,steroids,core,False,,no,invented
+sample-d17,prior_treatment,core,False,,أخدت كورتيزون لفترة طويلة، أو عندك هشاشة عظام؟ لا مفيش كورتيزون ولا هشاشة,invented
+sample-d17,chief_complaint,core,False,ضهري بيوجعني ورجلي ضعفت,,missed
+sample-d17,family_history,core,False,,لا عمري ما اتعالجت من ورم,invented
+sample-d17,sport_activity,core,False,,شلت عفش,invented
+sample-d17,patient_belief,core,False,,بدأ من أسبوعين، فجأة بعد ما شلت عفش,invented
+sample-d17,trauma_mechanism,trauma,False,,شلت عفش,invented
+sample-d17,injury_when,trauma,False,,من أسبوعين,invented
+sample-d17,swelling_24h,trauma,False,,no,invented
+sample-d17,numb_cold,trauma,False,,yes,invented
+sample-d17,first_aid,trauma,False,,لا مفيش كورتيزون ولا هشاشة,invented
 sample-d17,fever,red_flags,True,no,no,correct
 sample-d17,weight_loss,red_flags,True,no,no,correct
 sample-d17,cancer_history,red_flags,True,no,no,correct
 sample-d17,bladder_bowel,red_flags,True,yes,yes,correct
 sample-d17,constant_worsening,red_flags,True,yes,yes,correct
+sample-d17,neuro_vascular,red_flags,True,,yes,invented
 sample-d17,recent_infection_procedure,red_flags,True,no,no,correct
 sample-d17,saddle_numbness,red_flags,True,yes,yes,correct
+sample-d17,exertion_chest,red_flags,True,,no,invented
 sample-d17,leg_pain_below_knee,back,False,yes,yes,correct
 sample-d17,leg_numb_weak,back,False,yes,yes,correct
 sample-d17,foot_catching,back,False,yes,yes,correct
 sample-d17,pain_over_6_weeks,back,False,no,no,correct
 sample-d17,steroids_osteoporosis,back,False,no,no,correct
-sample-d17,lying_down,back,False,no_change,no_change,correct
+sample-d17,lying_down,back,False,no_change,,missed
 sample-d16,site,site,False,neck,neck,correct
-sample-d16,side,site,False,,left,invented
 sample-d16,one_or_many,site,False,more_than_one,more_than_one,correct
-sample-d16,exact_spot,site,False,,wide_area,invented
 sample-d16,also_neck_back,site,False,,yes,invented
 sample-d16,onset,core,False,من سبع شهور,من سبع شهور، واحدة واحدة,correct
-sample-d16,onset_type,core,False,gradual,,missed
+sample-d16,onset_type,core,False,gradual,gradual,correct
 sample-d16,injury,core,False,no,no,correct
 sample-d16,pain_severity,core,False,6,6,correct
 sample-d16,radiation,core,False,,yes,invented
@@ -314,12 +302,23 @@ sample-d16,night_pain,core,False,no,no,correct
 sample-d16,swelling,core,False,,no,invented
 sample-d16,numbness,core,False,,yes,invented
 sample-d16,weakness,core,False,,yes,invented
-sample-d16,chief_complaint,core,False,رقبتي بتوجعني وإيدي بقت بتتلخبط,رقبتي بتوجعني وإيدي بقت بتتلخبط,correct
+sample-d16,prior_treatment,core,False,,لا مفيش,invented
+sample-d16,chief_complaint,core,False,رقبتي بتوجعني وإيدي بقت بتتلخبط,,missed
+sample-d16,timing,core,False,,constant,invented
+sample-d16,stiffness,core,False,,yes,invented
+sample-d16,instability,core,False,,catches,invented
+sample-d16,function,core,False,,بوقّع الكوباية من إيدي,invented
 sample-d16,prior_problems,core,False,,no,invented
+sample-d16,other_joints,core,False,,no,invented
+sample-d16,chronic_diseases,core,False,,لا مفيش سخونية,invented
+sample-d16,medications,core,False,,لا مفيش سخونية,invented
 sample-d16,occupation,core,False,محاسب وبقعد قدام الكمبيوتر,محاسب وبقعد قدام الكمبيوتر,correct
 sample-d16,fever,red_flags,True,no,,missed
-sample-d16,weight_loss,red_flags,True,no,,missed
-sample-d16,cancer_history,red_flags,True,no,,missed
+sample-d16,weight_loss,red_flags,True,no,no,correct
+sample-d16,cancer_history,red_flags,True,no,no,correct
+sample-d16,bladder_bowel,red_flags,True,,no,invented
+sample-d16,neuro_vascular,red_flags,True,,yes,invented
+sample-d16,saddle_numbness,red_flags,True,,no,invented
 sample-d16,arm_pain,neck,False,yes,yes,correct
 sample-d16,arm_numbness,neck,False,yes,yes,correct
 sample-d16,arm_weakness,neck,False,yes,yes,correct
@@ -328,44 +327,40 @@ sample-d16,bladder_bowel_neck,neck,True,no,,missed
 sample-d16,dizzy_vision_speech,neck,True,no,,missed
 sample-d16,neck_movement,neck,False,yes,yes,correct
 sample-d16,headache,neck,False,yes,yes,correct
+sample-d16,leg_pain_below_knee,back,False,,no,invented
 sample-d16,leg_numb_weak,back,False,,yes,invented
 sample-d16,foot_catching,back,False,,no,invented
 sample-d16,pain_over_6_weeks,back,False,,yes,invented
-sample-d16,steroids_osteoporosis,back,False,,no,invented
 sample-d16,lying_down,back,False,,no_change,invented
 sample-d15,site,site,False,wrist_hand,wrist_hand,correct
 sample-d15,side,site,False,both,both,correct
-sample-d15,one_or_many,site,False,,one_place,invented
+sample-d15,one_or_many,site,False,,more_than_one,invented
 sample-d15,exact_spot,site,False,,wide_area,invented
 sample-d15,also_neck_back,site,False,,no,invented
 sample-d15,onset,core,False,من أربع شهور,من أربع شهور، واحدة واحدة,correct
-sample-d15,onset_type,core,False,gradual,,missed
-sample-d15,character,core,False,,تنميل وبتصحيني بالليل,invented
-sample-d15,radiation,core,False,,yes,invented
+sample-d15,onset_type,core,False,gradual,gradual,correct
+sample-d15,character,core,False,,تنميل,invented
 sample-d15,worse_with,core,False,,لما بسوق وأمسك الموبايل,invented
 sample-d15,better_with,core,False,,لما أنفض إيدي,invented
 sample-d15,night_pain,core,False,,yes,invented
-sample-d15,morning_stiffness_min,core,False,,0,invented
 sample-d15,swelling,core,False,,no,invented
-sample-d15,numbness,core,False,yes,yes,correct
+sample-d15,numbness,core,False,yes,,missed
 sample-d15,weakness,core,False,yes,yes,correct
 sample-d15,prior_treatment,core,False,,الجبيرة فرقت معايا,invented
-sample-d15,diabetes,core,False,yes,,missed
+sample-d15,diabetes,core,False,yes,yes,correct
 sample-d15,chief_complaint,core,False,إيديا بتنمل وبتصحيني بالليل,إيديا بتنمل وبتصحيني بالليل,correct
 sample-d15,timing,core,False,,intermittent,invented
 sample-d15,stiffness,core,False,,yes,invented
+sample-d15,instability,core,False,,none,invented
 sample-d15,function,core,False,,صعب أقفل الأزرار وأفتح البرطمان,invented
 sample-d15,prior_problems,core,False,,yes,invented
 sample-d15,chronic_diseases,core,False,,عندي سكر,invented
-sample-d15,steroids,core,False,,no,invented
-sample-d15,blood_thinners,core,False,,no,invented
-sample-d15,allergies,core,False,,no,invented
-sample-d15,family_history,core,False,,لا مفيش ورم ولا كتلة,invented
+sample-d15,family_history,core,False,,عندي سكر,invented
 sample-d15,occupation,core,False,سكرتيرة وبكتب على الكمبيوتر طول اليوم,سكرتيرة وبكتب على الكمبيوتر طول اليوم,correct
 sample-d15,dominant_hand,core,False,right,right,correct
-sample-d15,sport_activity,core,False,,لا مفيش برودة ولا تغيير في اللون,invented
-sample-d15,smoking,core,False,,no,invented
+sample-d15,patient_belief,core,False,,بدأت من أربع شهور، واحدة واحدة. في تنميل أو وخز أو وجع في صوابعك؟ أنهي صوابع؟ في الإبهام والسبابة والوسطى. الصباع الصغير سليم ومفيهوش أعراض؟ أيوه الصباع الصغير سليم. بيصحّيك بالليل؟ أيوه بيصحيني تلات مرات في الليلة. لما تنفض إيدك أو ترفعها بيخف؟ أيوه لما أنفض إيدي بيخف. بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوه لما بسوق وأمسك الموبايل. إيدك ضعيفة أو بتوقّع حاجات منها؟ أيوه الحاجات بتقع من إيدي. صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوه صعب أقفل الأزرار وأفتح البرطمان.,invented
 sample-d15,neuro_vascular,red_flags,True,no,,missed
+sample-d15,saddle_numbness,red_flags,True,,no,invented
 sample-d15,numb_fingers,wrist_hand,False,الإبهام والسبابة والوسطى,في الإبهام والسبابة والوسطى,correct
 sample-d15,spares_little_finger,wrist_hand,False,yes,yes,correct
 sample-d15,night_waking,wrist_hand,False,yes,yes,correct
@@ -381,7 +376,7 @@ sample-d14,one_or_many,site,False,,one_place,invented
 sample-d14,exact_spot,site,False,,one_spot,invented
 sample-d14,also_neck_back,site,False,,no,invented
 sample-d14,onset,core,False,من تلات شهور,من تلات شهور، واحدة واحدة,correct
-sample-d14,onset_type,core,False,gradual,,missed
+sample-d14,onset_type,core,False,gradual,gradual,correct
 sample-d14,injury,core,False,no,no,correct
 sample-d14,pain_severity,core,False,5,5,correct
 sample-d14,worse_with,core,False,,لما ألف الأكياس وأمسك الدرافيل,invented
@@ -392,11 +387,22 @@ sample-d14,numbness,core,False,,no,invented
 sample-d14,weakness,core,False,yes,yes,correct
 sample-d14,prior_treatment,core,False,لبست رباط ودهان,لبست رباط ودهان,correct
 sample-d14,chief_complaint,core,False,كوعي بيوجعني لما بمسك الأدوات,كوعي بيوجعني لما بمسك الأدوات,correct
+sample-d14,timing,core,False,,intermittent,invented
+sample-d14,painkillers_help,core,False,,yes,invented
+sample-d14,stiffness,core,False,,no,invented
 sample-d14,instability,core,False,,none,invented
+sample-d14,function,core,False,,حسس بضعف في إيدك,invented
 sample-d14,prior_problems,core,False,,no,invented
-sample-d14,occupation,core,False,سباك وشغلي فيه لف وشد كتير,"plumber, involves a lot of twisting and pulling",wrong value
-sample-d14,sport_activity,core,False,مبتمرنش,no,wrong value
-sample-d14,fever,red_flags,True,no,no,correct
+sample-d14,other_joints,core,False,,no,invented
+sample-d14,chronic_diseases,core,False,,لا مفيش سخونية,invented
+sample-d14,medications,core,False,,لبست رباط ودهان,invented
+sample-d14,steroids,core,False,,no,invented
+sample-d14,blood_thinners,core,False,,no,invented
+sample-d14,allergies,core,False,,no,invented
+sample-d14,occupation,core,False,سباك وشغلي فيه لف وشد كتير,سباك وشغلي فيه لف وشد كتير,correct
+sample-d14,sport_activity,core,False,مبتمرنش,مبتمرنش,correct
+sample-d14,smoking,core,False,,no,invented
+sample-d14,fever,red_flags,True,no,,missed
 sample-d14,elbow_site,elbow,False,outer,outer,correct
 sample-d14,grip_lift_twist,elbow,False,yes,yes,correct
 sample-d14,elbow_swelling,elbow,False,no,no,correct
@@ -407,18 +413,13 @@ sample-d13,side,site,False,left,left,correct
 sample-d13,one_or_many,site,False,,one_place,invented
 sample-d13,exact_spot,site,False,,one_spot,invented
 sample-d13,also_neck_back,site,False,,no,invented
+sample-d13,onset,core,False,,امبارح بالليل,invented
 sample-d13,injury,core,False,yes,yes,correct
-sample-d13,pain_severity,core,False,9,,missed
-sample-d13,character,core,False,,خرج من مكانه,invented
-sample-d13,radiation,core,False,,no,invented
+sample-d13,pain_severity,core,False,9,10,wrong value
 sample-d13,worse_with,core,False,,لا مقدرتش أستخدم إيدي,invented
-sample-d13,better_with,core,False,,رحت مستشفى حطوا لي جبيرة,invented
-sample-d13,night_pain,core,False,,yes,invented
 sample-d13,swelling,core,False,,yes,invented
 sample-d13,numbness,core,False,,no,invented
-sample-d13,weakness,core,False,,yes,invented
 sample-d13,prior_treatment,core,False,,رحت مستشفى حطوا لي جبيرة,invented
-sample-d13,diabetes,core,False,,no,invented
 sample-d13,chief_complaint,core,False,كتفي خرج من مكانه امبارح,كتفي خرج من مكانه امبارح,correct
 sample-d13,timing,core,False,,constant,invented
 sample-d13,painkillers_help,core,False,,no,invented
@@ -427,22 +428,16 @@ sample-d13,instability,core,False,,locks,invented
 sample-d13,function,core,False,,لا مقدرتش أستخدم إيدي,invented
 sample-d13,prior_problems,core,False,,yes,invented
 sample-d13,other_joints,core,False,,no,invented
-sample-d13,chronic_diseases,core,False,,بلعب كورة سلة,invented
 sample-d13,medications,core,False,,رحت مستشفى حطوا لي جبيرة,invented
 sample-d13,steroids,core,False,,no,invented
 sample-d13,blood_thinners,core,False,,no,invented
-sample-d13,allergies,core,False,,no,invented
-sample-d13,family_history,core,False,,لا مفيش تنميل,invented
-sample-d13,occupation,core,False,,لا مقدرتش أستخدم إيدي,invented
 sample-d13,dominant_hand,core,False,left,left,correct
 sample-d13,sport_activity,core,False,بلعب كورة سلة,بلعب كورة سلة,correct
-sample-d13,smoking,core,False,,no,invented
-sample-d13,patient_belief,core,False,,خرج تلات مرات قبل كده,invented
-sample-d13,trauma_mechanism,trauma,False,وقعت على كتفي مباشرة,وقعة من على الموتوسيكل,wrong value
+sample-d13,trauma_mechanism,trauma,False,وقعت على كتفي مباشرة,وقعت من على الموتوسيكل,wrong value
 sample-d13,can_bear_weight,trauma,False,,no,invented
 sample-d13,high_energy,trauma,False,yes,yes,correct
 sample-d13,injury_when,trauma,False,امبارح بالليل,امبارح بالليل,correct
-sample-d13,immediate_function,trauma,False,no,no,correct
+sample-d13,immediate_function,trauma,False,no,,missed
 sample-d13,snap_pop,trauma,False,yes,yes,correct
 sample-d13,deformity,trauma,False,yes,yes,correct
 sample-d13,skin_wound,trauma,False,yes,yes,correct
@@ -452,33 +447,41 @@ sample-d13,first_aid,trauma,False,رحت مستشفى حطوا لي جبيرة,�
 sample-d13,overhead_activity,shoulder,False,,yes,invented
 sample-d13,stiffness_reach,shoulder,False,,yes,invented
 sample-d13,can_lift_arm,shoulder,False,no,no,correct
-sample-d13,dislocation,shoulder,False,yes,,missed
+sample-d13,dislocation,shoulder,False,yes,yes,correct
 sample-d13,neck_arm_symptoms,shoulder,False,no,no,correct
 sample-d13,first_dislocation,shoulder,False,19,19,correct
 sample-d12,site,site,False,shoulder,shoulder,correct
 sample-d12,side,site,False,right,right,correct
 sample-d12,one_or_many,site,False,,one_place,invented
-sample-d12,exact_spot,site,False,,one_spot,invented
 sample-d12,also_neck_back,site,False,no,no,correct
 sample-d12,onset,core,False,من أربع شهور,من أربع شهور، واحدة واحدة,correct
-sample-d12,onset_type,core,False,gradual,,missed
+sample-d12,onset_type,core,False,gradual,gradual,correct
 sample-d12,injury,core,False,no,no,correct
 sample-d12,pain_severity,core,False,7,10,wrong value
 sample-d12,radiation,core,False,yes,yes,correct
-sample-d12,worse_with,core,False,لما أرفع إيدي فوق راسي,لما أرفع إيدي فوق راسي,correct
+sample-d12,worse_with,core,False,لما أرفع إيدي فوق راسي,لما أرفع إيدي فوق راسي. بتشتغل أو بتلعب وإيدك فوق مستوى الكتف، أو بتشيل حاجات تقيلة؟,correct
 sample-d12,night_pain,core,False,yes,yes,correct
-sample-d12,weakness,core,False,,yes,invented
+sample-d12,swelling,core,False,,no,invented
+sample-d12,numbness,core,False,,no,invented
+sample-d12,weakness,core,False,,no,invented
 sample-d12,prior_treatment,core,False,خدت حقنة كورتيزون من شهرين,خدت حقنة كورتيزون من شهرين وفرقت يومين,correct
+sample-d12,diabetes,core,False,,no,invented
 sample-d12,chief_complaint,core,False,كتفي بيوجعني وإيدي مش بترتفع,كتفي بيوجعني وإيدي مش بترتفع,correct
-sample-d12,family_history,core,False,,لا عمري ما اتعالجت من ورم,invented
-sample-d12,occupation,core,False,,بشتغل وإيدي فوق طول اليوم,invented
+sample-d12,timing,core,False,,intermittent,invented
+sample-d12,painkillers_help,core,False,,no,invented
+sample-d12,stiffness,core,False,,yes,invented
+sample-d12,instability,core,False,,none,invented
+sample-d12,function,core,False,,لا مش بقدر أرفعها لمستوى الكتف,invented
+sample-d12,prior_problems,core,False,,yes,invented
+sample-d12,other_joints,core,False,,no,invented
+sample-d12,chronic_diseases,core,False,,لا عمري ما اتعالجت من ورم,invented
+sample-d12,steroids,core,False,,yes,invented
+sample-d12,occupation,core,False,,نقّاش وبشتغل وإيدي فوق طول اليوم,invented
 sample-d12,dominant_hand,core,False,right,right,correct
 sample-d12,smoking,core,False,yes,yes,correct
-sample-d12,patient_belief,core,False,,كتفي بيوجعني وإيدي مش بترتفع,invented
-sample-d12,fever,red_flags,True,no,no,correct
-sample-d12,weight_loss,red_flags,True,no,no,correct
-sample-d12,cancer_history,red_flags,True,no,no,correct
-sample-d12,injected_drugs,red_flags,True,,no,invented
+sample-d12,fever,red_flags,True,no,,missed
+sample-d12,weight_loss,red_flags,True,no,,missed
+sample-d12,cancer_history,red_flags,True,no,,missed
 sample-d12,exertion_chest,red_flags,True,no,,missed
 sample-d12,overhead_activity,shoulder,False,yes,yes,correct
 sample-d12,night_lying,shoulder,False,yes,yes,correct
@@ -490,22 +493,37 @@ sample-d11,site,site,False,knee,knee,correct
 sample-d11,side,site,False,left,left,correct
 sample-d11,one_or_many,site,False,one_place,one_place,correct
 sample-d11,exact_spot,site,False,wide_area,wide_area,correct
-sample-d11,onset,core,False,من أسبوعين,,missed
+sample-d11,also_neck_back,site,False,,no,invented
+sample-d11,onset,core,False,من أسبوعين,من أسبوعين,correct
 sample-d11,onset_type,core,False,sudden,,missed
 sample-d11,injury,core,False,yes,yes,correct
 sample-d11,pain_severity,core,False,7,7,correct
 sample-d11,character,core,False,وجع حاد,وجع حاد,correct
 sample-d11,radiation,core,False,,no,invented
-sample-d11,worse_with,core,False,,مش بقدر أفردها كلها,invented
-sample-d11,better_with,core,False,,لا مفيش,invented
+sample-d11,worse_with,core,False,,مش قادر أمشي كويس,invented
+sample-d11,better_with,core,False,,لا مقدرتش أشيل وزني عليها,invented
 sample-d11,night_pain,core,False,,no,invented
 sample-d11,swelling,core,False,,yes,invented
 sample-d11,numbness,core,False,,no,invented
 sample-d11,weakness,core,False,,yes,invented
-sample-d11,chief_complaint,core,False,اتعورت في الركبة وأنا بلعب كورة,,missed
+sample-d11,prior_treatment,core,False,,حطيت تلج وخدت مسكن,invented
+sample-d11,chief_complaint,core,False,اتعورت في الركبة وأنا بلعب كورة,اتعورت في الركبة وأنا بلعب كورة ومش قادر أمشي كويس,correct
+sample-d11,timing,core,False,,constant,invented
+sample-d11,stiffness,core,False,,yes,invented
 sample-d11,instability,core,False,locks,locks,correct
-sample-d11,prior_problems,core,False,no,,missed
+sample-d11,function,core,False,,بتخوني لما أمشي,invented
+sample-d11,prior_problems,core,False,no,no,correct
+sample-d11,other_joints,core,False,,no,invented
+sample-d11,chronic_diseases,core,False,,لا وزني ثابت,invented
+sample-d11,medications,core,False,,خدت مسكن,invented
+sample-d11,steroids,core,False,,no,invented
+sample-d11,blood_thinners,core,False,,no,invented
+sample-d11,allergies,core,False,,no,invented
+sample-d11,family_history,core,False,,لا مفيش,invented
+sample-d11,occupation,core,False,,لا مفيش,invented
 sample-d11,sport_activity,core,False,بلعب كورة مرتين في الأسبوع,بلعب كورة مرتين في الأسبوع,correct
+sample-d11,smoking,core,False,,no,invented
+sample-d11,patient_belief,core,False,,تعورت في الركبة وأنا بلعب كورة ومش قادر أمشي كويس,invented
 sample-d11,trauma_mechanism,trauma,False,رجلي ثبتت في الأرض وجسمي لف,وقعة، لوية، ضربة، حادثة عربية، ولا شيل حاجة تقيلة؟ رجلي ثبتت في الأرض وجسمي لف,correct
 sample-d11,can_bear_weight,trauma,False,,no,invented
 sample-d11,high_energy,trauma,False,no,no,correct
@@ -522,10 +540,12 @@ sample-d11,fever,red_flags,True,no,no,correct
 sample-d11,weight_loss,red_flags,True,no,no,correct
 sample-d11,cancer_history,red_flags,True,no,no,correct
 sample-d11,immune,red_flags,True,no,no,correct
-sample-d11,giving_way,knee,False,yes,yes,correct
+sample-d11,hot_red_joint,red_flags,True,,no,invented
+sample-d11,injected_drugs,red_flags,True,,no,invented
+sample-d11,saddle_numbness,red_flags,True,,no,invented
+sample-d11,exertion_chest,red_flags,True,,no,invented
+sample-d11,giving_way,knee,False,yes,,missed
 sample-d11,locking_catching,knee,False,,locks,invented
-sample-d11,stairs,knee,False,,no,invented
-sample-d11,kneeling,knee,False,,no,invented
 sample-d11,can_straighten,knee,False,no,no,correct
 sample-d10,site,site,False,knee,knee,correct
 sample-d10,side,site,False,both,both,correct
@@ -533,294 +553,242 @@ sample-d10,one_or_many,site,False,one_place,one_place,correct
 sample-d10,exact_spot,site,False,wide_area,wide_area,correct
 sample-d10,also_neck_back,site,False,no,no,correct
 sample-d10,onset,core,False,من خمس سنين,من خمس سنين وبدأ واحدة واحدة,correct
-sample-d10,onset_type,core,False,gradual,,missed
+sample-d10,onset_type,core,False,gradual,gradual,correct
 sample-d10,injury,core,False,no,no,correct
 sample-d10,pain_severity,core,False,6,6,correct
 sample-d10,character,core,False,وجع تقيل,تقيل,correct
-sample-d10,radiation,core,False,no,no,correct
+sample-d10,radiation,core,False,no,,missed
 sample-d10,worse_with,core,False,لما أنزل السلم ولما أقف كتير,لما أنزل السلم ولما أقف كتير,correct
-sample-d10,better_with,core,False,لما أقعد وأرتاح,وأقعد وأرتاح، والمسكنات بتفرق معايا شوية,wrong value
-sample-d10,night_pain,core,False,no,no,correct
-sample-d10,morning_stiffness_min,core,False,10,,missed
+sample-d10,better_with,core,False,لما أقعد وأرتاح,,missed
+sample-d10,night_pain,core,False,no,,missed
+sample-d10,morning_stiffness_min,core,False,10,10,correct
 sample-d10,swelling,core,False,yes,yes,correct
 sample-d10,numbness,core,False,,no,invented
 sample-d10,weakness,core,False,no,no,correct
 sample-d10,prior_treatment,core,False,علاج طبيعي وحقن,علاج طبيعي وحقن، وفرق معايا شهرين,correct
 sample-d10,diabetes,core,False,yes,,missed
-sample-d10,chief_complaint,core,False,ركبتي بتوجعني وأنا بطلع السلم,,missed
+sample-d10,chief_complaint,core,False,ركبتي بتوجعني وأنا بطلع السلم,ركبتي بتوجعني وأنا بطلع السلم وجاية أشوف الدكتور,correct
 sample-d10,timing,core,False,intermittent,intermittent,correct
 sample-d10,painkillers_help,core,False,yes,yes,correct
-sample-d10,stiffness,core,False,yes,,missed
-sample-d10,instability,core,False,clicks,,missed
+sample-d10,stiffness,core,False,yes,yes,correct
+sample-d10,instability,core,False,clicks,clicks,correct
 sample-d10,function,core,False,مش بعرف أنزل السلم من غير ما أمسك في الحيطة,مش بعرف أنزل السلم من غير ما أمسك في الحيطة,correct
 sample-d10,prior_problems,core,False,no,no,correct
-sample-d10,other_joints,core,False,yes,,missed
-sample-d10,chronic_diseases,core,False,سكر وضغط,سكور وضغط,wrong value
-sample-d10,medications,core,False,جلوكوفاج وأدوية الضغط,,missed
+sample-d10,other_joints,core,False,yes,yes,correct
+sample-d10,chronic_diseases,core,False,سكر وضغط,عندي سكر وضغط,correct
+sample-d10,medications,core,False,جلوكوفاج وأدوية الضغط,باخد جلوكوفاج وأدوية الضغط، مش باخد كورتيزون ولا مسيّلات,correct
 sample-d10,steroids,core,False,no,no,correct
 sample-d10,blood_thinners,core,False,no,no,correct
 sample-d10,allergies,core,False,no,no,correct
 sample-d10,family_history,core,False,أمي كان عندها خشونة في الركبة,أمي كان عندها خشونة في الركبة,correct
 sample-d10,occupation,core,False,مدرّسة، وبقف كتير في الحصة,مدرّسة، وبقف كتير في الحصة,correct
-sample-d10,dominant_hand,core,False,right,right,correct
-sample-d10,sport_activity,core,False,بمشي بس شوية,لا بمشي بس شوية,correct
-sample-d10,smoking,core,False,no,no,correct
+sample-d10,dominant_hand,core,False,right,,missed
+sample-d10,sport_activity,core,False,بمشي بس شوية,بمشي بس شوية,correct
+sample-d10,smoking,core,False,no,,missed
 sample-d10,patient_belief,core,False,شايفة إنه من الوزن، وخايفة أحتاج عملية,شايفة إنه من الوزن، وخايفة أحتاج عملية,correct
 sample-d10,can_bear_weight,trauma,False,yes,,missed
-sample-d10,fever,red_flags,True,no,no,correct
-sample-d10,weight_loss,red_flags,True,no,no,correct
-sample-d10,cancer_history,red_flags,True,no,no,correct
-sample-d10,bladder_bowel,red_flags,True,,no,invented
-sample-d10,constant_worsening,red_flags,True,,no,invented
-sample-d10,neuro_vascular,red_flags,True,,no,invented
-sample-d10,immune,red_flags,True,,no,invented
-sample-d10,hot_red_joint,red_flags,True,,no,invented
-sample-d10,recent_infection_procedure,red_flags,True,,no,invented
-sample-d10,injected_drugs,red_flags,True,,no,invented
-sample-d10,saddle_numbness,red_flags,True,,no,invented
-sample-d10,exertion_chest,red_flags,True,,no,invented
+sample-d10,fever,red_flags,True,no,,missed
+sample-d10,weight_loss,red_flags,True,no,,missed
+sample-d10,cancer_history,red_flags,True,no,,missed
 sample-d10,giving_way,knee,False,,yes,invented
-sample-d10,locking_catching,knee,False,none,,missed
-sample-d10,stairs,knee,False,yes,,missed
+sample-d10,locking_catching,knee,False,none,clicks,wrong value
+sample-d10,stairs,knee,False,yes,yes,correct
 sample-d10,kneeling,knee,False,yes,yes,correct
 sample-d10,can_straighten,knee,False,yes,yes,correct
-sample-d09,site,site,False,back,back,correct
-sample-d09,onset,core,False,من تلات شهور,من تلات شهور,correct
+sample-d09,site,site,False,back,,missed
+sample-d09,also_neck_back,site,False,,no,invented
+sample-d09,onset,core,False,من تلات شهور,,missed
 sample-d09,night_pain,core,False,yes,yes,correct
-sample-d09,chief_complaint,core,False,,ضهري بيوجعني من تلات شهور,invented
+sample-d09,chief_complaint,core,False,,ضهري بيوجعني من تلات شهور، وكان عندي سرطان في الثدي من خمس سنين,invented
 sample-d09,timing,core,False,,constant,invented
 sample-d09,function,core,False,,بقيت مش قادرة أتحكم في البول,invented
-sample-d09,chronic_diseases,core,False,,كان عندي سرطان في الثدي من خمس سنين,invented
-sample-d09,family_history,core,False,,سرطان في الثدي,invented
+sample-d09,family_history,core,False,,كان عندي سرطان في الثدي من خمس سنين,invented
 sample-d09,fever,red_flags,True,no,no,correct
-sample-d09,weight_loss,red_flags,True,no,no,correct
-sample-d09,cancer_history,red_flags,True,yes,yes,correct
+sample-d09,weight_loss,red_flags,True,no,,missed
+sample-d09,cancer_history,red_flags,True,yes,,missed
 sample-d09,bladder_bowel,red_flags,True,yes,yes,correct
-sample-d09,pain_over_6_weeks,back,False,,yes,invented
 sample-d08,site,site,False,wrist_hand,wrist_hand,correct
-sample-d08,side,site,False,right,right,correct
-sample-d08,onset,core,False,من شهر,من شهر,correct
+sample-d08,side,site,False,right,,missed
+sample-d08,one_or_many,site,False,,one_place,invented
+sample-d08,also_neck_back,site,False,,no,invented
+sample-d08,onset,core,False,من شهر,,missed
 sample-d08,night_pain,core,False,yes,yes,correct
-sample-d08,numbness,core,False,yes,,missed
-sample-d08,weakness,core,False,yes,yes,correct
-sample-d08,prior_treatment,core,False,لبست جبيرة بالليل,لّبست جبيرة بالليل,correct
+sample-d08,numbness,core,False,yes,yes,correct
+sample-d08,weakness,core,False,yes,,missed
+sample-d08,prior_treatment,core,False,لبست جبيرة بالليل,لبست جبيرة بالليل,correct
 sample-d08,diabetes,core,False,no,no,correct
 sample-d08,chief_complaint,core,False,,إيدي اليمين بتنمل بالليل,invented
-sample-d08,timing,core,False,,intermittent,invented
-sample-d08,painkillers_help,core,False,,no,invented
+sample-d08,timing,core,False,,constant,invented
 sample-d08,stiffness,core,False,,yes,invented
-sample-d08,function,core,False,,الحاجة بتقع من إيدي,invented
-sample-d08,prior_problems,core,False,,yes,invented
-sample-d08,dominant_hand,core,False,,right,invented
-sample-d08,smoking,core,False,,no,invented
-sample-d08,patient_belief,core,False,,جربتي أي علاج؟ لبست جبيرة بالليل,invented
+sample-d08,function,core,False,,الوجع بيصحيني من النوم,invented
 sample-d08,numb_fingers,wrist_hand,False,,إيدي اليمين بتنمل بالليل,invented
 sample-d08,night_waking,wrist_hand,False,,yes,invented
+sample-d08,provoked_by,wrist_hand,False,,no,invented
 sample-d08,grip_weakness,wrist_hand,False,,yes,invented
-sample-d08,splint_injection,wrist_hand,False,,yes,invented
 d01,site,site,False,knee,shoulder,wrong value
-d01,side,site,False,right,right,correct
-d01,onset,core,False,من حوالي تلات شهور,من حوالي ثلاث شهور,wrong value
-d01,onset_type,core,False,gradual,gradual,correct
+d01,side,site,False,right,,missed
+d01,onset,core,False,من حوالي تلات شهور,من حوالي ثلاث شهور وبدأت واحدة واحدة,wrong value
+d01,onset_type,core,False,gradual,,missed
 d01,injury,core,False,no,,missed
 d01,pain_severity,core,False,6,,missed
 d01,worse_with,core,False,لما أنزل السلم,لما أنزل السلم,correct
 d01,night_pain,core,False,yes,yes,correct
-d01,swelling,core,False,yes,yes,correct
-d01,chief_complaint,core,False,,رجبتي اليمين بتوجعني,invented
+d01,swelling,core,False,yes,,missed
+d01,chief_complaint,core,False,,رجبتي اليمين بتوجعني بدأت من إمتى؟,invented
+d01,timing,core,False,,constant,invented
+d01,stiffness,core,False,,yes,invented
+d01,function,core,False,,لما أنزل السلم فيه ورم؟,invented
 d01,fever,red_flags,True,no,no,correct
 d01,overhead_activity,shoulder,False,,no,invented
-d01,night_lying,shoulder,False,,yes,invented
-d01,stiffness_reach,shoulder,False,,no,invented
-d01,can_lift_arm,shoulder,False,,no,invented
-d01,dislocation,shoulder,False,,no,invented
-d01,neck_arm_symptoms,shoulder,False,,no,invented
 d02,site,site,False,back,back,correct
-d02,side,site,False,,left,invented
 d02,also_neck_back,site,False,,yes,invented
 d02,onset,core,False,من شهرين,من شهرين,correct
-d02,worse_with,core,False,,الوجع بيصحيك بالليل,invented
+d02,character,core,False,,تنميل من رجلي الشمال,invented
 d02,night_pain,core,False,yes,yes,correct
 d02,numbness,core,False,yes,yes,correct
 d02,chief_complaint,core,False,,ضهري بيوجعني من إمتى؟,invented
-d02,weight_loss,red_flags,True,yes,yes,correct
+d02,weight_loss,red_flags,True,yes,,missed
+d02,neuro_vascular,red_flags,True,,yes,invented
 d02,leg_numb_weak,back,False,,yes,invented
 d02,pain_over_6_weeks,back,False,,yes,invented
-d02,lying_down,back,False,,worse,invented
 d03,site,site,False,shoulder,shoulder,correct
-d03,side,site,False,left,left,correct
+d03,side,site,False,left,,missed
 d03,onset,core,False,امبارح,,missed
-d03,injury,core,False,yes,yes,correct
-d03,pain_severity,core,False,8,8,correct
-d03,swelling,core,False,no,no,correct
-d03,numbness,core,False,no,no,correct
-d03,weakness,core,False,yes,yes,correct
+d03,injury,core,False,yes,,missed
+d03,pain_severity,core,False,8,,missed
+d03,swelling,core,False,no,,missed
+d03,numbness,core,False,no,,missed
+d03,weakness,core,False,yes,,missed
 d03,chief_complaint,core,False,,كتف الشمال بيوجعني جامد,invented
 d03,timing,core,False,,constant,invented
 d03,painkillers_help,core,False,,no,invented
-d03,function,core,False,,مش قادر أرفع إيدي,invented
-d03,trauma_mechanism,trauma,False,وقعت من على السلم,وقعت من على السل من بارح,wrong value
-d03,can_bear_weight,trauma,False,,no,invented
-d03,injury_when,trauma,False,,بارح,invented
-d03,immediate_function,trauma,False,,no,invented
-d03,numb_cold,trauma,False,,no,invented
-d03,overhead_activity,shoulder,False,,no,invented
+d03,stiffness,core,False,,yes,invented
+d03,instability,core,False,,none,invented
+d03,function,core,False,,مفيش ورم,invented
+d03,trauma_mechanism,trauma,False,وقعت من على السلم,,missed
+d03,neuro_vascular,red_flags,True,,no,invented
+d03,exertion_chest,red_flags,True,,no,invented
 d03,can_lift_arm,shoulder,False,,no,invented
-d03,dislocation,shoulder,False,,yes,invented
-d03,first_dislocation,shoulder,False,,10,invented
 d04,site,site,False,hip,hip,correct
-d04,side,site,False,right,right,correct
-d04,onset,core,False,من سنة,من سنة,correct
-d04,onset_type,core,False,gradual,gradual,correct
-d04,radiation,core,False,yes,yes,correct
-d04,worse_with,core,False,,لما ارتاح,invented
-d04,better_with,core,False,لما أرتاح وأقعد,اعد بتتيبس الصبح,wrong value
-d04,morning_stiffness_min,core,False,30,30,correct
-d04,swelling,core,False,,yes,invented
-d04,prior_treatment,core,False,باخد مسكن,باخد مسكن,correct
+d04,side,site,False,right,,missed
+d04,also_neck_back,site,False,,no,invented
+d04,onset,core,False,من سنة,,missed
+d04,onset_type,core,False,gradual,,missed
+d04,radiation,core,False,yes,,missed
+d04,better_with,core,False,لما أرتاح وأقعد,,missed
+d04,morning_stiffness_min,core,False,30,,missed
+d04,prior_treatment,core,False,باخد مسكن,,missed
 d04,diabetes,core,False,yes,,missed
-d04,chief_complaint,core,False,,الورك اليمين بيوجعني من سنة,invented
 d04,timing,core,False,,intermittent,invented
-d04,painkillers_help,core,False,,yes,invented
 d04,stiffness,core,False,,yes,invented
-d04,chronic_diseases,core,False,,عندي ضغط من عشر سنين,invented
-d04,medications,core,False,,باخد مسكن,invented
 d04,leg_pain_below_knee,back,False,,yes,invented
-d04,pain_over_6_weeks,back,False,,yes,invented
 d04,lying_down,back,False,,better,invented
 d04,hip_site,hip,False,,groin,invented
 d04,hip_pain_travels,hip,False,,yes,invented
-d04,hip_provokers,hip,False,,yes,invented
+d04,walking_distance,hip,False,,حوالي نص ساعة,invented
 d05,site,site,False,ankle_foot,ankle_foot,correct
-d05,side,site,False,left,left,correct
-d05,also_neck_back,site,False,,no,invented
-d05,onset,core,False,من يومين,من يومين,correct
-d05,injury,core,False,yes,yes,correct
+d05,side,site,False,left,,missed
+d05,onset,core,False,من يومين,,missed
+d05,injury,core,False,yes,,missed
 d05,pain_severity,core,False,7,7,correct
-d05,swelling,core,False,yes,yes,correct
+d05,swelling,core,False,yes,,missed
 d05,numbness,core,False,no,no,correct
-d05,trauma_mechanism,trauma,False,لويت رجلي وأنا بلعب كورة,لعب كرة,wrong value
-d05,can_bear_weight,trauma,False,no,no,correct
-d05,injury_when,trauma,False,,من يومين,invented
-d05,swelling_24h,trauma,False,,yes,invented
-d05,numb_cold,trauma,False,,no,invented
-d05,foot_site,ankle_foot,False,,front_ankle,invented
-d05,foot_swelling,ankle_foot,False,,yes,invented
+d05,trauma_mechanism,trauma,False,لويت رجلي وأنا بلعب كورة,,missed
+d05,can_bear_weight,trauma,False,no,,missed
+d05,foot_site,ankle_foot,False,,back_heel,invented
 d05,foot_numbness,ankle_foot,False,,no,invented
-d05,foot_walk_distance,ankle_foot,False,,لا، ما قدرتش أقف عليها خالص,invented
 d06,site,site,False,neck,neck,correct
-d06,one_or_many,site,False,,more_than_one,invented
-d06,exact_spot,site,False,,wide_area,invented
-d06,also_neck_back,site,False,,yes,invented
 d06,onset,core,False,من تلات أسابيع,من 3 اسابيع,wrong value
-d06,radiation,core,False,yes,yes,correct
+d06,radiation,core,False,yes,,missed
 d06,worse_with,core,False,لما أقعد قدام الكمبيوتر كتير,لما اقعد قدام الكمبيوتر كتير,correct
 d06,night_pain,core,False,no,no,correct
 d06,swelling,core,False,,no,invented
 d06,numbness,core,False,yes,yes,correct
-d06,chief_complaint,core,False,,رقبتي بتوجعني من 3 اسابيع والوجع بينزل في دراعي فيه تنميل,invented
+d06,chief_complaint,core,False,,رقبتي بتوجعني من 3 اسابيع والوجع بينزل في دراعي فيه تنميل؟ ايوة تنميل في صوابعي,invented
 d06,timing,core,False,,constant,invented
-d06,stiffness,core,False,,no,invented
-d06,chronic_diseases,core,False,,لا التبول والاخراج عادي,invented
 d06,fever,red_flags,True,no,no,correct
 d06,bladder_bowel,red_flags,True,no,no,correct
-d06,arm_pain,neck,False,,yes,invented
 d06,arm_numbness,neck,False,,yes,invented
 d06,bladder_bowel_neck,neck,True,,no,invented
-d06,neck_movement,neck,False,,no,invented
-d06,leg_pain_below_knee,back,False,,yes,invented
-d06,leg_numb_weak,back,False,,yes,invented
 d07,site,site,False,knee,,missed
-d07,side,site,False,left,left,correct
+d07,side,site,False,left,,missed
 d07,onset,core,False,من كام شهر,من كام شهر,correct
-d07,worse_with,core,False,,الركبة بتخونك وانت ماشي,invented
-d07,swelling,core,False,yes,yes,correct
+d07,swelling,core,False,yes,,missed
+d07,chief_complaint,core,False,,ركبتي الشمال,invented
 d07,timing,core,False,,intermittent,invented
-d07,function,core,False,,متوسط الركبة بتخونك,invented
+d07,stiffness,core,False,,yes,invented
+d07,function,core,False,,أحيانا في ورم؟,invented
 d08,site,site,False,wrist_hand,wrist_hand,correct
-d08,side,site,False,right,right,correct
+d08,side,site,False,right,,missed
 d08,also_neck_back,site,False,,no,invented
 d08,onset,core,False,من شهر,,missed
 d08,night_pain,core,False,yes,yes,correct
 d08,swelling,core,False,,no,invented
-d08,numbness,core,False,yes,,missed
+d08,numbness,core,False,yes,yes,correct
 d08,weakness,core,False,yes,yes,correct
-d08,prior_treatment,core,False,لبست جبيرة بالليل,لما جربتي اي علاج,wrong value
+d08,prior_treatment,core,False,لبست جبيرة بالليل,,missed
 d08,diabetes,core,False,no,no,correct
+d08,chief_complaint,core,False,,ايدي اليمين بتنمل بالليل,invented
 d08,timing,core,False,,intermittent,invented
-d08,painkillers_help,core,False,,no,invented
-d08,dominant_hand,core,False,,right,invented
-d08,patient_belief,core,False,,لا مفيش سكر,invented
+d08,stiffness,core,False,,yes,invented
+d08,saddle_numbness,red_flags,True,,no,invented
 d08,numb_fingers,wrist_hand,False,,ايدي اليمين بتنمل بالليل,invented
-d08,night_waking,wrist_hand,False,,yes,invented
-d08,grip_weakness,wrist_hand,False,,yes,invented
-d08,daily_use,wrist_hand,False,,yes,invented
-d08,splint_injection,wrist_hand,False,,no,invented
-d09,site,site,False,back,back,correct
+d09,site,site,False,back,,missed
 d09,also_neck_back,site,False,,yes,invented
-d09,onset,core,False,من تلات شهور,من 3 شهور,wrong value
-d09,worse_with,core,False,,تغيير في التباول أو الإخراج,invented
-d09,night_pain,core,False,yes,yes,correct
-d09,swelling,core,False,,no,invented
-d09,weakness,core,False,,yes,invented
-d09,chief_complaint,core,False,,ظهرى بيوجعني من 3 شهور,invented
-d09,painkillers_help,core,False,,yes,invented
+d09,onset,core,False,من تلات شهور,,missed
+d09,night_pain,core,False,yes,,missed
 d09,function,core,False,,بقيت مش قادرة أتحكم في البول,invented
-d09,family_history,core,False,,سرطان في السادي,invented
+d09,chronic_diseases,core,False,,كان عندي سرطان في السادي من 5 سنين,invented
 d09,fever,red_flags,True,no,no,correct
-d09,weight_loss,red_flags,True,no,no,correct
-d09,cancer_history,red_flags,True,yes,yes,correct
+d09,weight_loss,red_flags,True,no,yes,wrong value
+d09,cancer_history,red_flags,True,yes,,missed
 d09,bladder_bowel,red_flags,True,yes,yes,correct
+d09,pain_over_6_weeks,back,False,,yes,invented
+d09,steroids_osteoporosis,back,False,,no,invented
+d09,lying_down,back,False,,worse,invented
 d10,site,site,False,knee,knee,correct
 d10,side,site,False,both,both,correct
 d10,one_or_many,site,False,one_place,one_place,correct
 d10,exact_spot,site,False,wide_area,wide_area,correct
 d10,also_neck_back,site,False,no,no,correct
-d10,onset,core,False,من خمس سنين,من خمس سنين,correct
+d10,onset,core,False,من خمس سنين,,missed
 d10,onset_type,core,False,gradual,,missed
-d10,injury,core,False,no,no,correct
+d10,injury,core,False,no,,missed
 d10,pain_severity,core,False,6,,missed
-d10,character,core,False,وجع تقيل,تقيل,correct
+d10,character,core,False,وجع تقيل,,missed
 d10,radiation,core,False,no,,missed
-d10,worse_with,core,False,لما أنزل السلم ولما أقف كتير,لما نزل السلم ولما أقف كتير,wrong value
-d10,better_with,core,False,لما أقعد وأرتاح,والمسكنات بتفرق معايا,wrong value
-d10,night_pain,core,False,no,no,correct
+d10,worse_with,core,False,لما أنزل السلم ولما أقف كتير,,missed
+d10,better_with,core,False,لما أقعد وأرتاح,,missed
+d10,night_pain,core,False,no,,missed
 d10,morning_stiffness_min,core,False,10,,missed
-d10,swelling,core,False,yes,yes,correct
+d10,swelling,core,False,yes,,missed
 d10,weakness,core,False,no,,missed
-d10,prior_treatment,core,False,علاج طبيعي وحقن,علاج طبيعي وحقن,correct
+d10,prior_treatment,core,False,علاج طبيعي وحقن,,missed
 d10,diabetes,core,False,yes,,missed
-d10,chief_complaint,core,False,ركبتي بتوجعني وأنا بطلع السلم,,missed
-d10,timing,core,False,intermittent,,missed
+d10,chief_complaint,core,False,ركبتي بتوجعني وأنا بطلع السلم,ركبتي بتوجعني,correct
+d10,timing,core,False,intermittent,intermittent,correct
 d10,painkillers_help,core,False,yes,yes,correct
 d10,stiffness,core,False,yes,yes,correct
-d10,instability,core,False,clicks,clicks,correct
-d10,function,core,False,مش بعرف أنزل السلم من غير ما أمسك في الحيطة,,missed
-d10,prior_problems,core,False,no,,missed
+d10,instability,core,False,clicks,,missed
+d10,function,core,False,مش بعرف أنزل السلم من غير ما أمسك في الحيطة,مش بعرف أنزل السلم من غير ممسك في الحيطة,wrong value
+d10,prior_problems,core,False,no,yes,wrong value
 d10,other_joints,core,False,yes,,missed
-d10,chronic_diseases,core,False,سكر وضغط,diabetes and hypertension,wrong value
-d10,medications,core,False,جلوكوفاج وأدوية الضغط,,missed
+d10,chronic_diseases,core,False,سكر وضغط,عندي سكر وضغط,correct
+d10,medications,core,False,جلوكوفاج وأدوية الضغط,باخد كلوكوفاج وأدوية الضغط,wrong value
 d10,steroids,core,False,no,no,correct
 d10,blood_thinners,core,False,no,,missed
 d10,allergies,core,False,no,no,correct
 d10,family_history,core,False,أمي كان عندها خشونة في الركبة,أمي كان عندها خشونة في الرجبة,wrong value
 d10,occupation,core,False,مدرّسة، وبقف كتير في الحصة,مدرسة وبقف كتير في الحصة,correct
-d10,dominant_hand,core,False,right,right,correct
+d10,dominant_hand,core,False,right,,missed
 d10,sport_activity,core,False,بمشي بس شوية,لا بمشي بس شوية,correct
-d10,smoking,core,False,no,no,correct
+d10,smoking,core,False,no,,missed
 d10,patient_belief,core,False,شايفة إنه من الوزن، وخايفة أحتاج عملية,شايف أنه من الوزن وخايفة احتاج عملية,wrong value
 d10,can_bear_weight,trauma,False,yes,,missed
-d10,fever,red_flags,True,no,no,correct
-d10,weight_loss,red_flags,True,no,no,correct
-d10,cancer_history,red_flags,True,no,no,correct
-d10,bladder_bowel,red_flags,True,,no,invented
-d10,constant_worsening,red_flags,True,,no,invented
-d10,neuro_vascular,red_flags,True,,no,invented
-d10,immune,red_flags,True,,no,invented
-d10,hot_red_joint,red_flags,True,,no,invented
-d10,recent_infection_procedure,red_flags,True,,no,invented
-d10,saddle_numbness,red_flags,True,,no,invented
-d10,exertion_chest,red_flags,True,,no,invented
+d10,fever,red_flags,True,no,,missed
+d10,weight_loss,red_flags,True,no,,missed
+d10,cancer_history,red_flags,True,no,,missed
+d10,giving_way,knee,False,,no,invented
 d10,locking_catching,knee,False,none,clicks,wrong value
 d10,stairs,knee,False,yes,yes,correct
 d10,kneeling,knee,False,yes,yes,correct
@@ -828,80 +796,78 @@ d10,can_straighten,knee,False,yes,yes,correct
 d11,site,site,False,knee,knee,correct
 d11,side,site,False,left,right,wrong value
 d11,one_or_many,site,False,one_place,one_place,correct
-d11,exact_spot,site,False,wide_area,,missed
+d11,exact_spot,site,False,wide_area,wide_area,correct
 d11,also_neck_back,site,False,,no,invented
 d11,onset,core,False,من أسبوعين,من إسبوعين,correct
 d11,onset_type,core,False,sudden,,missed
 d11,injury,core,False,yes,yes,correct
 d11,pain_severity,core,False,7,7,correct
-d11,character,core,False,وجع حاد,وجع حاد,correct
-d11,worse_with,core,False,,مش قادر أمسك أمشي كويس,invented
-d11,better_with,core,False,,تلج,invented
+d11,character,core,False,وجع حاد,بيتقفل,wrong value
+d11,worse_with,core,False,,مش بقدر أفردها كلها,invented
 d11,night_pain,core,False,,no,invented
 d11,swelling,core,False,,yes,invented
 d11,numbness,core,False,,no,invented
-d11,weakness,core,False,,yes,invented
+d11,weakness,core,False,,no,invented
 d11,prior_treatment,core,False,,حطيت تلج وخدت مسكن,invented
 d11,chief_complaint,core,False,اتعورت في الركبة وأنا بلعب كورة,,missed
 d11,instability,core,False,locks,,missed
+d11,function,core,False,,لا ما قدرتش أشيل وزني عليها,invented
 d11,prior_problems,core,False,no,,missed
-d11,sport_activity,core,False,بلعب كورة مرتين في الأسبوع,بلعب كرة مرتين في الإسبوع,wrong value
+d11,chronic_diseases,core,False,,لا مفيش سخونية,invented
+d11,sport_activity,core,False,بلعب كورة مرتين في الأسبوع,,missed
 d11,trauma_mechanism,trauma,False,رجلي ثبتت في الأرض وجسمي لف,وقعة,wrong value
 d11,can_bear_weight,trauma,False,,no,invented
 d11,high_energy,trauma,False,no,,missed
 d11,injury_when,trauma,False,الجمعة بعد العصر,من إسبوعين الجمعة بعد العصر,correct
-d11,immediate_function,trauma,False,no,no,correct
+d11,immediate_function,trauma,False,no,,missed
 d11,snap_pop,trauma,False,yes,yes,correct
 d11,swelling_24h,trauma,False,yes,yes,correct
-d11,deformity,trauma,False,no,,missed
+d11,deformity,trauma,False,no,no,correct
 d11,skin_wound,trauma,False,no,no,correct
 d11,numb_cold,trauma,False,no,no,correct
 d11,head_neck_injury,trauma,False,no,no,correct
-d11,first_aid,trauma,False,حطيت تلج وخدت مسكن,,missed
+d11,first_aid,trauma,False,حطيت تلج وخدت مسكن,حطيت تلج وخدت مسكن,correct
 d11,fever,red_flags,True,no,no,correct
 d11,weight_loss,red_flags,True,no,no,correct
-d11,cancer_history,red_flags,True,no,no,correct
-d11,bladder_bowel,red_flags,True,,no,invented
-d11,constant_worsening,red_flags,True,,no,invented
-d11,neuro_vascular,red_flags,True,,no,invented
+d11,cancer_history,red_flags,True,no,,missed
 d11,immune,red_flags,True,no,no,correct
-d11,hot_red_joint,red_flags,True,,no,invented
-d11,recent_infection_procedure,red_flags,True,,no,invented
-d11,injected_drugs,red_flags,True,,no,invented
-d11,saddle_numbness,red_flags,True,,no,invented
-d11,exertion_chest,red_flags,True,,no,invented
 d11,giving_way,knee,False,yes,yes,correct
 d11,locking_catching,knee,False,,clicks,invented
-d11,stairs,knee,False,,no,invented
-d11,kneeling,knee,False,,no,invented
 d11,can_straighten,knee,False,no,no,correct
 d12,site,site,False,shoulder,shoulder,correct
 d12,side,site,False,right,right,correct
-d12,one_or_many,site,False,,one_place,invented
-d12,exact_spot,site,False,,one_spot,invented
+d12,one_or_many,site,False,,more_than_one,invented
 d12,also_neck_back,site,False,no,no,correct
-d12,onset,core,False,من أربع شهور,,missed
+d12,onset,core,False,من أربع شهور,من اربع شهور,correct
 d12,onset_type,core,False,gradual,,missed
-d12,injury,core,False,no,,missed
+d12,injury,core,False,no,no,correct
 d12,pain_severity,core,False,7,7,correct
-d12,radiation,core,False,yes,yes,correct
-d12,worse_with,core,False,لما أرفع إيدي فوق راسي,لما ارفع ايدي فوق راسي,correct
+d12,radiation,core,False,yes,,missed
+d12,worse_with,core,False,لما أرفع إيدي فوق راسي,,missed
 d12,night_pain,core,False,yes,yes,correct
-d12,weakness,core,False,,yes,invented
+d12,swelling,core,False,,no,invented
+d12,numbness,core,False,,no,invented
 d12,prior_treatment,core,False,خدت حقنة كورتيزون من شهرين,خدت حقنة كورتزون من شهرين,wrong value
-d12,chief_complaint,core,False,كتفي بيوجعني وإيدي مش بترتفع,,missed
+d12,chief_complaint,core,False,كتفي بيوجعني وإيدي مش بترتفع,كدفي بيوجعني وايدي مش بترتفع,wrong value
+d12,timing,core,False,,constant,invented
+d12,stiffness,core,False,,yes,invented
 d12,instability,core,False,,none,invented
+d12,prior_problems,core,False,,no,invented
+d12,chronic_diseases,core,False,,لا وزني زي ما هو,invented
+d12,medications,core,False,,بتدخن علبة في اليوم,invented
+d12,blood_thinners,core,False,,no,invented
+d12,allergies,core,False,,no,invented
 d12,family_history,core,False,,لا عمري ما تعالجت من ورم,invented
 d12,dominant_hand,core,False,right,right,correct
-d12,sport_activity,core,False,,لا مفيش وقعة,invented
-d12,smoking,core,False,yes,,missed
-d12,patient_belief,core,False,,لا مفيش ديء تنفس ولا عرق,invented
+d12,smoking,core,False,yes,yes,correct
 d12,fever,red_flags,True,no,no,correct
 d12,weight_loss,red_flags,True,no,no,correct
 d12,cancer_history,red_flags,True,no,no,correct
-d12,injected_drugs,red_flags,True,,no,invented
+d12,neuro_vascular,red_flags,True,,no,invented
+d12,hot_red_joint,red_flags,True,,no,invented
+d12,recent_infection_procedure,red_flags,True,,no,invented
 d12,exertion_chest,red_flags,True,no,,missed
-d12,overhead_activity,shoulder,False,yes,,missed
+d12,overhead_activity,shoulder,False,yes,yes,correct
 d12,night_lying,shoulder,False,yes,yes,correct
 d12,stiffness_reach,shoulder,False,yes,yes,correct
 d12,can_lift_arm,shoulder,False,no,no,correct
@@ -916,21 +882,21 @@ d13,onset,core,False,,مبارح بالليل,invented
 d13,onset_type,core,False,,sudden,invented
 d13,injury,core,False,yes,yes,correct
 d13,pain_severity,core,False,9,10,wrong value
-d13,character,core,False,,شكل الكتفي مش طبيعي,invented
+d13,character,core,False,,خرج من مكانه,invented
 d13,radiation,core,False,,no,invented
-d13,worse_with,core,False,,لا ما فيش,invented
-d13,better_with,core,False,,لا ما فيش,invented
 d13,night_pain,core,False,,no,invented
-d13,swelling,core,False,,yes,invented
+d13,swelling,core,False,,no,invented
 d13,numbness,core,False,,no,invented
-d13,weakness,core,False,,yes,invented
 d13,prior_treatment,core,False,,رحت مستشفى,invented
 d13,chief_complaint,core,False,كتفي خرج من مكانه امبارح,,missed
+d13,function,core,False,,نا ما قدرتش أستخدم إيدي,invented
+d13,family_history,core,False,,لا ما ضربتش دماغي,invented
+d13,occupation,core,False,,نا ما قدرتش أستخدم إيدي,invented
 d13,dominant_hand,core,False,left,left,correct
 d13,sport_activity,core,False,بلعب كورة سلة,بلعب كورة سلة,correct
+d13,patient_belief,core,False,,خرج 3 مرات قبل كده لو آه كان عندك كم سنة أول مرة وكان بعد إصابة,invented
 d13,trauma_mechanism,trauma,False,وقعت على كتفي مباشرة,وقعت من على الموتوسيكل,wrong value
-d13,can_bear_weight,trauma,False,,no,invented
-d13,high_energy,trauma,False,yes,,missed
+d13,high_energy,trauma,False,yes,yes,correct
 d13,injury_when,trauma,False,امبارح بالليل,مبارح بالليل,correct
 d13,immediate_function,trauma,False,no,no,correct
 d13,snap_pop,trauma,False,yes,yes,correct
@@ -939,143 +905,144 @@ d13,skin_wound,trauma,False,yes,yes,correct
 d13,numb_cold,trauma,False,no,no,correct
 d13,head_neck_injury,trauma,False,no,no,correct
 d13,first_aid,trauma,False,رحت مستشفى حطوا لي جبيرة,رحت مستشفى,correct
-d13,overhead_activity,shoulder,False,,yes,invented
-d13,night_lying,shoulder,False,,yes,invented
 d13,stiffness_reach,shoulder,False,,yes,invented
 d13,can_lift_arm,shoulder,False,no,no,correct
 d13,dislocation,shoulder,False,yes,yes,correct
-d13,neck_arm_symptoms,shoulder,False,no,,missed
+d13,neck_arm_symptoms,shoulder,False,no,no,correct
 d13,first_dislocation,shoulder,False,19,19,correct
 d14,site,site,False,elbow,elbow,correct
 d14,side,site,False,right,right,correct
 d14,one_or_many,site,False,,one_place,invented
 d14,exact_spot,site,False,,one_spot,invented
 d14,also_neck_back,site,False,,no,invented
-d14,onset,core,False,من تلات شهور,من ثلاث شهور,wrong value
-d14,onset_type,core,False,gradual,gradual,correct
+d14,onset,core,False,من تلات شهور,,missed
+d14,onset_type,core,False,gradual,,missed
 d14,injury,core,False,no,no,correct
 d14,pain_severity,core,False,5,,missed
 d14,worse_with,core,False,,لما لف الكياس وامسك الدرافيل,invented
 d14,better_with,core,False,لما أريّح إيدي,,missed
 d14,night_pain,core,False,no,no,correct
+d14,swelling,core,False,,no,invented
+d14,numbness,core,False,,no,invented
 d14,weakness,core,False,yes,yes,correct
 d14,prior_treatment,core,False,لبست رباط ودهان,لبس تربط ودهان,wrong value
-d14,chief_complaint,core,False,كوعي بيوجعني لما بمسك الأدوات,,missed
-d14,painkillers_help,core,False,,no,invented
+d14,chief_complaint,core,False,كوعي بيوجعني لما بمسك الأدوات,كوعي بيوجعني لما بمسك الأدوات,correct
 d14,occupation,core,False,سباك وشغلي فيه لف وشد كتير,سباك وشغلي فيه لف وشد كتير,correct
-d14,dominant_hand,core,False,,right,invented
 d14,sport_activity,core,False,مبتمرنش,ما بتمرنش,wrong value
 d14,smoking,core,False,,no,invented
-d14,patient_belief,core,False,,بحس إني مسكتي ضعفت,invented
-d14,fever,red_flags,True,no,no,correct
-d14,weight_loss,red_flags,True,,no,invented
-d14,cancer_history,red_flags,True,,no,invented
-d14,bladder_bowel,red_flags,True,,no,invented
-d14,constant_worsening,red_flags,True,,no,invented
+d14,fever,red_flags,True,no,,missed
 d14,neuro_vascular,red_flags,True,,yes,invented
-d14,hot_red_joint,red_flags,True,,no,invented
-d14,recent_infection_procedure,red_flags,True,,no,invented
 d14,injected_drugs,red_flags,True,,no,invented
-d14,saddle_numbness,red_flags,True,,no,invented
-d14,exertion_chest,red_flags,True,,no,invented
 d14,elbow_site,elbow,False,outer,outer,correct
 d14,grip_lift_twist,elbow,False,yes,yes,correct
 d14,elbow_swelling,elbow,False,no,no,correct
 d14,elbow_locking,elbow,False,no,no,correct
 d14,ulnar_numbness,elbow,False,no,no,correct
 d15,site,site,False,wrist_hand,wrist_hand,correct
-d15,side,site,False,both,both,correct
+d15,side,site,False,both,right,wrong value
 d15,one_or_many,site,False,,one_place,invented
 d15,exact_spot,site,False,,wide_area,invented
 d15,also_neck_back,site,False,,no,invented
 d15,onset,core,False,من أربع شهور,,missed
-d15,onset_type,core,False,gradual,,missed
-d15,worse_with,core,False,,تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز,invented
+d15,onset_type,core,False,gradual,gradual,correct
+d15,injury,core,False,,no,invented
+d15,worse_with,core,False,,تستخدم أدوات بتهتز,invented
 d15,night_pain,core,False,,yes,invented
-d15,numbness,core,False,yes,,missed
-d15,weakness,core,False,yes,yes,correct
-d15,prior_treatment,core,False,,الجبيرة,invented
+d15,swelling,core,False,,no,invented
+d15,numbness,core,False,yes,yes,correct
+d15,weakness,core,False,yes,,missed
+d15,prior_treatment,core,False,,الجبيرة فرقت معايا,invented
 d15,diabetes,core,False,yes,,missed
 d15,chief_complaint,core,False,إيديا بتنمل وبتصحيني بالليل,,missed
-d15,timing,core,False,,intermittent,invented
-d15,function,core,False,,صعب أقفل الأزرار وأفتح البرطمان,invented
+d15,stiffness,core,False,,yes,invented
 d15,prior_problems,core,False,,yes,invented
-d15,chronic_diseases,core,False,,no,invented
-d15,steroids,core,False,,no,invented
-d15,blood_thinners,core,False,,no,invented
-d15,allergies,core,False,,no,invented
-d15,family_history,core,False,,لا أخطر عندي ضغط دم,invented
-d15,occupation,core,False,سكرتيرة وبكتب على الكمبيوتر طول اليوم,سكرتير,correct
+d15,chronic_diseases,core,False,,لا أخطر عندي ضغط دم,invented
+d15,occupation,core,False,سكرتيرة وبكتب على الكمبيوتر طول اليوم,,missed
 d15,dominant_hand,core,False,right,right,correct
-d15,sport_activity,core,False,,سكرتير سكرتير وبكتب على الكمبيوتر طول الليل,invented
-d15,smoking,core,False,,no,invented
-d15,patient_belief,core,False,,بيصحيك بالليل؟ أيوة بيصحيني ثلاث مرات في الليلة لما تنفض إيدك أو ترفعها بيخف؟ أيوة لما أنفض إيدي بيخف بيزيد لما تسوق أو تمسك الموبايل أو تكتب أو تستخدم أدوات بتهتز؟ أيوة بيزيد لما بسوق وامسك الموبايل إيدك ضعيفة أو بتوقع حاجات منها؟ أيوة الحاجات بتقع من إيدي صعب تكتب أو تقفل الأزرار أو تفتح برطمان أو تشيل شنط؟ أيوة صعب أقفل الأزرار وأفتح البرطمان في ورم أو كتلة في الرزغ أو الإيد؟ لا مفيش ورم ولا كتلة,invented
+d15,sport_activity,core,False,,سكرتير وبكتب على الكمبيوتر طول الليل,invented
+d15,patient_belief,core,False,,لا مفيش برودة ولا تغير في اللون,invented
 d15,neuro_vascular,red_flags,True,no,no,correct
 d15,immune,red_flags,True,,no,invented
-d15,hot_red_joint,red_flags,True,,no,invented
-d15,recent_infection_procedure,red_flags,True,,no,invented
-d15,injected_drugs,red_flags,True,,no,invented
-d15,saddle_numbness,red_flags,True,,no,invented
-d15,numb_fingers,wrist_hand,False,الإبهام والسبابة والوسطى,تنمل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى,correct
+d15,recent_infection_procedure,red_flags,True,,yes,invented
+d15,saddle_numbness,red_flags,True,,yes,invented
+d15,exertion_chest,red_flags,True,,yes,invented
+d15,numb_fingers,wrist_hand,False,الإبهام والسبابة والوسطى,تنميل أو وغز أو وجع في صوابعك أنهي صوابع في الإبهام والسبابة والوسطى,correct
 d15,spares_little_finger,wrist_hand,False,yes,yes,correct
 d15,night_waking,wrist_hand,False,yes,yes,correct
 d15,shake_relief,wrist_hand,False,yes,yes,correct
 d15,provoked_by,wrist_hand,False,yes,yes,correct
 d15,grip_weakness,wrist_hand,False,yes,yes,correct
 d15,daily_use,wrist_hand,False,yes,yes,correct
-d15,lump_swelling,wrist_hand,False,no,,missed
+d15,lump_swelling,wrist_hand,False,no,no,correct
 d15,splint_injection,wrist_hand,False,yes,yes,correct
-d16,site,site,False,neck,,missed
-d16,one_or_many,site,False,more_than_one,,missed
-d16,onset,core,False,من سبع شهور,من سبع شهور,correct
+d16,site,site,False,neck,neck,correct
+d16,side,site,False,,left,invented
+d16,one_or_many,site,False,more_than_one,one_place,wrong value
+d16,exact_spot,site,False,,wide_area,invented
+d16,also_neck_back,site,False,,yes,invented
+d16,onset,core,False,من سبع شهور,,missed
 d16,onset_type,core,False,gradual,,missed
 d16,injury,core,False,no,no,correct
 d16,pain_severity,core,False,6,,missed
 d16,radiation,core,False,,yes,invented
-d16,worse_with,core,False,لما أبص لتحت كتير,بتشتغل إيه وشغلك فيه وقف كتير أو شيل حاجات تقيلة أو حركات,wrong value
+d16,worse_with,core,False,لما أبص لتحت كتير,,missed
 d16,night_pain,core,False,no,no,correct
 d16,numbness,core,False,,yes,invented
 d16,weakness,core,False,,yes,invented
+d16,diabetes,core,False,,no,invented
 d16,chief_complaint,core,False,رقبتي بتوجعني وإيدي بقت بتتلخبط,,missed
-d16,family_history,core,False,,لا، ما فيش,invented
-d16,occupation,core,False,محاسب وبقعد قدام الكمبيوتر,محاسب وبقعد قدام الكمبيوتر,correct
-d16,sport_activity,core,False,,لا، ما فيش,invented
-d16,smoking,core,False,,no,invented
-d16,patient_belief,core,False,,لا، ما فيش,invented
+d16,timing,core,False,,constant,invented
+d16,painkillers_help,core,False,,no,invented
+d16,stiffness,core,False,,yes,invented
+d16,function,core,False,,مش بعرف أقفل الأزرار ومشيتي بقت أوحش,invented
+d16,occupation,core,False,محاسب وبقعد قدام الكمبيوتر,,missed
 d16,fever,red_flags,True,no,no,correct
 d16,weight_loss,red_flags,True,no,no,correct
 d16,cancer_history,red_flags,True,no,no,correct
-d16,arm_pain,neck,False,yes,,missed
-d16,arm_numbness,neck,False,yes,,missed
-d16,arm_weakness,neck,False,yes,,missed
-d16,clumsy_balance,neck,True,yes,,missed
+d16,saddle_numbness,red_flags,True,,no,invented
+d16,arm_pain,neck,False,yes,yes,correct
+d16,arm_numbness,neck,False,yes,yes,correct
+d16,arm_weakness,neck,False,yes,yes,correct
+d16,clumsy_balance,neck,True,yes,yes,correct
 d16,bladder_bowel_neck,neck,True,no,,missed
 d16,dizzy_vision_speech,neck,True,no,,missed
-d16,neck_movement,neck,False,yes,,missed
-d16,headache,neck,False,yes,,missed
+d16,neck_movement,neck,False,yes,yes,correct
+d16,headache,neck,False,yes,yes,correct
+d16,leg_numb_weak,back,False,,yes,invented
+d16,foot_catching,back,False,,yes,invented
+d16,lying_down,back,False,,worse,invented
 d18,site,site,False,hip,hip,correct
 d18,side,site,False,right,right,correct
 d18,one_or_many,site,False,more_than_one,more_than_one,correct
 d18,also_neck_back,site,False,yes,yes,correct
-d18,onset,core,False,من سنتين,من سنتين,correct
+d18,onset,core,False,من سنتين,,missed
 d18,onset_type,core,False,gradual,,missed
-d18,injury,core,False,no,no,correct
-d18,pain_severity,core,False,6,6,correct
-d18,worse_with,core,False,,عندما أقوم من كرسي واطي,invented
-d18,morning_stiffness_min,core,False,30,30,correct
+d18,injury,core,False,no,,missed
+d18,pain_severity,core,False,6,,missed
+d18,morning_stiffness_min,core,False,30,,missed
 d18,chief_complaint,core,False,وركي بيوجعني ومش قادر أمشي زي الأول,,missed
+d18,timing,core,False,,intermittent,invented
+d18,painkillers_help,core,False,,no,invented
 d18,stiffness,core,False,,yes,invented
-d18,function,core,False,,صعب تلبس الشراب أو الجزمة أو تقص دوافرك,invented
 d18,prior_problems,core,False,,no,invented
+d18,chronic_diseases,core,False,,لا ما بشربش كحول ولا بياخد كورتيزون,invented
 d18,steroids,core,False,,no,invented
-d18,bladder_bowel,red_flags,True,no,no,correct
-d18,saddle_numbness,red_flags,True,no,,missed
+d18,blood_thinners,core,False,,no,invented
+d18,allergies,core,False,,no,invented
+d18,family_history,core,False,,لا ما كانش عندي حاجة وأنا صغير,invented
+d18,smoking,core,False,,no,invented
+d18,patient_belief,core,False,,أيوة بيتيبس الصبح حوالي نص ساعة,invented
+d18,bladder_bowel,red_flags,True,no,,missed
+d18,neuro_vascular,red_flags,True,,no,invented
+d18,saddle_numbness,red_flags,True,no,no,correct
+d18,exertion_chest,red_flags,True,,no,invented
 d18,leg_pain_below_knee,back,False,,yes,invented
 d18,leg_numb_weak,back,False,no,no,correct
 d18,foot_catching,back,False,,yes,invented
 d18,pain_over_6_weeks,back,False,,yes,invented
+d18,steroids_osteoporosis,back,False,,no,invented
 d18,lying_down,back,False,,worse,invented
-d18,hip_site,hip,False,groin,groin,correct
+d18,hip_site,hip,False,groin,,missed
 d18,hip_pain_travels,hip,False,yes,yes,correct
 d18,limp,hip,False,yes,yes,correct
 d18,socks_shoes,hip,False,yes,yes,correct
@@ -1084,157 +1051,140 @@ d18,hip_mechanical,hip,False,no,no,correct
 d18,childhood_hip,hip,False,no,,missed
 d18,steroid_alcohol,hip,False,no,,missed
 d18,walking_distance,hip,False,حوالي ربع ساعة,ربع ساعة,correct
-d19,site,site,False,ankle_foot,ankle_foot,correct
+d19,site,site,False,ankle_foot,,missed
 d19,side,site,False,right,right,correct
 d19,one_or_many,site,False,,one_place,invented
 d19,exact_spot,site,False,,one_spot,invented
 d19,also_neck_back,site,False,,no,invented
-d19,onset,core,False,من تمن شهور,,missed
+d19,onset,core,False,من تمن شهور,من 8 شهور,wrong value
 d19,onset_type,core,False,gradual,,missed
 d19,injury,core,False,no,no,correct
-d19,pain_severity,core,False,7,10,wrong value
+d19,pain_severity,core,False,7,,missed
+d19,character,core,False,,حرقان,invented
+d19,radiation,core,False,,yes,invented
+d19,night_pain,core,False,,yes,invented
 d19,swelling,core,False,,yes,invented
 d19,numbness,core,False,,yes,invented
+d19,prior_treatment,core,False,,بستخدم نعلة طبي,invented
 d19,diabetes,core,False,yes,yes,correct
 d19,chief_complaint,core,False,كعب رجلي بيوجعني وصباعي الكبير بيورم,,missed
-d19,instability,core,False,,locks,invented
-d19,function,core,False,,صعب تلاقي جزمة مناسبة,invented
-d19,family_history,core,False,,لا مفيش وجع في السمانة عندك امراض مزمنة زي السكر او الدخط او الروماتويد او هشاشة العظام,invented
-d19,occupation,core,False,,لا مفيش وقعة في ورم في مكان واحد ولا القدم والكاحل كلهم,invented
-d19,sport_activity,core,False,,لا الكاحل ما بيخونيش تقدر تقف وتمشي عليها,invented
-d19,patient_belief,core,False,,أيوة حرقان في الرجلين بالليل حصلتلك لموبات فجأة من حمرار وسخونة وورم ووجع خصوصا في الصباع الكبير,invented
+d19,timing,core,False,,constant,invented
+d19,painkillers_help,core,False,,no,invented
+d19,stiffness,core,False,,yes,invented
+d19,prior_problems,core,False,,yes,invented
+d19,chronic_diseases,core,False,,سكور من 15 سنة,invented
+d19,steroids,core,False,,no,invented
+d19,blood_thinners,core,False,,no,invented
+d19,allergies,core,False,,no,invented
+d19,family_history,core,False,,عندي سكر من 15 سنة,invented
 d19,can_bear_weight,trauma,False,yes,,missed
-d19,fever,red_flags,True,no,no,correct
-d19,weight_loss,red_flags,True,,no,invented
-d19,cancer_history,red_flags,True,,no,invented
-d19,bladder_bowel,red_flags,True,,no,invented
-d19,constant_worsening,red_flags,True,,no,invented
-d19,neuro_vascular,red_flags,True,,no,invented
-d19,immune,red_flags,True,,no,invented
-d19,hot_red_joint,red_flags,True,no,no,correct
-d19,recent_infection_procedure,red_flags,True,,no,invented
-d19,injected_drugs,red_flags,True,,no,invented
-d19,saddle_numbness,red_flags,True,,no,invented
-d19,exertion_chest,red_flags,True,,no,invented
-d19,foot_site,ankle_foot,False,back_heel,back_heel,correct
+d19,fever,red_flags,True,no,,missed
+d19,hot_red_joint,red_flags,True,no,,missed
+d19,foot_site,ankle_foot,False,back_heel,,missed
 d19,foot_swelling,ankle_foot,False,yes,,missed
-d19,ankle_instability,ankle_foot,False,no,yes,wrong value
+d19,ankle_instability,ankle_foot,False,no,,missed
 d19,footwear,ankle_foot,False,yes,,missed
-d19,foot_deformity,ankle_foot,False,yes,yes,correct
-d19,foot_numbness,ankle_foot,False,yes,yes,correct
-d19,gout_attacks,ankle_foot,False,yes,yes,correct
+d19,foot_deformity,ankle_foot,False,yes,,missed
+d19,foot_numbness,ankle_foot,False,yes,,missed
+d19,gout_attacks,ankle_foot,False,yes,,missed
 d19,calf_pain,ankle_foot,False,no,,missed
 d19,foot_walk_distance,ankle_foot,False,حوالي عشر دقايق,,missed
-d21,site,site,False,other,knee,wrong value
-d21,side,site,False,,both,invented
+d21,site,site,False,other,,missed
 d21,one_or_many,site,False,more_than_one,more_than_one,correct
-d21,exact_spot,site,False,wide_area,wide_area,correct
-d21,also_neck_back,site,False,,yes,invented
-d21,onset,core,False,,من صفر العشر,invented
+d21,exact_spot,site,False,wide_area,,missed
+d21,also_neck_back,site,False,,no,invented
 d21,injury,core,False,no,,missed
-d21,pain_severity,core,False,,6,invented
+d21,radiation,core,False,,yes,invented
 d21,morning_stiffness_min,core,False,60,,missed
 d21,swelling,core,False,,no,invented
-d21,numbness,core,False,,no,invented
-d21,weakness,core,False,,no,invented
 d21,prior_treatment,core,False,,أبوي كان عنده روماتويد,invented
 d21,chief_complaint,core,False,تعبان ومفاصلي بتوجعني بقالي فترة,,missed
 d21,stiffness,core,False,yes,yes,correct
-d21,prior_problems,core,False,,no,invented
-d21,other_joints,core,False,yes,,missed
-d21,chronic_diseases,core,False,,yes,invented
+d21,other_joints,core,False,yes,yes,correct
+d21,chronic_diseases,core,False,,أبوي كان عنده روماتويد,invented
 d21,family_history,core,False,أبويا كان عنده روماتويد,أبوي كان عنده روماتويد,wrong value
-d21,fever,red_flags,True,no,,missed
+d21,fever,red_flags,True,no,no,correct
+d21,weight_loss,red_flags,True,,yes,invented
 d21,cancer_history,red_flags,True,,yes,invented
-d21,leg_pain_below_knee,back,False,,no,invented
-d21,leg_numb_weak,back,False,,no,invented
-d21,foot_catching,back,False,,no,invented
-d21,steroids_osteoporosis,back,False,,no,invented
-d21,lying_down,back,False,,no_change,invented
-d21,giving_way,knee,False,,no,invented
-d21,locking_catching,knee,False,,none,invented
-d21,stairs,knee,False,,no,invented
-d21,kneeling,knee,False,,no,invented
-d21,can_straighten,knee,False,,no,invented
 d20,site,site,False,knee,knee,correct
 d20,side,site,False,left,left,correct
 d20,one_or_many,site,False,one_place,one_place,correct
-d20,exact_spot,site,False,,one_spot,invented
+d20,exact_spot,site,False,,wide_area,invented
 d20,also_neck_back,site,False,,no,invented
 d20,onset,core,False,من تلات أيام,من ثلاث أيام,wrong value
 d20,onset_type,core,False,sudden,,missed
-d20,injury,core,False,no,no,correct
+d20,injury,core,False,no,,missed
 d20,pain_severity,core,False,9,,missed
-d20,radiation,core,False,,no,invented
-d20,worse_with,core,False,,السخونية,invented
-d20,night_pain,core,False,yes,yes,correct
-d20,swelling,core,False,yes,yes,correct
+d20,night_pain,core,False,yes,,missed
+d20,swelling,core,False,yes,,missed
 d20,numbness,core,False,,no,invented
 d20,weakness,core,False,,no,invented
-d20,prior_treatment,core,False,,خدت حقنة في الركبة من أسبوع,invented
-d20,chief_complaint,core,False,ركبتي ورمت وبقت حمرا وسخنة,,missed
-d20,medications,core,False,كورتيزون وميثوتريكسات,,missed
-d20,steroids,core,False,yes,yes,correct
+d20,prior_treatment,core,False,,بتاخد كورتيزون وإيه تاني مسيلات دم,invented
+d20,diabetes,core,False,,no,invented
+d20,chief_complaint,core,False,ركبتي ورمت وبقت حمرا وسخنة,ورمت وبقت حمرة وسخنة ومش قادرة أمشي,wrong value
+d20,timing,core,False,,constant,invented
+d20,painkillers_help,core,False,,no,invented
+d20,stiffness,core,False,,yes,invented
+d20,instability,core,False,,none,invented
+d20,function,core,False,,لا ما اقدرش اقف عليها,invented
+d20,prior_problems,core,False,,yes,invented
+d20,chronic_diseases,core,False,,بتاخد كورتيزون وإيه تاني مسيلات دم,invented
+d20,medications,core,False,كورتيزون وميثوتريكسات,بتاخد كورتيزون وإيه تاني مسيلات دم,wrong value
+d20,steroids,core,False,yes,,missed
 d20,blood_thinners,core,False,no,no,correct
-d20,family_history,core,False,,لا عمري ما اتعالجت من ورم فيه تنميل أو بروز,invented
-d20,occupation,core,False,,لا ما فيش وقع من صفر لعشرة الوجع قد إيه؟,invented
-d20,patient_belief,core,False,,أيوة عندي سخونية ورعشة في مفصل حمر وسخن وبيوجع جداً خصوصاً مع سخونيته؟ أيوة الركبة حمرة وسخنة وبتوجع جداً,invented
+d20,allergies,core,False,,no,invented
 d20,can_bear_weight,trauma,False,no,,missed
 d20,fever,red_flags,True,yes,yes,correct
-d20,weight_loss,red_flags,True,no,,missed
-d20,cancer_history,red_flags,True,no,,missed
+d20,weight_loss,red_flags,True,no,no,correct
+d20,cancer_history,red_flags,True,no,no,correct
+d20,bladder_bowel,red_flags,True,,no,invented
 d20,constant_worsening,red_flags,True,yes,yes,correct
 d20,neuro_vascular,red_flags,True,no,no,correct
-d20,immune,red_flags,True,yes,yes,correct
+d20,immune,red_flags,True,yes,,missed
 d20,hot_red_joint,red_flags,True,yes,yes,correct
 d20,recent_infection_procedure,red_flags,True,yes,yes,correct
 d20,injected_drugs,red_flags,True,no,,missed
 d20,saddle_numbness,red_flags,True,,no,invented
-d20,giving_way,knee,False,,no,invented
-d20,locking_catching,knee,False,,none,invented
-d20,stairs,knee,False,,no,invented
-d20,kneeling,knee,False,,no,invented
-d20,can_straighten,knee,False,,no,invented
-d17,site,site,False,back,back,correct
-d17,side,site,False,centre,right,wrong value
-d17,one_or_many,site,False,,one_place,invented
-d17,exact_spot,site,False,,wide_area,invented
-d17,also_neck_back,site,False,,yes,invented
-d17,onset,core,False,من أسبوعين,من أسبوعين,correct
-d17,onset_type,core,False,sudden,sudden,correct
-d17,injury,core,False,yes,,missed
-d17,pain_severity,core,False,9,10,wrong value
-d17,character,core,False,,بيزيد مع الوقت,invented
-d17,radiation,core,False,,yes,invented
-d17,worse_with,core,False,,النوم على الظهر,invented
-d17,better_with,core,False,,ما بيفرقش,invented
-d17,night_pain,core,False,yes,yes,correct
-d17,swelling,core,False,,no,invented
-d17,numbness,core,False,,yes,invented
-d17,weakness,core,False,,yes,invented
-d17,prior_treatment,core,False,,أخدت كورتزون لفترة طويلة,invented
-d17,chief_complaint,core,False,ضهري بيوجعني ورجلي ضعفت,,missed
-d17,timing,core,False,,constant,invented
-d17,stiffness,core,False,,no,invented
-d17,function,core,False,,رجلي بتخبط في الأرض,invented
-d17,prior_problems,core,False,,no,invented
-d17,other_joints,core,False,,no,invented
-d17,chronic_diseases,core,False,,لا مفيش كورتزون ولا هشاشة,invented
-d17,medications,core,False,,لا مفيش كورتزون,invented
-d17,steroids,core,False,,no,invented
-d17,blood_thinners,core,False,,no,invented
-d17,fever,red_flags,True,no,,missed
-d17,weight_loss,red_flags,True,no,no,correct
-d17,cancer_history,red_flags,True,no,no,correct
-d17,bladder_bowel,red_flags,True,yes,,missed
-d17,constant_worsening,red_flags,True,yes,,missed
-d17,neuro_vascular,red_flags,True,,yes,invented
-d17,hot_red_joint,red_flags,True,,no,invented
-d17,recent_infection_procedure,red_flags,True,no,no,correct
-d17,saddle_numbness,red_flags,True,yes,yes,correct
-d17,leg_pain_below_knee,back,False,yes,yes,correct
-d17,leg_numb_weak,back,False,yes,yes,correct
-d17,foot_catching,back,False,yes,yes,correct
-d17,pain_over_6_weeks,back,False,no,no,correct
-d17,steroids_osteoporosis,back,False,no,no,correct
-d17,lying_down,back,False,no_change,,missed
+d20,exertion_chest,red_flags,True,,no,invented
+sample-d20,site,site,False,knee,knee,correct
+sample-d20,side,site,False,left,left,correct
+sample-d20,one_or_many,site,False,one_place,one_place,correct
+sample-d20,exact_spot,site,False,,wide_area,invented
+sample-d20,also_neck_back,site,False,,no,invented
+sample-d20,onset,core,False,من تلات أيام,من تلات أيام,correct
+sample-d20,onset_type,core,False,sudden,,missed
+sample-d20,injury,core,False,no,no,correct
+sample-d20,pain_severity,core,False,9,,missed
+sample-d20,night_pain,core,False,yes,yes,correct
+sample-d20,swelling,core,False,yes,yes,correct
+sample-d20,chief_complaint,core,False,ركبتي ورمت وبقت حمرا وسخنة,ركبتي ورمت وبقت حمرا وسخنة ومش قادرة أمشي,correct
+sample-d20,stiffness,core,False,,yes,invented
+sample-d20,function,core,False,,لا مقدرش أقف عليها,invented
+sample-d20,prior_problems,core,False,,yes,invented
+sample-d20,chronic_diseases,core,False,,باخد كورتيزون عشان الروماتويد,invented
+sample-d20,medications,core,False,كورتيزون وميثوتريكسات,باخد كورتيزون وميثوتريكسات، ومبخدش مسيّلات,correct
+sample-d20,steroids,core,False,yes,yes,correct
+sample-d20,blood_thinners,core,False,no,no,correct
+sample-d20,allergies,core,False,,no,invented
+sample-d20,family_history,core,False,,لا عمري ما اتعالجت من ورم,invented
+sample-d20,occupation,core,False,,لا مفيش وقعة,invented
+sample-d20,sport_activity,core,False,,لا مبخدش حاجة بالحقن,invented
+sample-d20,patient_belief,core,False,,بدأ من تلات أيام، فجأة,invented
+sample-d20,can_bear_weight,trauma,False,no,,missed
+sample-d20,fever,red_flags,True,yes,yes,correct
+sample-d20,weight_loss,red_flags,True,no,no,correct
+sample-d20,cancer_history,red_flags,True,no,no,correct
+sample-d20,bladder_bowel,red_flags,True,,no,invented
+sample-d20,constant_worsening,red_flags,True,yes,yes,correct
+sample-d20,neuro_vascular,red_flags,True,no,,missed
+sample-d20,immune,red_flags,True,yes,yes,correct
+sample-d20,hot_red_joint,red_flags,True,yes,yes,correct
+sample-d20,recent_infection_procedure,red_flags,True,yes,yes,correct
+sample-d20,injected_drugs,red_flags,True,no,no,correct
+sample-d20,saddle_numbness,red_flags,True,,no,invented
+sample-d20,exertion_chest,red_flags,True,,no,invented
+sample-d20,giving_way,knee,False,,no,invented
+sample-d20,locking_catching,knee,False,,none,invented
+sample-d20,stairs,knee,False,,no,invented
+sample-d20,kneeling,knee,False,,no,invented
+sample-d20,can_straighten,knee,False,,no,invented

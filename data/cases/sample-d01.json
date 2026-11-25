@@ -1,7 +1,7 @@
 {
   "id": "sample-d01",
   "created": "2026-11-18T23:47:59+00:00",
-  "updated": "2026-11-19T12:06:39+00:00",
+  "updated": "2026-11-24T23:55:28+00:00",
   "source": "sample",
   "audio_file": null,
   "transcript": "أهلا بحضرتك، إيه اللي مضايقك النهاردة؟ ركبتي اليمين بتوجعني. بدأت من إمتى؟ من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور. الوجع كام من صفر لعشرة؟ حوالي ستة. إيه اللي بيزوّده؟ لما أنزل السلم. فيه ورم؟ أيوه الركبة متورمة شوية. الوجع بيصحيك بالليل؟ أيوه كذا مرة. فيه سخونية؟ لا مفيش سخونية.",
@@ -16,7 +16,7 @@
   "fields": {
     "site": {
       "ai": "knee",
-      "quote": "ركبتي",
+      "quote": "ركبتي اليمين بتوجعني",
       "value": "knee",
       "decision": "",
       "edited": false,
@@ -24,19 +24,19 @@
     },
     "side": {
       "ai": "right",
-      "quote": "اليمين",
+      "quote": "ركبتي اليمين بتوجعني",
       "value": "right",
       "decision": "",
       "edited": false,
       "filled": true
     },
     "one_or_many": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "one_place",
+      "quote": "لما أنزل السلم",
+      "value": "one_place",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "exact_spot": {
       "ai": null,
@@ -47,28 +47,28 @@
       "filled": false
     },
     "also_neck_back": {
+      "ai": "no",
+      "quote": "لا مفيش سخونية",
+      "value": "no",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset": {
+      "ai": "من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور",
+      "quote": "من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور",
+      "value": "من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور",
+      "decision": "",
+      "edited": false,
+      "filled": true
+    },
+    "onset_type": {
       "ai": null,
       "quote": "",
       "value": null,
       "decision": "",
       "edited": false,
       "filled": false
-    },
-    "onset": {
-      "ai": "من حوالي تلات شهور",
-      "quote": "من حوالي تلات شهور",
-      "value": "من حوالي تلات شهور",
-      "decision": "",
-      "edited": false,
-      "filled": true
-    },
-    "onset_type": {
-      "ai": "gradual",
-      "quote": "بدأت واحدة واحدة من غير ما أتعور",
-      "value": "gradual",
-      "decision": "",
-      "edited": false,
-      "filled": true
     },
     "injury": {
       "ai": null,
@@ -79,12 +79,12 @@
       "filled": false
     },
     "pain_severity": {
-      "ai": 6,
-      "quote": "حوالي ستة",
-      "value": 6,
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "character": {
       "ai": null,
@@ -135,12 +135,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "أيوه الركبة متورمة شوية",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -183,20 +183,20 @@
       "filled": true
     },
     "timing": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "intermittent",
+      "quote": "من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور",
+      "value": "intermittent",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "painkillers_help": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "no",
+      "quote": "لما أنزل السلم",
+      "value": "no",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "stiffness": {
       "ai": null,
@@ -215,12 +215,12 @@
       "filled": false
     },
     "function": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "الوجع بيصحيك بالليل؟",
+      "quote": "أيوه كذا مرة",
+      "value": "الوجع بيصحيك بالليل؟",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "prior_problems": {
       "ai": null,
@@ -887,12 +887,12 @@
       "filled": false
     },
     "stairs": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "لما أنزل السلم",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "kneeling": {
       "ai": null,
@@ -983,10 +983,31 @@
       "filled": false
     }
   },
-  "flags": [],
+  "flags": [
+    {
+      "field": "exact_spot",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه الركبة متورمة شوية"
+    },
+    {
+      "field": "pain_severity",
+      "issue": "not_a_number",
+      "value": "ستة"
+    },
+    {
+      "field": "swelling",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه الركبة متورمة شوية"
+    },
+    {
+      "field": "stiffness",
+      "issue": "answer_not_after_question",
+      "quote": "أيوه الركبة متورمة شوية"
+    }
+  ],
   "events": [
     {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "site",
       "from": null,
@@ -994,7 +1015,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "side",
       "from": null,
@@ -1002,31 +1023,31 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "one_or_many",
+      "from": null,
+      "to": "one_place",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "also_neck_back",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
-      "to": "من حوالي تلات شهور",
+      "to": "من حوالي تلات شهور، وبدأت واحدة واحدة من غير ما أتعور",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
-      "kind": "AI filled",
-      "field": "onset_type",
-      "from": null,
-      "to": "gradual",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:06:39+00:00",
-      "kind": "AI filled",
-      "field": "pain_severity",
-      "from": null,
-      "to": "6",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "worse_with",
       "from": null,
@@ -1034,15 +1055,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "night_pain",
       "from": null,
@@ -1050,7 +1063,7 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "chief_complaint",
       "from": null,
@@ -1058,15 +1071,48 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T12:06:39+00:00",
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "timing",
+      "from": null,
+      "to": "intermittent",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "painkillers_help",
+      "from": null,
+      "to": "no",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "function",
+      "from": null,
+      "to": "الوجع بيصحيك بالليل؟",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
       "kind": "AI filled",
       "field": "fever",
       "from": null,
       "to": "no",
       "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:55:28+00:00",
+      "kind": "AI filled",
+      "field": "stairs",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 79.5
 }

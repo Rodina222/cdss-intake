@@ -1,7 +1,7 @@
 {
   "id": "d07",
   "created": "2026-11-18T23:49:28+00:00",
-  "updated": "2026-11-19T11:22:57+00:00",
+  "updated": "2026-11-24T23:01:14+00:00",
   "source": "audio",
   "audio_file": "d07.aac",
   "transcript": "اهلا بحضرتك ايه اللي تعبك؟ ظهري لا استني رجلي ركبتي الشمال من امتى؟ مش فاكر بالزبط يمكن من كام شهر الوجع كم من صفر العشرة؟ مش عارف متوسط الركبة بتخونك وانت ماشي؟ احيانا في ورم؟ اه شوية",
@@ -28,12 +28,12 @@
       "filled": false
     },
     "side": {
-      "ai": "left",
-      "quote": "الشمال",
-      "value": "left",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "one_or_many": {
       "ai": null,
@@ -108,12 +108,12 @@
       "filled": false
     },
     "worse_with": {
-      "ai": "الركبة بتخونك وانت ماشي",
-      "quote": "الركبة بتخونك وانت ماشي",
-      "value": "الركبة بتخونك وانت ماشي",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "better_with": {
       "ai": null,
@@ -140,12 +140,12 @@
       "filled": false
     },
     "swelling": {
-      "ai": "yes",
-      "quote": "شوية",
-      "value": "yes",
+      "ai": null,
+      "quote": "",
+      "value": null,
       "decision": "",
       "edited": false,
-      "filled": true
+      "filled": false
     },
     "numbness": {
       "ai": null,
@@ -180,16 +180,16 @@
       "filled": false
     },
     "chief_complaint": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "ركبتي الشمال",
+      "quote": "ركبتي الشمال",
+      "value": "ركبتي الشمال",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "timing": {
       "ai": "intermittent",
-      "quote": "احيانا",
+      "quote": "من كام شهر",
       "value": "intermittent",
       "decision": "",
       "edited": false,
@@ -204,12 +204,12 @@
       "filled": false
     },
     "stiffness": {
-      "ai": null,
-      "quote": "",
-      "value": null,
+      "ai": "yes",
+      "quote": "متوسط",
+      "value": "yes",
       "decision": "",
       "edited": false,
-      "filled": false
+      "filled": true
     },
     "instability": {
       "ai": null,
@@ -220,9 +220,9 @@
       "filled": false
     },
     "function": {
-      "ai": "متوسط الركبة بتخونك",
-      "quote": "متوسط الركبة بتخونك",
-      "value": "متوسط الركبة بتخونك",
+      "ai": "أحيانا في ورم؟",
+      "quote": "أحيانا في ورم؟",
+      "value": "أحيانا في ورم؟",
       "decision": "",
       "edited": false,
       "filled": true
@@ -992,7 +992,17 @@
     {
       "field": "site",
       "issue": "quote_not_in_transcript",
-      "quote": "ركبي"
+      "quote": "ركتي"
+    },
+    {
+      "field": "side",
+      "issue": "answer_not_after_question",
+      "quote": "الشمال"
+    },
+    {
+      "field": "also_neck_back",
+      "issue": "answer_not_after_question",
+      "quote": "ظهري"
     },
     {
       "field": "pain_severity",
@@ -1000,22 +1010,24 @@
       "value": "متوسط"
     },
     {
-      "field": "chief_complaint",
+      "field": "swelling",
+      "issue": "value_not_allowed",
+      "value": "اه شوية"
+    },
+    {
+      "field": "painkillers_help",
+      "issue": "answer_not_after_question",
+      "quote": "مش فاكر بالزبط"
+    },
+    {
+      "field": "hot_red_joint",
       "issue": "quote_not_in_transcript",
-      "quote": "ركتي الشمال"
+      "quote": "مفيش سخونية"
     }
   ],
   "events": [
     {
-      "t": "2026-11-19T11:22:57+00:00",
-      "kind": "AI filled",
-      "field": "side",
-      "from": null,
-      "to": "left",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:57+00:00",
+      "t": "2026-11-24T23:01:14+00:00",
       "kind": "AI filled",
       "field": "onset",
       "from": null,
@@ -1023,23 +1035,15 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:57+00:00",
+      "t": "2026-11-24T23:01:14+00:00",
       "kind": "AI filled",
-      "field": "worse_with",
+      "field": "chief_complaint",
       "from": null,
-      "to": "الركبة بتخونك وانت ماشي",
+      "to": "ركبتي الشمال",
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:57+00:00",
-      "kind": "AI filled",
-      "field": "swelling",
-      "from": null,
-      "to": "yes",
-      "who": "Language model"
-    },
-    {
-      "t": "2026-11-19T11:22:57+00:00",
+      "t": "2026-11-24T23:01:14+00:00",
       "kind": "AI filled",
       "field": "timing",
       "from": null,
@@ -1047,15 +1051,24 @@
       "who": "Language model"
     },
     {
-      "t": "2026-11-19T11:22:57+00:00",
+      "t": "2026-11-24T23:01:14+00:00",
+      "kind": "AI filled",
+      "field": "stiffness",
+      "from": null,
+      "to": "yes",
+      "who": "Language model"
+    },
+    {
+      "t": "2026-11-24T23:01:14+00:00",
       "kind": "AI filled",
       "field": "function",
       "from": null,
-      "to": "متوسط الركبة بتخونك",
+      "to": "أحيانا في ورم؟",
       "who": "Language model"
     }
   ],
   "comment": "",
   "reviewed": false,
-  "report_seen": false
+  "report_seen": false,
+  "extract_s": 39.9
 }

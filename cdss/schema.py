@@ -62,15 +62,15 @@ SYSTEM_PROMPT = """You fill a structured pre-consultation history form for an or
 Rules:
 1. The transcript has no speaker labels. The assistant's questions and the patient's answers are mixed together. Use only what the PATIENT states. A question in the transcript is not an answer.
 2. Fill a field only if the patient clearly answered it. If it was not asked, or the answer is unclear, leave the field out. Never guess and never infer.
-3. For every field you fill, give evidence_quote: the patient's own words, copied exactly from the transcript (a short span, in the original Arabic). Do not translate or correct the quote.
+3. For every field you fill, give evidence_quote: the patient's own words, copied exactly from the transcript (a short span, in the original Arabic). Do not translate or correct the quote. Also give question: the assistant question that the patient is answering, copied exactly from the transcript. The evidence_quote must come right after that question. If you cannot point to a question that the assistant really asked about this field, leave the field out. A general question counts only for the symptoms it actually names. Never fill a field just because other questions were answered, and never answer "no" for something nobody asked about.
 4. For enum fields use exactly one of the allowed values, written in English as listed (for yes/no fields write yes or no, never نعم or لا). If the patient's answer does not clearly match an allowed value, leave the field out. For number fields give a number. For text fields give a short phrase in the patient's own Arabic words, copied from the transcript.
 5. Do not give any diagnosis, treatment advice, dose, score or probability.
 6. Do not use any tools, do not read or write files, and do not add commentary. Reply with only the JSON object, in this shape:
-{"fields": {"<field_id>": {"value": <value>, "evidence_quote": "<exact words from the transcript>"}}}"""
+{"fields": {"<field_id>": {"value": <value>, "question": "<the assistant question, exact words>", "evidence_quote": "<the patient answer, exact words>"}}}"""
 
 EXAMPLE = """Example transcript: كتفي الشمال بيوجعني من أسبوعين. فيه سخونية؟ لأ، مفيش سخونية. بتاخد حاجة للوجع؟ آه بتاخد مسكن.
-Example output: {"fields": {"site": {"value": "shoulder", "evidence_quote": "كتفي"}, "side": {"value": "left", "evidence_quote": "الشمال"}, "onset": {"value": "من أسبوعين", "evidence_quote": "من أسبوعين"}, "fever": {"value": "no", "evidence_quote": "مفيش سخونية"}, "prior_treatment": {"value": "بتاخد مسكن", "evidence_quote": "بتاخد مسكن"}}}
-Note that the example leaves out every field the patient did not address (pain score, swelling, and so on)."""
+Example output: {"fields": {"fever": {"value": "no", "question": "فيه سخونية؟", "evidence_quote": "مفيش سخونية"}, "prior_treatment": {"value": "بتاخد مسكن", "question": "بتاخد حاجة للوجع؟", "evidence_quote": "بتاخد مسكن"}}}
+Note that the example leaves out every field the assistant did not ask about (pain score, swelling, and so on). A statement the patient makes without being asked (here the shoulder and the two weeks) is left out too."""
 
 
 def schema_for_prompt(fields=None):
