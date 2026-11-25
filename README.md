@@ -1,4 +1,10 @@
 # CDSS Intake
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg?logo=streamlit&logoColor=white)](https://streamlit.io/)
+[![faster-whisper](https://img.shields.io/badge/transcription-faster--whisper-green.svg)](https://github.com/SYSTRAN/faster-whisper)
+[![LLM backends](https://img.shields.io/badge/LLM-Ollama%20%7C%20OpenCode-purple.svg)](https://ollama.com/)
+[![Offline tests](https://img.shields.io/badge/tests-offline-lightgrey.svg)](#tests)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 A doctor-in-the-loop orthopedic pre-consultation dashboard. CDSS Intake turns role-played intake recordings or transcripts into structured case data, evidence-linked answers, reviewable reports, and evaluation results.
 
