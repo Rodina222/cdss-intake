@@ -31,6 +31,7 @@ def get(case_id):
         if not p.exists():
             return None
         c = json.loads(p.read_text(encoding="utf-8"))
+    c.setdefault("followup_answers", {})
     for f in SCHEMA:                      # a schema that grew since the case was made
         c["fields"].setdefault(f["id"], {"ai": None, "quote": "", "value": None, "decision": "", "edited": False, "filled": False})
     return c
@@ -48,7 +49,7 @@ def save(case):
 def new_case(case_id, transcript="", source="text", audio_file=None):
     c = {"id": case_id, "created": now(), "updated": now(), "source": source, "audio_file": audio_file,
          "transcript": transcript, "asr": None, "busy": None, "error": None,
-         "model": None, "fields": empty_fields(), "flags": [], "events": [],
+         "model": None, "fields": empty_fields(), "followup_answers": {}, "flags": [], "events": [],
          "comment": "", "reviewed": False, "report_seen": False}
     return save(c)
 

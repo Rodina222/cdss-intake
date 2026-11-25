@@ -158,3 +158,67 @@ def save_review(case_id, comment, kind="save", who="Doctor"):
         store.event(c, "review saved", None, None, comment or "(no comment)", who=who)
         (config.REPORT_DIR / f"{case_id}.md").write_text(report.report_markdown(c), encoding="utf-8")
     return store.save(c)
+
+
+def save_followup_answer(case_id, fid, value, answer_text, who="Reviewer"):
+    """Save an explicit patient follow-up answer separately from AI fields."""
+
+    c = store.get(case_id)
+    if c is None:
+        raise ValueError("Case not found.")
+
+    spec = BY_ID.get(fid)
+    if spec is None:
+        raise ValueError("Unknown field ID.")
+
+    # Never overwrite an original AI-extracted or reviewed answer.
+    field_data = c["fields"].get(fid, {})
+    if field_data.get("filled", False):
+        raise ValueError("This field already has an original answer.")
+
+    # Never silently replace an earlier follow-up answer.
+    if fid in c.setdefault("followup_answers", {}):
+        raise ValueError("A follow-up answer already exists for this field.")
+
+    if not isinstance(answer_text, str) or not answer_text.strip():
+        raise ValueError("The patient's answer text cannot be empty.")
+
+    field_type = spec["type"]
+
+    if field_type == "enum":
+        if value not in spec.get("options", []):
+            raise ValueError("Value must be one of the allowed options.")
+
+    elif field_type == "number":
+        if isinstance(value, bool):
+            raise ValueError("A valid number is required.")
+        try:
+            value = float(value)
+        except (TypeError, ValueError):
+            raise ValueError("A valid number is required.")
+
+    elif field_type == "text":
+        if not isinstance(value, str) or not value.strip():
+            raise ValueError("A non-empty text value is required.")
+
+    else:
+        raise ValueError("Unsupported field type.")
+
+    c["followup_answers"][fid] = {
+        "value": value,
+        "answer_text": answer_text,
+        "source": "patient_followup",
+        "timestamp": store.now(),
+        "who": who
+    }
+
+    store.event(
+        c,
+        "Follow-up answer",
+        fid,
+        None,
+        str(value),
+        who=who
+    )
+
+    return store.save(c)

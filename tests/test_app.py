@@ -57,7 +57,7 @@ noexc(at, "run extraction")
 c = store.get("mine")
 check(c["fields"]["weight_loss"]["value"] == "yes" and c["busy"] is None, "extraction through the app fills the template")
 
-at.radio[0].set_value("Summary").run()
+[r for r in at.radio if r.label == "Screen"][0].set_value("Summary").run()
 noexc(at, "summary page")
 check(any("Unexplained weight loss" in m.value for m in at.markdown), "red flag shown on the summary")
 [b for b in at.button if b.label == "Edit"][-1].click(); at.run()

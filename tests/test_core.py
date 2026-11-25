@@ -62,8 +62,12 @@ check(c3["reviewed"] and (config.REPORT_DIR / "sample-d01.md").exists(), "review
 kinds = [e["kind"] for e in c3["events"]]
 check({"AI filled", "edited by doctor", "approved", "flagged", "review saved"} <= set(kinds), "all event kinds recorded")
 md = report.report_markdown(c3)
-check("- None reported." in md and "Patient said no to: Fever?" in md and "Not answered (ask the patient)" in md, "report: red flags first, unasked ones listed")
-
+check(
+    "- No positive red flags reported." in md
+    and "Patient explicitly said no to: Fever?" in md
+    and "**Not answered (ask the patient):**" in md,
+    "report: red flags first, unasked ones listed"
+)
 ev = scoring.evaluate()
 s = ev["summary"]
 check(s["cases_scored"] == ["sample-d01"] and s["counts"]["invented"] == 0 and s["counts"]["missed"] > 0, "scoring counts missed fields, none invented")

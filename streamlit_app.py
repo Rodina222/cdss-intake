@@ -9,6 +9,7 @@ import pandas as pd
 import streamlit as st
 
 from cdss import config, llm, pipeline, report, samples, scoring, store
+from cdss.followup import get_follow_up_questions
 from cdss.schema import BY_ID, MODULE_TITLES, SCHEMA
 from cdss.textutil import safe_id
 
@@ -160,25 +161,89 @@ def need_extract(c):
 
 def rf_block(c):
     F = c["fields"]
+    followups = c.get("followup_answers", {})
     rf = [f for f in SCHEMA if f["red_flag"]]
-    yes = [f for f in rf if F[f["id"]]["filled"] and F[f["id"]]["value"] == "yes"]
-    no = [f for f in rf if F[f["id"]]["filled"] and F[f["id"]]["value"] == "no"]
-    na = [f for f in rf if not F[f["id"]]["filled"]]
+
+    yes, no, na = [], [], []
+
+    for f in rf:
+        fid = f["id"]
+        field_data = F.get(fid, {})
+
+        # Prefer the original extracted answer when it exists.
+        if field_data.get("filled", False):
+            answer = {
+                "value": field_data["value"],
+                "quote": field_data.get("quote", ""),
+                "source": "AI extraction"
+            }
+
+        # Otherwise, check the patient's follow-up answer.
+        elif fid in followups:
+            answer = {
+                "value": followups[fid]["value"],
+                "quote": followups[fid].get("answer_text", ""),
+                "source": "Patient follow-up"
+            }
+
+        else:
+            na.append(f)
+            continue
+
+        if answer["value"] == "yes":
+            yes.append((f, answer))
+        elif answer["value"] == "no":
+            no.append((f, answer))
+
     out = []
+
     if yes:
-        out.append("<ul style='margin:0 0 6px 0'>" + "".join(
-            f'<li><b>{esc(f["question_en"])}</b> yes. <span class="ar-inline">{esc(F[f["id"]]["quote"])}</span></li>' for f in yes) + "</ul>")
+        out.append(
+            "<ul style='margin:0 0 6px 0'>" +
+            "".join(
+                f'<li><b>{esc(f["question_en"])}</b> yes. '
+                f'<span class="ar-inline">{esc(a["quote"])}</span> '
+                f'<small>({esc(a["source"])})</small></li>'
+                for f, a in yes
+            ) +
+            "</ul>"
+        )
     else:
-        out.append("<p style='margin:0 0 6px 0'>None reported by the patient.</p>")
+        out.append(
+            "<p style='margin:0 0 6px 0'>"
+            "No positive red flags reported by the patient.</p>"
+        )
+
     if no:
-        out.append("<p style='margin:0 0 6px 0;color:#44575d'>Patient said no to: " + ", ".join(esc(f["question_en"].rstrip("?")) for f in no) + ".</p>")
+        out.append(
+            "<p style='margin:0 0 6px 0;color:#44575d'>"
+            "<b>Patient said no to:</b> " +
+            ", ".join(
+                esc(f["question_en"].rstrip("?"))
+                for f, a in no
+            ) +
+            ".</p>"
+        )
+
     if na:
-        out.append("<p style='margin:0'><b>Not answered, ask the patient:</b> " + ", ".join(esc(f["question_en"].rstrip("?")) for f in na) + ".</p>")
+        out.append(
+            "<p style='margin:0'><b>Not answered, ask the patient:</b> " +
+            ", ".join(
+                esc(f["question_en"].rstrip("?"))
+                for f in na
+            ) +
+            ".</p>"
+        )
+
     cls = "rf" if yes else "banner"
     style = "" if yes else ' style="background:#EEF3F3;color:#263B43"'
-    st.markdown(f'<div class="{cls}"{style}><h4 style="{"" if yes else "color:#263B43;"}">Red flags</h4>{"".join(out)}</div>', unsafe_allow_html=True)
 
-
+    st.markdown(
+        f'<div class="{cls}"{style}>'
+        f'<h4 style="{"" if yes else "color:#263B43;"}">Red flags</h4>'
+        f'{"".join(out)}</div>',
+        unsafe_allow_html=True
+    )
 def field_tables(c, mode):
     """mode is 'summary' (edit only) or 'review' (approve, edit, flag)."""
     F = c["fields"]
@@ -399,6 +464,108 @@ elif page == "Intake":
                 st.dataframe(pd.DataFrame([{"field": x["field"], "why": x["issue"].replace("_", " "), "detail": x.get("quote") or x.get("value") or ""} for x in c["flags"]]),
                              hide_index=True, width="stretch")
 
+
+    # ------------------------------------------------ Adaptive Follow-up Agent
+    st.divider()
+    st.subheader("Adaptive Follow-up Agent")
+    st.caption(
+        "Ask one relevant unanswered question at a time. "
+        "Red-flag questions are prioritized. Patient answers require explicit evidence."
+    )
+
+    followup_questions = get_follow_up_questions(c, language="ar")
+
+    if not followup_questions:
+        st.success("All relevant follow-up questions have been answered.")
+    else:
+        question = followup_questions[0]
+        fid = question["id"]
+        spec = BY_ID[fid]
+
+        st.markdown(
+            f"**Question {1} of {len(followup_questions)}**"
+        )
+
+        if question["red_flag"]:
+            st.warning("Red-flag question — ask the patient explicitly.")
+
+        st.markdown(
+            f'<div class="ar">{esc(question["question"])}</div>',
+            unsafe_allow_html=True
+        )
+
+        st.caption(f"Field: {fid}")
+
+        answer_value = None
+        valid_input = True
+
+        if question["type"] == "enum":
+            options = question.get("options", [])
+            answer_value = st.radio(
+                "Patient's answer",
+                options,
+                index=None,
+                format_func=lambda v: fmt(spec, v),
+                key=f"followup-value-{c['id']}-{fid}"
+            )
+            valid_input = answer_value is not None
+
+        elif question["type"] == "number":
+            min_value = 0.0 if fid == "pain_severity" else None
+            max_value = 10.0 if fid == "pain_severity" else None
+
+            answer_value = st.number_input(
+                "Numeric answer",
+                min_value=min_value,
+                max_value=max_value,
+                value=None,
+                step=1.0,
+                key=f"followup-value-{c['id']}-{fid}"
+            )
+            valid_input = answer_value is not None
+
+            if fid == "first_dislocation":
+                st.caption(
+                    "Enter the age at first dislocation. "
+                    "Include whether it followed an injury in the patient's exact answer below."
+                )
+
+        elif question["type"] == "text":
+            answer_value = st.text_input(
+                "Text answer",
+                key=f"followup-value-{c['id']}-{fid}"
+            )
+            valid_input = bool(answer_value.strip())
+
+        else:
+            st.error("Unsupported question type.")
+
+        answer_text = st.text_area(
+            "Patient's exact answer / transcript evidence",
+            placeholder="Record the patient's actual words here...",
+            key=f"followup-evidence-{c['id']}-{fid}"
+        )
+
+        if st.button(
+            "Save answer and continue",
+            type="primary",
+            key=f"followup-save-{c['id']}-{fid}",
+            disabled=not valid_input or not answer_text.strip()
+        ):
+            try:
+                pipeline.save_followup_answer(
+                    c["id"],
+                    fid,
+                    answer_value,
+                    answer_text,
+                    who="Reviewer"
+                )
+                st.success("Follow-up answer saved.")
+                st.rerun()
+
+            except ValueError as e:
+                st.error(str(e))
+
 # ---------------------------------------------------------------- Summary
 elif page == "Summary":
     c = case()
@@ -441,31 +608,117 @@ elif page == "Report":
 # ---------------------------------------------------------------- Doctor review
 elif page == "Doctor review":
     c = case()
+
     if not c:
-        need_case(); st.stop()
+        need_case()
+        st.stop()
+
     if not filled(c):
-        need_extract(c); st.stop()
+        need_extract(c)
+        st.stop()
+
     banner(c)
     st.title("Doctor review")
-    st.caption("Approve, edit or flag each value. Every change is saved next to the original AI value so the team can measure how often the doctor corrects the model.")
+
+    st.caption(
+        "Approve, edit or flag each value. Every change is saved next "
+        "to the original AI value so the team can measure how often "
+        "the doctor corrects the model."
+    )
+
+    # Original AI-extracted red flags
     rf_block(c)
+
+    # Original AI-extracted fields
     field_tables(c, "review")
+
+    # Patient follow-up answers
+    followups = c.get("followup_answers", {})
+
+    if followups:
+        with st.container(border=True):
+            st.subheader("Patient Follow-up Answers")
+
+            st.caption(
+                "Explicit patient answers collected through the "
+                "adaptive follow-up agent. These answers are kept "
+                "separate from AI-extracted values."
+            )
+
+            for spec in SCHEMA:
+                fid = spec["id"]
+
+                if fid not in followups:
+                    continue
+
+                answer = followups[fid]
+
+                st.markdown(f"**{spec['question_en']}**")
+
+                st.write(
+                    f"Answer: {fmt(spec, answer['value'])}"
+                )
+
+                st.caption(
+                    f"Patient's evidence: {answer['answer_text']}"
+                )
+
+                st.caption(
+                    f"Source: {answer.get('source', 'patient_followup')}"
+                )
+
+                st.divider()
+
+    # Doctor review progress
     f = filled(c)
-    decided = sum(1 for x in f if c["fields"][x["id"]]["decision"] or c["fields"][x["id"]]["edited"])
+
+    decided = sum(
+        1 for x in f
+        if c["fields"][x["id"]]["decision"]
+        or c["fields"][x["id"]]["edited"]
+    )
+
+    # Review comment and actions
     with st.container(border=True):
         st.markdown("**Comment**")
-        cm = st.text_area("Comment", value=c["comment"], key=f"cm-{c['id']}", label_visibility="collapsed")
-        b1, b2, b3 = st.columns([1, 1.4, 3], vertical_alignment="center")
+
+        cm = st.text_area(
+            "Comment",
+            value=c["comment"],
+            key=f"cm-{c['id']}",
+            label_visibility="collapsed"
+        )
+
+        b1, b2, b3 = st.columns(
+            [1, 1.4, 3],
+            vertical_alignment="center"
+        )
+
         if b1.button("Save review", type="primary"):
-            pipeline.save_review(c["id"], cm, "save", who=ME)
+            pipeline.save_review(
+                c["id"],
+                cm,
+                "save",
+                who=ME
+            )
+
             st.toast("Review saved. The report is in data/reports.")
             st.rerun()
+
         if b2.button("Request more information"):
-            pipeline.save_review(c["id"], cm, "request", who=ME)
+            pipeline.save_review(
+                c["id"],
+                cm,
+                "request",
+                who=ME
+            )
+
             st.toast("Request recorded in history")
             st.rerun()
+
         b3.caption(f"{decided} of {len(f)} fields decided")
 
+# ---------------------------------------------------------------- History
 # ---------------------------------------------------------------- History
 elif page == "History":
     c = case()
