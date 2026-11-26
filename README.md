@@ -147,6 +147,37 @@ Or set `APP_PASSWORD` in the environment. Keep secrets out of the repository. Do
 
 The dashboard can also import cases from data folders or seed role-played sample cases.
 
+## Adaptive Intake Follow-up Agent
+
+The Adaptive Intake Follow-up Agent improves the clinical intake process by identifying missing information and asking relevant follow-up questions based on the patient's initial responses.
+
+### Key Features
+
+- Generates follow-up questions based on missing or incomplete clinical information.
+- Avoids asking questions that have already been answered.
+- Filters out irrelevant follow-up questions.
+- Prioritizes clinically important information and red flags.
+- Validates follow-up answers before incorporating them into the case.
+- Stores follow-up answers separately from the original AI-extracted answers.
+- Integrates relevant follow-up information into the clinical report while preserving the original responses.
+
+### Workflow
+
+1. Reviews the initial patient intake data.
+2. Identifies unanswered or incomplete relevant fields.
+3. Generates targeted follow-up questions.
+4. Collects and validates the patient's responses.
+5. Updates the case with the additional information.
+6. Makes the collected information available for doctor review and reporting.
+
+### Testing
+
+The feature was tested with dedicated follow-up test cases, alongside the existing core and dashboard test suites.
+
+- Follow-up tests: Passed.
+- Core tests: 24/24 passed.
+- Dashboard tests: 21/21 passed.
+
 ## Command-line pipeline
 
 ```bash
